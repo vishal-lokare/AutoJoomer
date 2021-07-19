@@ -31,7 +31,7 @@ $.getJSON('http://www.vishal-lokare.co/AutoJoomer/index.html', function(links) {
                         window.open(thatClassLink[i],"_blank");
                     }, millisOfThatClass[i]);
             }
-            else if(millisOfThatClass[i] > -3600000) {
+            else if(millisOfThatClass[i] > -2400000) {
                 alert( 'Now the class is ' + thatClassName[i] + ' at ' + millisOfThatClass + ' ' + i);
                 window.open(thatClassLink[i],"_blank");
             }
