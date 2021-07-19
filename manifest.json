@@ -1,0 +1,14 @@
+{
+    "name": "AutoJoomer",
+    "version": "1.0",
+    "manifest_version": 2,
+    "permissions" : ["tabs"],
+
+    "background": {
+        "scripts": [
+            "jquery.js",
+            "script.js"
+        ],
+        "persistent": true
+    }
+}
