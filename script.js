@@ -1,4 +1,4 @@
-var batch = '2'
+var batch = ''
 
 var now = new Date();
 var h = [0, 8, 9, 10, 12, 14, 14, 16];
@@ -7,7 +7,7 @@ var thatClassLink = ['', '', '', '', '', '', '', '']
 var thatClassName = ['', '', '', '', '', '', '', '']
 var millisOfThatClass = [0, 0, 0, 0, 0, 0, 0, 0]
 $.getJSON('http://www.vishal-lokare.co/AutoJoomer/index.html', function(links) {
-        alert('started');
+        alert('AutoJoomer Started!!!');
         var not_batch = '';
         if(batch == '2')
             not_batch = '1';
