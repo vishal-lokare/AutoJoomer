@@ -2,7 +2,7 @@ var batch = ''
 
 var now = new Date();
 var h = [0, 8, 9, 10, 12, 14, 14, 16];
-var m = [0, 30, 40, 50, 0, 0, 0, 45];
+var m = [0, 30, 40, 50, 15, 0, 0, 45];
 var thatClassLink = ['', '', '', '', '', '', '', '']
 var thatClassName = ['', '', '', '', '', '', '', '']
 var millisOfThatClass = [0, 0, 0, 0, 0, 0, 0, 0]
@@ -27,13 +27,15 @@ $.getJSON('http://www.vishal-lokare.co/AutoJoomer/index.html', function(links) {
             if(millisOfThatClass[i] > 0) {
                     // alert(thatClassName[i] + ' at ' + h[i] + m[i] + ' ' + thatClassLink[i]);
                     setTimeout(function() {
-                        alert( 'Now the class is ' + thatClassName[i] + ' at ' + millisOfThatClass + ' ' + i);
-                        window.open(thatClassLink[i],"_blank");
+                        if(window.confirm( 'Now the class is ' + thatClassName[i] + ' at ' + millisOfThatClass + ' ' + i)){
+                           window.open(thatClassLink[i],"_blank");
+                        }
                     }, millisOfThatClass[i]);
             }
             else if(millisOfThatClass[i] > -2400000) {
-                alert( 'Now the class is ' + thatClassName[i] + ' at ' + millisOfThatClass + ' ' + i);
-                window.open(thatClassLink[i],"_blank");
+                if(window.confirm( 'Now the class is ' + thatClassName[i] + ' at ' + millisOfThatClass + ' ' + i)){
+                     window.open(thatClassLink[i],"_blank");
+                }
             }
         }
 });
