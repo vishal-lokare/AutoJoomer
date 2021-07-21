@@ -3,43 +3,59 @@
         "1": {
             "1": {
                 "class_name": "IEC121",
-                "class_link": "https://lms.iiitkottayam.ac.in/mod/zoom/loadmeeting.php?id=1499"
+                "class_link": "https://lms.iiitkottayam.ac.in/mod/zoom/loadmeeting.php?id=1499",
+                "class_name2": "IEC121",
+                "class_link2": "https://lms.iiitkottayam.ac.in/mod/zoom/loadmeeting.php?id=1499"
             },
             "2": {
                 "class_name": "ICS121",
-                "class_link": "https://lms.iiitkottayam.ac.in/mod/zoom/loadmeeting.php?id=1500"
+                "class_link": "https://lms.iiitkottayam.ac.in/mod/zoom/loadmeeting.php?id=1500",
+                "class_name2": "ICS121",
+                "class_link2": "https://lms.iiitkottayam.ac.in/mod/zoom/loadmeeting.php?id=1500"
             },
             "3": {
                 "class_name": "ICS122",
-                "class_link": "https://lms.iiitkottayam.ac.in/mod/zoom/loadmeeting.php?id=1506"
+                "class_link": "https://lms.iiitkottayam.ac.in/mod/zoom/loadmeeting.php?id=1506",
+                "class_name2": "ICS122",
+                "class_link2": "https://lms.iiitkottayam.ac.in/mod/zoom/loadmeeting.php?id=1506"
             },
             "4": {
                 "class_name": "IMA121",
-                "class_link": "https://lms.iiitkottayam.ac.in/mod/zoom/loadmeeting.php?id=1507"
+                "class_link": "https://lms.iiitkottayam.ac.in/mod/zoom/loadmeeting.php?id=1507",
+                "class_name2": "IMA121",
+                "class_link2": "https://lms.iiitkottayam.ac.in/mod/zoom/loadmeeting.php?id=1507"
             },
             "5": {
                 "class_name": "1_ICS121_LAB",
                 "class_link": "https://lms.iiitkottayam.ac.in/mod/bigbluebuttonbn/bbb_view.php?action=join&id=1232&bn=81",
                 "class_name2": "",
-                "class_link2": "https://smashkarts.io"
+                "class_link2": ""
             },
             "6": {
                 "class_name": "Coding Practice",
-                "class_link": "https://lms.iiitkottayam.ac.in/mod/zoom/loadmeeting.php?id=1511"
+                "class_link": "https://lms.iiitkottayam.ac.in/mod/zoom/loadmeeting.php?id=1511",
+                "class_name2": "Coding Practice",
+                "class_link2": "https://lms.iiitkottayam.ac.in/mod/zoom/loadmeeting.php?id=1511"
             }
         },
         "2": {
             "1": {
                 "class_name": "ICS122",
-                "class_link": "https://lms.iiitkottayam.ac.in/mod/zoom/loadmeeting.php?id=1506"
+                "class_link": "https://lms.iiitkottayam.ac.in/mod/zoom/loadmeeting.php?id=1506",
+                "class_name2": "ICS122",
+                "class_link2": "https://lms.iiitkottayam.ac.in/mod/zoom/loadmeeting.php?id=1506"
             },
             "2": {
                 "class_name": "IMA121",
-                "class_link": "https://lms.iiitkottayam.ac.in/mod/zoom/loadmeeting.php?id=1507"
+                "class_link": "https://lms.iiitkottayam.ac.in/mod/zoom/loadmeeting.php?id=1507",
+                "class_name2": "IMA121",
+                "class_link2": "https://lms.iiitkottayam.ac.in/mod/zoom/loadmeeting.php?id=1507"
             },
             "3": {
                 "class_name": "ICS121",
-                "class_link": "https://lms.iiitkottayam.ac.in/mod/zoom/loadmeeting.php?id=1500"
+                "class_link": "https://lms.iiitkottayam.ac.in/mod/zoom/loadmeeting.php?id=1500",
+                "class_name2": "ICS121",
+                "class_link2": "https://lms.iiitkottayam.ac.in/mod/zoom/loadmeeting.php?id=1500"
             },
             "4": {
                 "class_name": "ICS123",
@@ -51,29 +67,39 @@
                 "class_name": "2_ICS121_LAB",
                 "class_link": "https://lms.iiitkottayam.ac.in/mod/bigbluebuttonbn/bbb_view.php?action=join&id=1233&bn=82",
                 "class_name2": "",
-                "class_link2": "https://smashkarts.io"
+                "class_link2": ""
             },
             "6": {
                 "class_name": "Coding Practice",
-                "class_link": "https://lms.iiitkottayam.ac.in/mod/zoom/loadmeeting.php?id=1511"
+                "class_link": "https://lms.iiitkottayam.ac.in/mod/zoom/loadmeeting.php?id=1511",
+                "class_name2": "Coding Practice",
+                "class_link2": "https://lms.iiitkottayam.ac.in/mod/zoom/loadmeeting.php?id=1511"
             }
         },
         "3": {
             "1": {
                 "class_name": "IMA121",
-                "class_link": "https://lms.iiitkottayam.ac.in/mod/zoom/loadmeeting.php?id=1507"
+                "class_link": "https://lms.iiitkottayam.ac.in/mod/zoom/loadmeeting.php?id=1507",
+                "class_name2": "IMA121",
+                "class_link2": "https://lms.iiitkottayam.ac.in/mod/zoom/loadmeeting.php?id=1507"
             },
             "2": {
                 "class_name": "ICS121",
-                "class_link": "https://lms.iiitkottayam.ac.in/mod/zoom/loadmeeting.php?id=1500"
+                "class_link": "https://lms.iiitkottayam.ac.in/mod/zoom/loadmeeting.php?id=1500",
+                "class_name2": "ICS121",
+                "class_link2": "https://lms.iiitkottayam.ac.in/mod/zoom/loadmeeting.php?id=1500"
             },
             "3": {
                 "class_name": "IMA121",
-                "class_link": "https://lms.iiitkottayam.ac.in/mod/zoom/loadmeeting.php?id=1507"
+                "class_link": "https://lms.iiitkottayam.ac.in/mod/zoom/loadmeeting.php?id=1507",
+                "class_name2": "IMA121",
+                "class_link2": "https://lms.iiitkottayam.ac.in/mod/zoom/loadmeeting.php?id=1507"
             },
             "4": {
                 "class_name": "ICS121",
-                "class_link": "https://lms.iiitkottayam.ac.in/mod/zoom/loadmeeting.php?id=1500"
+                "class_link": "https://lms.iiitkottayam.ac.in/mod/zoom/loadmeeting.php?id=1500",
+                "class_name2": "ICS121",
+                "class_link2": "https://lms.iiitkottayam.ac.in/mod/zoom/loadmeeting.php?id=1500"
             },
             "5": {
                 "class_name": "2_ICS123_LAB",
@@ -83,21 +109,29 @@
             },
             "6": {
                 "class_name": "Coding Practice",
-                "class_link": "https://lms.iiitkottayam.ac.in/mod/zoom/loadmeeting.php?id=1511"
+                "class_link": "https://lms.iiitkottayam.ac.in/mod/zoom/loadmeeting.php?id=1511",
+                "class_name2": "Coding Practice",
+                "class_link2": "https://lms.iiitkottayam.ac.in/mod/zoom/loadmeeting.php?id=1511"
             }
         },
         "4": {
             "1": {
                 "class_name": "",
-                "class_link": "https://smashkarts.io"
+                "class_link": "",
+                "class_name2": "",
+                "class_link2": ""
             },
             "2": {
                 "class_name": "IEC121",
-                "class_link": "https://lms.iiitkottayam.ac.in/mod/zoom/loadmeeting.php?id=1499"
+                "class_link": "https://lms.iiitkottayam.ac.in/mod/zoom/loadmeeting.php?id=1499",
+                "class_name2": "IEC121",
+                "class_link2": "https://lms.iiitkottayam.ac.in/mod/zoom/loadmeeting.php?id=1499"
             },
             "3": {
                 "class_name": "ICS122",
-                "class_link": "https://lms.iiitkottayam.ac.in/mod/zoom/loadmeeting.php?id=1506"
+                "class_link": "https://lms.iiitkottayam.ac.in/mod/zoom/loadmeeting.php?id=1506",
+                "class_name2": "ICS122",
+                "class_link2": "https://lms.iiitkottayam.ac.in/mod/zoom/loadmeeting.php?id=1506"
             },
             "4": {
                 "class_name": "ICS123",
@@ -113,17 +147,23 @@
             },
             "6": {
                 "class_name": "Coding Practice",
-                "class_link": "https://lms.iiitkottayam.ac.in/mod/zoom/loadmeeting.php?id=1511"
+                "class_link": "https://lms.iiitkottayam.ac.in/mod/zoom/loadmeeting.php?id=1511",
+                "class_name2": "Coding Practice",
+                "class_link2": "https://lms.iiitkottayam.ac.in/mod/zoom/loadmeeting.php?id=1511"
             }
         },
         "5": {
             "1": {
                 "class_name": "ICS122",
-                "class_link": "https://lms.iiitkottayam.ac.in/mod/zoom/loadmeeting.php?id=1506"
+                "class_link": "https://lms.iiitkottayam.ac.in/mod/zoom/loadmeeting.php?id=1506",
+                "class_name2": "ICS122",
+                "class_link2": "https://lms.iiitkottayam.ac.in/mod/zoom/loadmeeting.php?id=1506"
             },
             "2": {
                 "class_name": "IEC121",
-                "class_link": "https://lms.iiitkottayam.ac.in/mod/zoom/loadmeeting.php?id=1499"
+                "class_link": "https://lms.iiitkottayam.ac.in/mod/zoom/loadmeeting.php?id=1499",
+                "class_name2": "IEC121",
+                "class_link2": "https://lms.iiitkottayam.ac.in/mod/zoom/loadmeeting.php?id=1499"
             },
             "3": {
                 "class_name": "ICS123",
@@ -133,7 +173,9 @@
             },
             "4": {
                 "class_name": "IEC121",
-                "class_link": "https://lms.iiitkottayam.ac.in/mod/zoom/loadmeeting.php?id=1499"
+                "class_link": "https://lms.iiitkottayam.ac.in/mod/zoom/loadmeeting.php?id=1499",
+                "class_name2": "IEC121",
+                "class_link2": "https://lms.iiitkottayam.ac.in/mod/zoom/loadmeeting.php?id=1499"
             },
             "5": {
                 "class_name": "1_IHS121",
@@ -143,7 +185,9 @@
             },
             "6": {
                 "class_name": "Coding Practice",
-                "class_link": "https://lms.iiitkottayam.ac.in/mod/zoom/loadmeeting.php?id=1511"
+                "class_link": "https://lms.iiitkottayam.ac.in/mod/zoom/loadmeeting.php?id=1511",
+                "class_name2": "Coding Practice",
+                "class_link2": "https://lms.iiitkottayam.ac.in/mod/zoom/loadmeeting.php?id=1511"
             }
         }
     }
