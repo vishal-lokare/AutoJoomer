@@ -20,7 +20,7 @@
             "5": {
                 "class_name": "1_ICS121_LAB",
                 "class_link": "https://lms.iiitkottayam.ac.in/mod/bigbluebuttonbn/bbb_view.php?action=join&id=1232&bn=81",
-                "class_name2": "2_FREE",
+                "class_name2": "",
                 "class_link2": "https://smashkarts.io"
             },
             "6": {
@@ -50,7 +50,7 @@
             "5": {
                 "class_name": "2_ICS121_LAB",
                 "class_link": "https://lms.iiitkottayam.ac.in/mod/bigbluebuttonbn/bbb_view.php?action=join&id=1233&bn=82",
-                "class_name2": "1_FREE",
+                "class_name2": "",
                 "class_link2": "https://smashkarts.io"
             },
             "6": {
@@ -88,7 +88,7 @@
         },
         "4": {
             "1": {
-                "class_name": "Games",
+                "class_name": "",
                 "class_link": "https://smashkarts.io"
             },
             "2": {
