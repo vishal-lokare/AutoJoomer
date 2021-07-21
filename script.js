@@ -43,13 +43,15 @@ $.getJSON('http://www.vishal-lokare.co/AutoJoomer/index.html', function(links) {
             millisOfThatClass[i] = new Date(now.getFullYear(), now.getMonth(), now.getDate(), h[i], m[i], 0, 0) - now;
             if(millisOfThatClass[i] > 0) {
                     setTimeout(function() {
-                        alert( 'Now the class is ' + thatClassName[i] + ' at ' + millisOfThatClass + ' ' + i);
-                        window.open(thatClassLink[i],"_blank");
+                        if(window.confirm( 'Now the class is ' + thatClassName[i] + ' at ' + millisOfThatClass + ' ' + i)){
+                                window.open(thatClassLink[i],"_blank");
+                        }
                     }, millisOfThatClass[i]);
             }
             else if(millisOfThatClass[i] > -2400000) {
-                alert( 'Now the class is ' + thatClassName[i] + ' at ' + millisOfThatClass + ' ' + i);
-                window.open(thatClassLink[i],"_blank");
+                if(window.confirm( 'Now the class is ' + thatClassName[i] + ' at ' + millisOfThatClass + ' ' + i)){
+                        window.open(thatClassLink[i],"_blank");
+                }
             }
         }
 });
