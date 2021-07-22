@@ -63,13 +63,13 @@ function runningscript() {
             millisOfThatClass[i] = new Date(now.getFullYear(), now.getMonth(), now.getDate(), h[i], m[i], 0, 0) - now;
             if (millisOfThatClass[i] > 0) {
                 setTimeout(function () {
-                    if (window.confirm('Now the class is ' + thatClassName[i] + ' at ' + millisOfThatClass + ' ' + i)) {
+                    if (window.confirm('Now the class is ' + thatClassName[i] + ' at ' + h[i] + ":" + m[i])) {
                         window.open(thatClassLink[i], "_blank");
                     }
                 }, millisOfThatClass[i]);
             }
-            else if (millisOfThatClass[i] > -2400000) {
-                if (window.confirm('Now the class is ' + thatClassName[i] + ' at ' + millisOfThatClass + ' ' + i)) {
+            else if (millisOfThatClass[i] > -3600000) {
+                if (window.confirm('Now the class is ' + thatClassName[i] + ' at ' + h[i] + ":" + m[i])) {
                     window.open(thatClassLink[i], "_blank");
                 }
             }

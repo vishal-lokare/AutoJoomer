@@ -1,17 +1,16 @@
 # AutoJoomer
-This extension automatically opens classes on both zoom and LMS for IIITK CSE Branch 2020. Also added functionality for different batches.
+AutoJoomer will hep you join classes on time (IIIT Kottayam 2020). Works for all classes, including labs; differentiates between lab batches; fetches data from hosted database which can be changed whenever there are changes in the timetable.
 
 ## Installation
-1. Download the files to a folder
-2. Go to 'Extensions' in your browser
-3. Enable 'Developer Mode' on the top-right corner
-4. Click on 'Load Unpacked' on the top-left corner
-5. Select the folder in which you downloaded the files
-6. Navigate to extensions panel in top right, click on "AutoJoomer", set your values and save
-7. Restart browser
+1. Download all the files to a folder.
+2. Open your browser, navigate to "Extensions" panel -> "Manage Extensions".
+3. Enable "Developer Mode" in the top-right.
+4. Click on "Load Unpacked" and select the folder where you downloaded the files.
+5. Navigate to "Extensions" panel -> click on "AutoJoomer".
+6. Set the required values, click "SAVE", and restart your browser.
+7. The extension will stop working when the browser is closed OR the day is over.
 
 ## How to stay updated
-
 To stay up-to-date with the latest version hosted on github, run 
 ```
 git pull
@@ -21,3 +20,13 @@ in the terminal and reload the extension
 OR
 
 repeat installation process again
+
+## How to use
+1. Open browser.
+2. If any values are not set, error will be displayed. If this is the case, set the values in "AutoJoomer" popup in "Extensions" panel.
+3. You will get a confirm prompt whenever a class is supposed to be joined. Click "OK" to join or "Cancel" to ignore.
+4. This confirmation can be bypassed by removing the "window.confirm" part in script.js (line 66, 71).
+5. In case you open your browser after a class has already started, the extension will automatically open that class as well given that it started in the last hour.
+
+## Future Updates
+Functionality for extra classes not in layout of original timetable
