@@ -27,3 +27,4 @@ in the terminal and reload the extension
 ## Future Updates
 1. Functionality for ECE Branch 2020
 2. Merge LMSLogger into this extension
+3. Shifting the database to firebase for seamlessly updating the changes in class timings
