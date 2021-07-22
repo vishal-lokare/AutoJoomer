@@ -1,5 +1,5 @@
 # AutoJoomer
-AutoJoomer will help you join classes on time (IIIT Kottayam 2020). Works for all classes, including labs; differentiates between lab batches; and also coding classes fetches data from hosted database which can be changed whenever there are changes in the timetable.
+AutoJoomer will help you join classes on time (IIIT Kottayam 2020). Works for all classes, including labs; differentiates between lab batches; and also coding classes; fetches data from hosted database which can be changed whenever there are changes in the timetable.
 
 ## Installation
 1. Download all the files to a folder.
