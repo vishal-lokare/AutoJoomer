@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>AutoJoomer</title>
+    <script type="text/javascript" src="popup.js"></script>
+    <style>
+        body {
+            background-image: url("cool-background.png");
+            background-size: contain;
+        }
+
+        span {
+            font-size: 20px;
+            font-weight: bolder;
+            /* text-shadow: 6px 6px 7px black; */
+            -webkit-text-stroke-width: 1px;
+            -webkit-text-stroke-color: black;
+        }
+
+        button {
+            border-radius: 25%;
+            padding: 5px;
+        }
+    </style>
+</head>
+
+<body>
+    <div style="color: white;">
+        <img src="icon.png" height="128" width="128" style="margin: 0 auto;">
+        <br><br>
+        <span>BRANCH: </span><br>
+        <select name="branch" id="branch">
+            <option value="C" selected>CSE</option>
+            <option value="E">ECE</option>
+        </select>
+        <br><br>
+        <span>BATCH: </span><br>
+        <select name="batch" id="batch">
+            <option value="1" selected>1</option>
+            <option value="2">2</option>
+        </select>
+        <br><br>
+        <button type="button" id="button">SAVE</button>
+    </div>
+</body>
+
+</html>

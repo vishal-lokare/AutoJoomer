@@ -2,27 +2,22 @@
 This extension automatically opens classes on both zoom and LMS for IIITK CSE Branch 2020. Also added functionality for different batches.
 
 ## Installation
-If you have `git` installed and want to be up-to-date with the latest version of `AutoJoomer`
-run
-```
-git clone https://github.com/vishal-lokare/AutoJoomer.git
-```
-in the terminal and move to step `2.`
-
 1. Download the files to a folder
-2. Edit "script.js" by changing variable "batch" to your respective batch in single quotes.
-3. Go to 'Extensions' in your browser
-4. Enable 'Developer Mode' on the top-right corner
-5. Click on 'Load Unpacked' on the top-left corner
-6. Select the folder in which you downloaded the files
-7. Restart your browser and keep it open.
+2. Go to 'Extensions' in your browser
+3. Enable 'Developer Mode' on the top-right corner
+4. Click on 'Load Unpacked' on the top-left corner
+5. Select the folder in which you downloaded the files
+6. Navigate to extensions panel in top right, click on "AutoJoomer", set your values and save
+7. Restart browser
+
+## How to stay updated
 
 To stay up-to-date with the latest version hosted on github, run 
 ```
 git pull
 ``` 
 in the terminal and reload the extension
-(NOTE - don't forget to change the variable "batch" in script.js as mentioned in step 2 above)
 
-## Future Updates
-Functionality for ECE Branch 2020
+OR
+
+repeat installation process again
