@@ -2,6 +2,7 @@ var username = JSON.parse(window.localStorage.getItem("AutoJoomerUsername"));
 var password = JSON.parse(window.localStorage.getItem("AutoJoomerPassword"));
 var branch = JSON.parse(window.localStorage.getItem("AutoJoomerBranch"));
 var batch = JSON.parse(window.localStorage.getItem("AutoJoomerBatch"));
+
 console.log(username + " " + password);
 if ((branch == null) || (batch == null) || (branch == "null") || (batch == "null") || (username == null) || (password == null) || (username == "null") || (password == "null") || (username == "") || (password == "")) {
     alert("Some values have not been set. Navigate to the extensions panel in your browser, choose \"AutoJoomer\",  save your values and restart your browser for changes to take effect.");
@@ -30,10 +31,12 @@ function runningscript() {
     var thatClassLink = ['', '', '', '', '', '', '', '']
     var thatClassName = ['', '', '', '', '', '', '', '']
     var millisOfThatClass = [0, 0, 0, 0, 0, 0, 0, 0]
-    $.getJSON('http://www.vishal-lokare.co/AutoJoomer/index.html', function (links) {
+
+    $.getJSON('https://autojoomer-45dc2-default-rtdb.asia-southeast1.firebasedatabase.app/links.json', function (links) {
         console.log("Started AutoJoomer");
         var day = now.getDay();
-        var thatDay = links.links[day]
+        var thatDay = (links[day])
+        console.log(thatDay)
         for (let i = 1; i < 7; i++) {
             var thatClass = thatDay[i];
             if (i != 5) {
