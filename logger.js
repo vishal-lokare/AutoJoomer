@@ -11,9 +11,6 @@ chrome.runtime.sendMessage('getPassword', (password) => {
 });
 
 $(document).ready(function () {
-    console.log("inside");
-    console.log(replaceusername);
-    console.log(replacepassword);
     var url = window.location.href;
     if (url == 'https://lms.iiitkottayam.ac.in/')
         document.getElementsByClassName('btn-login')[0].click();
