@@ -25,4 +25,5 @@ in the terminal and reload the extension
 (NOTE - don't forget to change the variable "batch" in script.js as mentioned in step 2 above)
 
 ## Future Updates
-Functionality for ECE Branch 2020
+1. Functionality for ECE Branch 2020
+2. Merge LMSLogger into this extension
