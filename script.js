@@ -1,6 +1,6 @@
 var branch = JSON.parse(window.localStorage.getItem("AutoJoomerBranch"));
 var batch = JSON.parse(window.localStorage.getItem("AutoJoomerBatch"));
-if ((branch == null) || (batch == null)) {
+if ((branch == null) || (batch == null) || (branch == "null") || (batch == "null")) {
     alert("Either branch or batch have not been set. Navigate to the extensions panel in your browser, choose \"AutoJoomer\",  save your values and restart your browser for changes to take effect.");
 }
 else {
