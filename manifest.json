@@ -1,6 +1,6 @@
 {
     "name": "AutoJoomer",
-    "version": "1.0",
+    "version": "2.0",
     "manifest_version": 2,
     "permissions": [
         "tabs"
@@ -15,5 +15,19 @@
             "script.js"
         ],
         "persistent": true
-    }
+    },
+    "content_scripts": [
+        {
+            "matches": [
+                "https://lms.iiitkottayam.ac.in/",
+                "https://lms.iiitkottayam.ac.in/login/index.php",
+                "https://lms.iiitkottayam.ac.in/login/index.php/#",
+                "https://lms.iiitkottayam.ac.in/mod/bigbluebuttonbn/*"
+            ],
+            "js": [
+                "jquery.js",
+                "logger.js"
+            ]
+        }
+    ]
 }
