@@ -27,7 +27,7 @@
             },
             "5": {
                 "class_name": "1_ICS121_LAB",
-                "class_link": "https://lms.iiitkottayam.ac.in/mod/bigbluebuttonbn/bbb_view.php?action=join&id=1232&bn=81",
+                "class_link": "https://lms.iiitkottayam.ac.in/mod/bigbluebuttonbn/view.php?id=1232",
                 "class_name2": "",
                 "class_link2": ""
             },
@@ -59,13 +59,13 @@
             },
             "4": {
                 "class_name": "ICS123",
-                "class_link": "https://lms.iiitkottayam.ac.in/mod/bigbluebuttonbn/bbb_view.php?action=join&id=1167&bn=75",
+                "class_link": "https://lms.iiitkottayam.ac.in/mod/bigbluebuttonbn/view.php?id=1167",
                 "class_name2": "IEC122",
-                "class_link2": "https://lms.iiitkottayam.ac.in/mod/bigbluebuttonbn/bbb_view.php?action=join&id=1165&bn=73"
+                "class_link2": "https://lms.iiitkottayam.ac.in/mod/bigbluebuttonbn/view.php?id=1165"
             },
             "5": {
                 "class_name": "2_ICS121_LAB",
-                "class_link": "https://lms.iiitkottayam.ac.in/mod/bigbluebuttonbn/bbb_view.php?action=join&id=1233&bn=82",
+                "class_link": "https://lms.iiitkottayam.ac.in/mod/bigbluebuttonbn/view.php?id=1233",
                 "class_name2": "",
                 "class_link2": ""
             },
@@ -103,9 +103,9 @@
             },
             "5": {
                 "class_name": "2_ICS123_LAB",
-                "class_link": "https://lms.iiitkottayam.ac.in/mod/bigbluebuttonbn/bbb_view.php?action=join&id=1167&bn=75",
+                "class_link": "https://lms.iiitkottayam.ac.in/mod/bigbluebuttonbn/view.php?id=1167",
                 "class_name2": "1_IEC121_LAB",
-                "class_link2": "https://lms.iiitkottayam.ac.in/mod/bigbluebuttonbn/bbb_view.php?action=join&id=1266&bn=83"
+                "class_link2": "https://lms.iiitkottayam.ac.in/mod/bigbluebuttonbn/view.php?id=1266"
             },
             "6": {
                 "class_name": "Coding Practice",
@@ -135,15 +135,15 @@
             },
             "4": {
                 "class_name": "ICS123",
-                "class_link": "https://lms.iiitkottayam.ac.in/mod/bigbluebuttonbn/bbb_view.php?action=join&id=1167&bn=75",
+                "class_link": "https://lms.iiitkottayam.ac.in/mod/bigbluebuttonbn/view.php?id=1167",
                 "class_name2": "IEC122",
-                "class_link2": "https://lms.iiitkottayam.ac.in/mod/bigbluebuttonbn/bbb_view.php?action=join&id=1165&bn=73"
+                "class_link2": "https://lms.iiitkottayam.ac.in/mod/bigbluebuttonbn/view.php?id=1165"
             },
             "5": {
                 "class_name": "1_ICS123_LAB",
-                "class_link": "https://lms.iiitkottayam.ac.in/mod/bigbluebuttonbn/bbb_view.php?action=join&id=1167&bn=75",
+                "class_link": "https://lms.iiitkottayam.ac.in/mod/bigbluebuttonbn/view.php?id=1167",
                 "class_name2": "2_IEC121_LAB",
-                "class_link2": "https://lms.iiitkottayam.ac.in/mod/bigbluebuttonbn/bbb_view.php?action=join&id=1267&bn=84"
+                "class_link2": "https://lms.iiitkottayam.ac.in/mod/bigbluebuttonbn/view.php?id=1267"
             },
             "6": {
                 "class_name": "Coding Practice",
@@ -167,9 +167,9 @@
             },
             "3": {
                 "class_name": "ICS123",
-                "class_link": "https://lms.iiitkottayam.ac.in/mod/bigbluebuttonbn/bbb_view.php?action=join&id=1167&bn=75",
+                "class_link": "https://lms.iiitkottayam.ac.in/mod/bigbluebuttonbn/view.php?id=1167",
                 "class_name2": "IEC122",
-                "class_link2": "https://lms.iiitkottayam.ac.in/mod/bigbluebuttonbn/bbb_view.php?action=join&id=1165&bn=73"
+                "class_link2": "https://lms.iiitkottayam.ac.in/mod/bigbluebuttonbn/view.php?id=1165"
             },
             "4": {
                 "class_name": "IEC121",
