@@ -28,51 +28,53 @@ function runningscript() {
     var m = [0, 30, 40, 50, 0, 0, 45];
     var thatClassLink = ['', '', '', '', '', '', '', '']
     var thatClassName = ['', '', '', '', '', '', '', '']
-    var millisOfThatClass = [0, 0, 0, 0, 0, 0, 0, 0]
-
-    $.getJSON('https://autojoomer-45dc2-default-rtdb.asia-southeast1.firebasedatabase.app/links.json', function (links) {
-        console.log("Started AutoJoomer");
-        var day = now.getDay();
-        var thatDay = (links[day])
-        for (let i = 1; i < 7; i++) {
-            var thatClass = thatDay[i];
-            if (i != 5) {
-                if (branch == 'E') {
-                    thatClassName[i] = thatClass['class_name2'];
-                    thatClassLink[i] = thatClass['class_link2'];
-                }
-                else {
-                    thatClassName[i] = thatClass['class_name'];
-                    thatClassLink[i] = thatClass['class_link'];
-                }
-            }
-            else {
-                if (batch == thatClass['class_name'][0]) {
-                    thatClassName[i] = thatClass['class_name'];
-                    thatClassLink[i] = thatClass['class_link'];
-                }
-                else if (batch == thatClass['class_name2'][0]) {
-                    thatClassName[i] = thatClass['class_name2'];
-                    thatClassLink[i] = thatClass['class_link2'];
-                }
-            }
-            if (branch == 'E' && (thatClassName[i] == "1_ICS123_LAB" || thatClassName[i] == "2_ICS123_LAB")) {
-                thatClassName[i] = '';
-            }
-            if (thatClassName[i] == '') continue;
-            millisOfThatClass[i] = new Date(now.getFullYear(), now.getMonth(), now.getDate(), h[i], m[i], 0, 0) - now;
-            if (millisOfThatClass[i] > 0) {
-                setTimeout(function () {
-                    if (window.confirm('Now the class is ' + thatClassName[i] + ' at ' + h[i] + ":" + m[i])) {
-                        window.open(thatClassLink[i], "_blank");
-                    }
-                }, millisOfThatClass[i]);
-            }
-            else if (millisOfThatClass[i] > -3600000) {
-                if (window.confirm('Now the class is ' + thatClassName[i] + ' at ' + h[i] + ":" + m[i])) {
-                    window.open(thatClassLink[i], "_blank");
-                }
-            }
-        }
-    });
+	var millisOfThatClass = [0, 0, 0, 0, 0, 0, 0, 0]
+	
+	var day = now.getDay();
+	if(day !=0 && day != 6) {
+		$.getJSON('https://autojoomer-45dc2-default-rtdb.asia-southeast1.firebasedatabase.app/links.json', function (links) {
+			console.log("Started AutoJoomer");	
+				var thatDay = (links[day])
+				for (let i = 1; i < 7; i++) {
+					var thatClass = thatDay[i];
+					if (i != 5) {
+						if (branch == 'E') {
+							thatClassName[i] = thatClass['class_name2'];
+							thatClassLink[i] = thatClass['class_link2'];
+						}
+						else {
+							thatClassName[i] = thatClass['class_name'];
+							thatClassLink[i] = thatClass['class_link'];
+						}
+					}
+					else {
+						if (batch == thatClass['class_name'][0]) {
+							thatClassName[i] = thatClass['class_name'];
+							thatClassLink[i] = thatClass['class_link'];
+						}
+						else if (batch == thatClass['class_name2'][0]) {
+							thatClassName[i] = thatClass['class_name2'];
+							thatClassLink[i] = thatClass['class_link2'];
+						}
+					}
+					if (branch == 'E' && (thatClassName[i] == "1_ICS123_LAB" || thatClassName[i] == "2_ICS123_LAB")) {
+						thatClassName[i] = '';
+					}
+					if (thatClassName[i] == '') continue;
+					millisOfThatClass[i] = new Date(now.getFullYear(), now.getMonth(), now.getDate(), h[i], m[i], 0, 0) - now;
+					if (millisOfThatClass[i] > 0) {
+						setTimeout(function () {
+							if (window.confirm('Now the class is ' + thatClassName[i] + ' at ' + h[i] + ":" + m[i])) {
+								window.open(thatClassLink[i], "_blank");
+							}
+						}, millisOfThatClass[i]);
+					}
+					else if (millisOfThatClass[i] > -3600000) {
+						if (window.confirm('Now the class is ' + thatClassName[i] + ' at ' + h[i] + ":" + m[i])) {
+							window.open(thatClassLink[i], "_blank");
+					}
+					}
+			}
+		});
+	}
 }
