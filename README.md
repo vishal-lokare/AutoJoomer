@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="https://github.com/vishal-lokare/AutoJoomer/blob/main/icon.png?raw=true" alt="AutoJoomer" width="100" height="100" >
+  <img src="https://github.com/vishal-lokare/AutoJoomer/blob/main/icon.png?raw=true" alt="AutoJoomer" width="100" height="100" > <br>
   <b>AutoJoomer</b>
 </p>
 
