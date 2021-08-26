@@ -1,4 +1,4 @@
-![AutoJoomer](https://github.com/vishal-lokare/AutoJoomer/blob/main/icon.png?raw=true)
+<div style="text-align:center">![AutoJoomer](https://github.com/vishal-lokare/AutoJoomer/blob/main/icon.png?raw=true | width=100)</div>
 # AutoJoomer
 AutoJoomer will help you join classes on time (IIIT Kottayam 2020). Works for all classes, including labs; differentiates between lab batches; and also coding classes; fetches data from hosted database which can be changed whenever there are changes in the timetable.
 
