@@ -34,7 +34,7 @@ function runningscript() {
 	if(day !=0 && day != 6) {
 
 		var fetchLink = ""
-		if branch == "CSE"
+		if (branch == "CSE")
 			fetchLink = "https://autojoomer-45dc2-default-rtdb.asia-southeast1.firebasedatabase.app/links/CSE.json"; 
 		else
 			fetchLink = "https://autojoomer-45dc2-default-rtdb.asia-southeast1.firebasedatabase.app/links/ECE.json";
@@ -50,7 +50,7 @@ function runningscript() {
 					thatClassLink[i] = thatClass['class_link'];
 
 					if (thatClassName[i] == '') continue;
-					
+
 					millisOfThatClass[i] = new Date(now.getFullYear(), now.getMonth(), now.getDate(), h[i], m[i], 0, 0) - now;
 					
 					if (millisOfThatClass[i] > 0) {
