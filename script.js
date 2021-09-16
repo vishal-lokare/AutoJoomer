@@ -25,7 +25,7 @@ function runningscript() {
     console.log("Batch = " + batch);
     var now = new Date();
     var h = [0, 8, 9, 10, 12, 14, 16];
-    var m = [0, 30, 40, 50, 0, 0, 45];
+    var m = [0, 30, 40, 50, 0, 0, 30];
     var thatClassLink = ['', '', '', '', '', '', '', '']
     var thatClassName = ['', '', '', '', '', '', '', '']
 	var millisOfThatClass = [0, 0, 0, 0, 0, 0, 0, 0]
