@@ -11,11 +11,7 @@ function savevalues() {
     var username = document.getElementById("username").value;
     var password = document.getElementById("password").value;
     var branch = document.getElementById("branch").value;
-    var batch = document.getElementById("batch").value;
-    if (branch == "E")
-        batch = 2;
     window.localStorage.setItem("AutoJoomerUsername", JSON.stringify(username));
     window.localStorage.setItem("AutoJoomerPassword", JSON.stringify(password));
     window.localStorage.setItem("AutoJoomerBranch", JSON.stringify(branch));
-    window.localStorage.setItem("AutoJoomerBatch", JSON.stringify(batch));
 }

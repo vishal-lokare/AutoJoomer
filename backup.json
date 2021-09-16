@@ -1,194 +1,269 @@
 {
     "links": {
-        "1": {
+        "CSE" : {
             "1": {
-                "class_name": "IEC121",
-                "class_link": "https://lms.iiitkottayam.ac.in/mod/zoom/loadmeeting.php?id=1499",
-                "class_name2": "IEC121",
-                "class_link2": "https://lms.iiitkottayam.ac.in/mod/zoom/loadmeeting.php?id=1499"
+                "1": {
+                    "class_name": "ICS212",
+                    "class_link": "https://lms.iiitkottayam.ac.in/mod/zoom/loadmeeting.php?id=2315"
+                },
+                "2": {
+                    "class_name": "ICS211",
+                    "class_link": "https://lms.iiitkottayam.ac.in/mod/zoom/loadmeeting.php?id=2317"
+                },
+                "3": {
+                    "class_name": "ICS213",
+                    "class_link": "https://lms.iiitkottayam.ac.in/mod/zoom/loadmeeting.php?id=2314"
+                },
+                "4": {
+                    "class_name": "ICS214",
+                    "class_link": "https://lms.iiitkottayam.ac.in/mod/zoom/loadmeeting.php?id=2313"
+                },
+                "5": {
+                    "class_name": "ICS213 LAB",
+                    "class_link": "https://lms.iiitkottayam.ac.in/mod/zoom/loadmeeting.php?id=2314"
+                },
+                "6": {
+                    "class_name": "Coding Club Activities",
+                    "class_link": ""
+                }
             },
             "2": {
-                "class_name": "ICS121",
-                "class_link": "https://lms.iiitkottayam.ac.in/mod/zoom/loadmeeting.php?id=1500",
-                "class_name2": "ICS121",
-                "class_link2": "https://lms.iiitkottayam.ac.in/mod/zoom/loadmeeting.php?id=1500"
+                "1": {
+                    "class_name": "ICS211",
+                    "class_link": "https://lms.iiitkottayam.ac.in/mod/zoom/loadmeeting.php?id=2317"
+                },
+                "2": {
+                    "class_name": "IMA211",
+                    "class_link": "https://lms.iiitkottayam.ac.in/mod/zoom/loadmeeting.php?id=2319"
+                },
+                "3": {
+                    "class_name": "ICS211",
+                    "class_link": "https://lms.iiitkottayam.ac.in/mod/zoom/loadmeeting.php?id=2317"
+                },
+                "4": {
+                    "class_name": "ICS213",
+                    "class_link": "https://lms.iiitkottayam.ac.in/mod/zoom/loadmeeting.php?id=2314"
+                },
+                "5": {
+                    "class_name": "ICS214 Lab",
+                    "class_link": "https://lms.iiitkottayam.ac.in/mod/zoom/loadmeeting.php?id=2313"
+                },
+                "6": {
+                    "class_name": "Coding Club Activities",
+                    "class_link": ""
+                }
             },
             "3": {
-                "class_name": "ICS122",
-                "class_link": "https://lms.iiitkottayam.ac.in/mod/zoom/loadmeeting.php?id=1506",
-                "class_name2": "ICS122",
-                "class_link2": "https://lms.iiitkottayam.ac.in/mod/zoom/loadmeeting.php?id=1506"
+                "1": {
+                    "class_name": "ISC211",
+                    "class_link": "https://lms.iiitkottayam.ac.in/mod/zoom/loadmeeting.php?id=2312"
+                },
+                "2": {
+                    "class_name": "ICS213",
+                    "class_link": "https://lms.iiitkottayam.ac.in/mod/zoom/loadmeeting.php?id=2314"
+                },
+                "3": {
+                    "class_name": "ICS212",
+                    "class_link": "https://lms.iiitkottayam.ac.in/mod/zoom/loadmeeting.php?id=2315"
+                },
+                "4": {
+                    "class_name": "IMA211",
+                    "class_link": "https://lms.iiitkottayam.ac.in/mod/zoom/loadmeeting.php?id=2317"
+                },
+                "5": {
+                    "class_name": "SEMINAR",
+                    "class_link": ""
+                },
+                "6": {
+                    "class_name": "Coding Club Activities",
+                    "class_link": ""
+                }
             },
             "4": {
-                "class_name": "IMA121",
-                "class_link": "https://lms.iiitkottayam.ac.in/mod/zoom/loadmeeting.php?id=1507",
-                "class_name2": "IMA121",
-                "class_link2": "https://lms.iiitkottayam.ac.in/mod/zoom/loadmeeting.php?id=1507"
+                "1": {
+                    "class_name": "ICS215",
+                    "class_link": "https://lms.iiitkottayam.ac.in/mod/zoom/loadmeeting.php?id=2318"
+                },
+                "2": {
+                    "class_name": "IMA211",
+                    "class_link": "https://lms.iiitkottayam.ac.in/mod/zoom/loadmeeting.php?id=2319"
+                },
+                "3": {
+                    "class_name": "ICS212",
+                    "class_link": "https://lms.iiitkottayam.ac.in/mod/zoom/loadmeeting.php?id=2315"
+                },
+                "4": {
+                    "class_name": "ICS214",
+                    "class_link": "https://lms.iiitkottayam.ac.in/mod/zoom/loadmeeting.php?id=2313"
+                },
+                "5": {
+                    "class_name": "ICS215",
+                    "class_link": "https://lms.iiitkottayam.ac.in/mod/zoom/loadmeeting.php?id=2318"
+                },
+                "6": {
+                    "class_name": "Coding Club Activities",
+                    "class_link": ""
+                }
             },
             "5": {
-                "class_name": "1_ICS121_LAB",
-                "class_link": "https://lms.iiitkottayam.ac.in/mod/bigbluebuttonbn/view.php?id=1232",
-                "class_name2": "",
-                "class_link2": ""
+                "1": {
+                    "class_name": "ISC211",
+                    "class_link": "https://lms.iiitkottayam.ac.in/mod/zoom/loadmeeting.php?id=2312"
+                },
+                "2": {
+                    "class_name": "IMA211",
+                    "class_link": "https://lms.iiitkottayam.ac.in/mod/zoom/loadmeeting.php?id=2319"
+                },
+                "3": {
+                    "class_name": "ICS214",
+                    "class_link": "https://lms.iiitkottayam.ac.in/mod/zoom/loadmeeting.php?id=2313"
+                },
+                "4": {
+                    "class_name": "ICS212",
+                    "class_link": "https://lms.iiitkottayam.ac.in/mod/zoom/loadmeeting.php?id=2315"
+                },
+                "5": {
+                    "class_name": "ICS211",
+                    "class_link": "https://lms.iiitkottayam.ac.in/mod/zoom/loadmeeting.php?id=2317"
+                },
+                "6": {
+                    "class_name": "Coding Club Activities",
+                    "class_link": ""
+                }
+            }
+        },
+    "ECE" : {
+        "1": {
+            "1": {
+                "class_name": "IEC212",
+                "class_link": "https://lms.iiitkottayam.ac.in/mod/bigbluebuttonbn/bbb_view.php?action=join&id=2275&bn=122"
+            },
+            "2": {
+                "class_name": "IEC211",
+                "class_link": "https://lms.iiitkottayam.ac.in/mod/bigbluebuttonbn/bbb_view.php?action=join&id=2276&bn=123"
+            },
+            "3": {
+                "class_name": "IEC213",
+                "class_link": "https://lms.iiitkottayam.ac.in/mod/bigbluebuttonbn/bbb_view.php?action=join&id=2274&bn=121"
+            },
+            "4": {
+                "class_name": "IEC214",
+                "class_link": "https://lms.iiitkottayam.ac.in/mod/bigbluebuttonbn/bbb_view.php?action=join&id=2273&bn=120"
+            },
+            "5": {
+                "class_name": "IEC213 Lab",
+                "class_link": "https://lms.iiitkottayam.ac.in/mod/bigbluebuttonbn/bbb_view.php?action=join&id=2274&bn=121"
             },
             "6": {
-                "class_name": "Coding Practice",
-                "class_link": "https://lms.iiitkottayam.ac.in/mod/zoom/loadmeeting.php?id=1511",
-                "class_name2": "Coding Practice",
-                "class_link2": "https://lms.iiitkottayam.ac.in/mod/zoom/loadmeeting.php?id=1511"
+                "class_name": "Coding Club Activities",
+                "class_link": ""
             }
         },
         "2": {
             "1": {
-                "class_name": "ICS122",
-                "class_link": "https://lms.iiitkottayam.ac.in/mod/zoom/loadmeeting.php?id=1506",
-                "class_name2": "ICS122",
-                "class_link2": "https://lms.iiitkottayam.ac.in/mod/zoom/loadmeeting.php?id=1506"
+                "class_name": "IEC212",
+                "class_link": "https://lms.iiitkottayam.ac.in/mod/bigbluebuttonbn/bbb_view.php?action=join&id=2275&bn=122"
             },
             "2": {
-                "class_name": "IMA121",
-                "class_link": "https://lms.iiitkottayam.ac.in/mod/zoom/loadmeeting.php?id=1507",
-                "class_name2": "IMA121",
-                "class_link2": "https://lms.iiitkottayam.ac.in/mod/zoom/loadmeeting.php?id=1507"
+                "class_name": "IMA211",
+                "class_link": "https://lms.iiitkottayam.ac.in/mod/zoom/loadmeeting.php?id=2319"
             },
             "3": {
-                "class_name": "ICS121",
-                "class_link": "https://lms.iiitkottayam.ac.in/mod/zoom/loadmeeting.php?id=1500",
-                "class_name2": "ICS121",
-                "class_link2": "https://lms.iiitkottayam.ac.in/mod/zoom/loadmeeting.php?id=1500"
+                "class_name": "IEC215",
+                "class_link": "https://lms.iiitkottayam.ac.in/mod/bigbluebuttonbn/bbb_view.php?action=join&id=2272&bn=119"
             },
             "4": {
-                "class_name": "ICS123",
-                "class_link": "https://lms.iiitkottayam.ac.in/mod/bigbluebuttonbn/view.php?id=1167",
-                "class_name2": "IEC122",
-                "class_link2": "https://lms.iiitkottayam.ac.in/mod/bigbluebuttonbn/view.php?id=1165"
+                "class_name": "IEC214",
+                "class_link": "https://lms.iiitkottayam.ac.in/mod/bigbluebuttonbn/bbb_view.php?action=join&id=2273&bn=120"
             },
             "5": {
-                "class_name": "2_ICS121_LAB",
-                "class_link": "https://lms.iiitkottayam.ac.in/mod/bigbluebuttonbn/view.php?id=1233",
-                "class_name2": "",
-                "class_link2": ""
+                "class_name": "IEC211 Lab",
+                "class_link": "https://lms.iiitkottayam.ac.in/mod/bigbluebuttonbn/bbb_view.php?action=join&id=2276&bn=123"
             },
             "6": {
-                "class_name": "Coding Practice",
-                "class_link": "https://lms.iiitkottayam.ac.in/mod/zoom/loadmeeting.php?id=1511",
-                "class_name2": "Coding Practice",
-                "class_link2": "https://lms.iiitkottayam.ac.in/mod/zoom/loadmeeting.php?id=1511"
+                "class_name": "Coding Club Activities",
+                "class_link": ""
             }
         },
         "3": {
             "1": {
-                "class_name": "IMA121",
-                "class_link": "https://lms.iiitkottayam.ac.in/mod/zoom/loadmeeting.php?id=1507",
-                "class_name2": "IMA121",
-                "class_link2": "https://lms.iiitkottayam.ac.in/mod/zoom/loadmeeting.php?id=1507"
+                "class_name": "IEC215",
+                "class_link": "https://lms.iiitkottayam.ac.in/mod/bigbluebuttonbn/bbb_view.php?action=join&id=2272&bn=119"
             },
             "2": {
-                "class_name": "ICS121",
-                "class_link": "https://lms.iiitkottayam.ac.in/mod/zoom/loadmeeting.php?id=1500",
-                "class_name2": "ICS121",
-                "class_link2": "https://lms.iiitkottayam.ac.in/mod/zoom/loadmeeting.php?id=1500"
+                "class_name": "IEC213",
+                "class_link": "https://lms.iiitkottayam.ac.in/mod/bigbluebuttonbn/bbb_view.php?action=join&id=2274&bn=121"
             },
             "3": {
-                "class_name": "IMA121",
-                "class_link": "https://lms.iiitkottayam.ac.in/mod/zoom/loadmeeting.php?id=1507",
-                "class_name2": "IMA121",
-                "class_link2": "https://lms.iiitkottayam.ac.in/mod/zoom/loadmeeting.php?id=1507"
+                "class_name": "IEC212",
+                "class_link": "https://lms.iiitkottayam.ac.in/mod/bigbluebuttonbn/bbb_view.php?action=join&id=2275&bn=122"
             },
             "4": {
-                "class_name": "ICS121",
-                "class_link": "https://lms.iiitkottayam.ac.in/mod/zoom/loadmeeting.php?id=1500",
-                "class_name2": "ICS121",
-                "class_link2": "https://lms.iiitkottayam.ac.in/mod/zoom/loadmeeting.php?id=1500"
+                "class_name": "IMA211",
+                "class_link": "https://lms.iiitkottayam.ac.in/mod/zoom/loadmeeting.php?id=2319"
             },
             "5": {
-                "class_name": "2_ICS123_LAB",
-                "class_link": "https://lms.iiitkottayam.ac.in/mod/bigbluebuttonbn/view.php?id=1167",
-                "class_name2": "1_IEC121_LAB",
-                "class_link2": "https://lms.iiitkottayam.ac.in/mod/bigbluebuttonbn/view.php?id=1266"
+                "class_name": "IEC212 Lab",
+                "class_link": "https://lms.iiitkottayam.ac.in/mod/bigbluebuttonbn/bbb_view.php?action=join&id=2275&bn=122"
             },
             "6": {
-                "class_name": "Coding Practice",
-                "class_link": "https://lms.iiitkottayam.ac.in/mod/zoom/loadmeeting.php?id=1511",
-                "class_name2": "Coding Practice",
-                "class_link2": "https://lms.iiitkottayam.ac.in/mod/zoom/loadmeeting.php?id=1511"
+                "class_name": "Coding Club Activities",
+                "class_link": ""
             }
         },
         "4": {
             "1": {
-                "class_name": "",
-                "class_link": "",
-                "class_name2": "",
-                "class_link2": ""
+                "class_name": "ICS215",
+                "class_link": "https://lms.iiitkottayam.ac.in/mod/zoom/loadmeeting.php?id=2318"
             },
             "2": {
-                "class_name": "IEC121",
-                "class_link": "https://lms.iiitkottayam.ac.in/mod/zoom/loadmeeting.php?id=1499",
-                "class_name2": "IEC121",
-                "class_link2": "https://lms.iiitkottayam.ac.in/mod/zoom/loadmeeting.php?id=1499"
+                "class_name": "IMA211",
+                "class_link": "https://lms.iiitkottayam.ac.in/mod/zoom/loadmeeting.php?id=2319"
             },
             "3": {
-                "class_name": "ICS122",
-                "class_link": "https://lms.iiitkottayam.ac.in/mod/zoom/loadmeeting.php?id=1506",
-                "class_name2": "ICS122",
-                "class_link2": "https://lms.iiitkottayam.ac.in/mod/zoom/loadmeeting.php?id=1506"
+                "class_name": "IEC214",
+                "class_link": "https://lms.iiitkottayam.ac.in/mod/bigbluebuttonbn/bbb_view.php?action=join&id=2273&bn=120"
             },
             "4": {
-                "class_name": "ICS123",
-                "class_link": "https://lms.iiitkottayam.ac.in/mod/bigbluebuttonbn/view.php?id=1167",
-                "class_name2": "IEC122",
-                "class_link2": "https://lms.iiitkottayam.ac.in/mod/bigbluebuttonbn/view.php?id=1165"
+                "class_name": "IEC211",
+                "class_link": "https://lms.iiitkottayam.ac.in/mod/bigbluebuttonbn/bbb_view.php?action=join&id=2276&bn=123"
             },
             "5": {
-                "class_name": "1_ICS123_LAB",
-                "class_link": "https://lms.iiitkottayam.ac.in/mod/bigbluebuttonbn/view.php?id=1167",
-                "class_name2": "2_IEC121_LAB",
-                "class_link2": "https://lms.iiitkottayam.ac.in/mod/bigbluebuttonbn/view.php?id=1267"
+                "class_name": "ICS215 Lab",
+                "class_link": "https://lms.iiitkottayam.ac.in/mod/zoom/loadmeeting.php?id=2318"
             },
             "6": {
-                "class_name": "Coding Practice",
-                "class_link": "https://lms.iiitkottayam.ac.in/mod/zoom/loadmeeting.php?id=1511",
-                "class_name2": "Coding Practice",
-                "class_link2": "https://lms.iiitkottayam.ac.in/mod/zoom/loadmeeting.php?id=1511"
+                "class_name": "Coding Club Activities",
+                "class_link": ""
             }
         },
         "5": {
             "1": {
-                "class_name": "ICS122",
-                "class_link": "https://lms.iiitkottayam.ac.in/mod/zoom/loadmeeting.php?id=1506",
-                "class_name2": "ICS122",
-                "class_link2": "https://lms.iiitkottayam.ac.in/mod/zoom/loadmeeting.php?id=1506"
+                "class_name": "IEC214",
+                "class_link": "https://lms.iiitkottayam.ac.in/mod/bigbluebuttonbn/bbb_view.php?action=join&id=2273&bn=120"
             },
             "2": {
-                "class_name": "IEC121",
-                "class_link": "https://lms.iiitkottayam.ac.in/mod/zoom/loadmeeting.php?id=1499",
-                "class_name2": "IEC121",
-                "class_link2": "https://lms.iiitkottayam.ac.in/mod/zoom/loadmeeting.php?id=1499"
+                "class_name": "IMA211",
+                "class_link": "https://lms.iiitkottayam.ac.in/mod/zoom/loadmeeting.php?id=2319"
             },
             "3": {
-                "class_name": "ICS123",
-                "class_link": "https://lms.iiitkottayam.ac.in/mod/bigbluebuttonbn/view.php?id=1167",
-                "class_name2": "IEC122",
-                "class_link2": "https://lms.iiitkottayam.ac.in/mod/bigbluebuttonbn/view.php?id=1165"
+                "class_name": "IEC211",
+                "class_link": "https://lms.iiitkottayam.ac.in/mod/bigbluebuttonbn/bbb_view.php?action=join&id=2276&bn=123"
             },
             "4": {
-                "class_name": "IEC121",
-                "class_link": "https://lms.iiitkottayam.ac.in/mod/zoom/loadmeeting.php?id=1499",
-                "class_name2": "IEC121",
-                "class_link2": "https://lms.iiitkottayam.ac.in/mod/zoom/loadmeeting.php?id=1499"
+                "class_name": "IEC213",
+                "class_link": "https://lms.iiitkottayam.ac.in/mod/bigbluebuttonbn/bbb_view.php?action=join&id=2274&bn=121"
             },
             "5": {
-                "class_name": "1_IHS121",
-                "class_link": "https://lms.iiitkottayam.ac.in/mod/zoom/loadmeeting.php?id=1503",
-                "class_name2": "2_IHS121",
-                "class_link2": "https://lms.iiitkottayam.ac.in/mod/zoom/loadmeeting.php?id=1503"
+                "class_name": "IEC213",
+                "class_link": "https://lms.iiitkottayam.ac.in/mod/bigbluebuttonbn/bbb_view.php?action=join&id=2274&bn=121"
             },
             "6": {
-                "class_name": "Coding Practice",
-                "class_link": "https://lms.iiitkottayam.ac.in/mod/zoom/loadmeeting.php?id=1511",
-                "class_name2": "Coding Practice",
-                "class_link2": "https://lms.iiitkottayam.ac.in/mod/zoom/loadmeeting.php?id=1511"
+                "class_name": "Coding Club Activities",
+                "class_link": ""
             }
         }
+
+    }
     }
 }
