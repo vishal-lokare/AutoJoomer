@@ -5,7 +5,7 @@ window.onload = function () {
 }
 
 function savevalues() {
-    document.getElementById("button").style.color = "black";
+    document.getElementById("button").style.color = "white";
     document.getElementById("button").innerHTML = "RESTART BROWSER";
     document.getElementById("button").disabled = true;
     var username = document.getElementById("username").value;
