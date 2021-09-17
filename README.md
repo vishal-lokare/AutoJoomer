@@ -33,5 +33,8 @@ repeat the installation process again.
 5. In case you open your browser after a class has already started, the extension will automatically open that class as well given that it started in the last hour.
 7. The extension will stop working when the browser is closed OR the day is over.
 
+## Contributing to this project
+Hop on in our discord server - https://discord.gg/AXsjAWzj, we will be happy to have you on board.
+
 ## Future Updates
 Functionality for extra classes not in layout of original timetable.
