@@ -58,11 +58,15 @@ function runningscript() {
 
 				if (millisOfThatClass[i] > 0) {
 					setTimeout(function () {
-						window.open(thatClassLink[i], "_blank");
+						if (window.confirm('Now the class is ' + thatClassName[i] + ' at ' + h[i] + ":" + m[i])) {
+							window.open(thatClassLink[i], "_blank");
+						}
 					}, millisOfThatClass[i]);
 				}
 				else if (millisOfThatClass[i] > -3600000) {
-					window.open(thatClassLink[i], "_blank");
+					if (window.confirm('Now the class is ' + thatClassName[i] + ' at ' + h[i] + ":" + m[i])) {
+						window.open(thatClassLink[i], "_blank");
+					}
 				}
 			}
 		});
