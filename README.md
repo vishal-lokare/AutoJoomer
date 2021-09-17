@@ -34,7 +34,7 @@ repeat the installation process again.
 7. The extension will stop working when the browser is closed OR the day is over.
 
 ## Contributing to this project
-<p>Hop on in our discord server - <img src="https://github.com/vishal-lokare/AutoJoomer/blob/main/icon.png?raw=true" alt="AutoJoomer" width="50" height="50">[https://discord.gg/AXsjAWzj], we will be happy to have you on board.</p>
+<p>Hop on in our discord server - <a href="https://discord.gg/AXsjAWzj"><img src="https://logos-world.net/wp-content/uploads/2020/12/Discord-Logo.png" alt="AutoJoomer Discord" width="20" height="20"></a>, we will be happy to have you on board.</p>
 
 
 ## Future Updates
