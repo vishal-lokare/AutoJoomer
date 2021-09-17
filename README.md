@@ -34,7 +34,8 @@ repeat the installation process again.
 7. The extension will stop working when the browser is closed OR the day is over.
 
 ## Contributing to this project
-Hop on in our discord server - https://discord.gg/AXsjAWzj, we will be happy to have you on board.
+<p>Hop on in our discord server - <img src="https://github.com/vishal-lokare/AutoJoomer/blob/main/icon.png?raw=true" alt="AutoJoomer" width="50" height="50">[https://discord.gg/AXsjAWzj], we will be happy to have you on board.</p>
+
 
 ## Future Updates
 Functionality for extra classes not in layout of original timetable.
