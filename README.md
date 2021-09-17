@@ -15,7 +15,7 @@ AutoJoomer will help you join classes on time (IIIT Kottayam 2020). Works for al
 6. Set the required values, click "SAVE", and restart your browser / reload the extension.
 
 ## How to stay updated
-To stay up-to-date with the latest version hosted on github, run 
+To stay up-to-date with the latest version hosted on github, while being in the same directory where the downloaded files are, run
 ```
 git pull
 ``` 
