@@ -33,7 +33,7 @@ function runningscript() {
 	var day = now.getDay();
 	if (day != 0 && day != 6) {
 
-		if (day == 3 || day == 5)
+		if ((day == 3 || day == 5) && branch == "C")
 			var m = [0, 0, 40, 50, 0, 0, 30];
 
 		var fetchLink = ""
