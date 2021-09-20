@@ -5,18 +5,45 @@
   
   <p align="center">
   Amazing contributors-<br><br>
-  <a href="https://github.com/vishal-lokare"><img src="https://avatars.githubusercontent.com/u/31512838?v=4" alt="Vishal Lokare" width="35" height="35"></a> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-  <a href="https://github.com/freak-10"><img src="https://avatars.githubusercontent.com/u/62661394?v=4" alt="Kotikalapudi Sumanth" width="35" height="35"></a> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-  <a href="https://github.com/karynaur"><img src="https://avatars.githubusercontent.com/u/25678782?v=4" alt="Aditya Srinivas Menon" width="35" height="35"></a> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-  <a href="https://github.com/tomid9999"><img src="https://avatars.githubusercontent.com/u/28211612?v=4" alt="Rishabh Srivastava" width="35" height="35"></a> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-  <a href="https://github.com/nikhil9302"><img src="https://avatars.githubusercontent.com/u/74824711?v=4" alt="Nikhil Menon" width="35" height="35"></a> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  <table align='center' rules='none'>
+    <tr align='center'>
+      <td>
+        <a href="https://github.com/vishal-lokare"><img src="https://avatars.githubusercontent.com/u/31512838?v=4" alt="Vishal Lokare" width="35" height="35"></a> 
+      </td>
+      <td>
+         <a href="https://github.com/freak-10"><img src="https://avatars.githubusercontent.com/u/62661394?v=4" alt="Kotikalapudi Sumanth" width="35" height="35"></a> 
+      </td> 
+      <td>
+        <a href="https://github.com/karynaur"><img src="https://avatars.githubusercontent.com/u/25678782?v=4" alt="Aditya Srinivas Menon" width="35" height="35"></a>
+      </td> 
+      <td>
+        <a href="https://github.com/tomid9999"><img src="https://avatars.githubusercontent.com/u/28211612?v=4" alt="Rishabh Srivastava" width="35" height="35"></a> 
+      </td> 
+      <td>
+        <a href="https://github.com/nikhil9302"><img src="https://avatars.githubusercontent.com/u/74824711?v=4" alt="Nikhil Menon" width="35" height="35"></a> 
+      </td> 
+    </tr>
+    <tr>
+      <td>
+        <a href="https://github.com/vishal-lokare">vishal-lokare</a>
+      </td> 
+      <td>
+        <a href="https://github.com/freak-10">freak-10</a>
+      </td>  
+      <td>
+        <a href="https://github.com/karynaur">karynaur</a>
+      </td>  
+      <td>
+        <a href="https://github.com/tomid9999">tomid9999</a>
+      </td>  
+      <td>
+        <a href="https://github.com/nikhil9302">nikhil9302</a>
+      </td>  
+    </tr>  
+  <table>    
   </p>
   
-  <br>
-  
-  <p align="center">
-    <a href="https://github.com/vishal-lokare">vishal-lokare</a>&nbsp;&nbsp;&nbsp;&nbsp;<a href="https://github.com/freak-10">freak-10</a>&nbsp;&nbsp;&nbsp;&nbsp;<a href="https://github.com/karynaur">karynaur</a>&nbsp;&nbsp;&nbsp;&nbsp;<a href="https://github.com/tomid9999">tomid9999</a>&nbsp;&nbsp;&nbsp;&nbsp;<a href="https://github.com/nikhil9302">nikhil9302</a>
-  </p>
+  <br>  
   <br>
 </p>
 
