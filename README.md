@@ -28,13 +28,11 @@ repeat the installation process again.
 ## How to use
 1. Open your browser.
 2. If values are not set, error will be displayed. In this case, set the values in "AutoJoomer" popup in "Extensions" panel.
-3. You will get a confirmation prompt whenever a class is supposed to be joined. Click "OK" to join or "Cancel" to ignore.
-4. This confirmation can be bypassed by removing the "window.confirm" part in script.js (line 61, 67). Although it is recommended to keep it as you will be informed which class will be opened.
-5. In case you open your browser after a class has already started, the extension will automatically open that class as well given that it started in the last hour.
-7. The extension will stop working when the browser is closed OR the day is over.
+3. In case you open your browser after a class has already started, the extension will automatically open that class as well given that it started in the last hour.
+4. The extension will stop working when the browser is closed OR the day is over.
 
 ## Contributing to this project
-<p>Hop on in our discord server - <a href="https://discord.gg/AXsjAWzj"><img src="https://logos-world.net/wp-content/uploads/2020/12/Discord-Logo.png" alt="AutoJoomer Discord" width="40" height="20"></a>, we will be happy to have you on board. </p>
+<p>Hop on in our discord server - <a href="https://discord.gg/AXsjAWzj"><img src="https://logos-world.net/wp-content/uploads/2020/12/Discord-Logo.png" alt="AutoJoomer Discord" width="40" height="20"></a>, we will be happy to have you on board.</p>
 
 
 ## Future Updates

@@ -1,8 +1,9 @@
 var username = JSON.parse(window.localStorage.getItem("AutoJoomerUsername"));
 var password = JSON.parse(window.localStorage.getItem("AutoJoomerPassword"));
 var branch = JSON.parse(window.localStorage.getItem("AutoJoomerBranch"));
+var confirmation = JSON.parse(window.localStorage.getItem("AutoJoomerConfirmation"));
 
-if ((branch == null) || (branch == "null") || (username == null) || (password == null) || (username == "null") || (password == "null") || (username == "") || (password == "")) {
+if ((branch == null) || (branch == "null") || (username == null) || (password == null) || (username == "null") || (password == "null") || (username == "") || (password == "") || (confirmation == null)) {
 	alert("Some values have not been set. Navigate to the extensions panel in your browser, choose \"AutoJoomer\",  save your values and restart your browser for changes to take effect.");
 }
 else {
@@ -22,6 +23,7 @@ function runningscript() {
 	console.log("Username = " + username);
 	console.log("Password = " + password);
 	console.log("Branch = " + branch);
+	console.log("Confirmation Required = " + confirmation);
 
 	var now = new Date();
 	var h = [0, 8, 9, 10, 12, 14, 16];
@@ -58,15 +60,23 @@ function runningscript() {
 
 				if (millisOfThatClass[i] > 0) {
 					setTimeout(function () {
-						if (window.confirm('Now the class is ' + thatClassName[i] + ' at ' + h[i] + ":" + m[i])) {
-							window.open(thatClassLink[i], "_blank");
+						if (confirmation == 1) {
+							if (window.confirm('Now the class is ' + thatClassName[i] + ' at ' + h[i] + ":" + m[i])) {
+								window.open(thatClassLink[i], "_blank");
+							}
 						}
+						else
+							window.open(thatClassLink[i], "_blank");
 					}, millisOfThatClass[i]);
 				}
 				else if (millisOfThatClass[i] > -3600000) {
-					if (window.confirm('Now the class is ' + thatClassName[i] + ' at ' + h[i] + ":" + m[i])) {
-						window.open(thatClassLink[i], "_blank");
+					if (confirmation == 1) {
+						if (window.confirm('Now the class is ' + thatClassName[i] + ' at ' + h[i] + ":" + m[i])) {
+							window.open(thatClassLink[i], "_blank");
+						}
 					}
+					else
+						window.open(thatClassLink[i], "_blank");
 				}
 			}
 		});
