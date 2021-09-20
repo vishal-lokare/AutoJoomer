@@ -5,6 +5,8 @@
 
   <p align="center">
   Amazing contributors-<br><br>
+  </p>
+  <p align="center">
   <table align='center' rules='none'>
     <tr align='center'>
       <td>
