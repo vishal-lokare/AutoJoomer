@@ -40,6 +40,11 @@
             color: white;
             background: black;
         }
+
+        label {
+            color: white;
+            font-size: 110%;
+        }
     </style>
 </head>
 
@@ -57,9 +62,12 @@
                 <option value="C">CSE</option>
                 <option value="E">ECE</option>
             </select>
+            <br><br>
+            <label for="confirmation">Confirmation Before Joining Classes?</label>
+            <input type="checkbox" id="confirmation" name="confirmation" value="yes" checked>
+            <br><br>
+            <button type="button" id="button">SAVE</button>
         </center>
-        <br>
-        <center><button type="button" id="button">SAVE</button></center>
     </div>
 </body>
 
