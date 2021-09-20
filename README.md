@@ -1,6 +1,6 @@
 <p align="center">
-  <img src="https://github.com/vishal-lokare/AutoJoomer/blob/main/icon.png?raw=true" alt="AutoJoomer" width="100" height="100" > <br>
-  <b>AutoJoomer</b>
+  <a href="https://github.com/vishal-lokare/AutoJoomer/"><img src="https://github.com/vishal-lokare/AutoJoomer/blob/main/icon.png?raw=true" alt="AutoJoomer" width="100" height="100"></a><br>
+  <a href="https://github.com/vishal-lokare/AutoJoomer/"><b>AutoJoomer</b></a>
   <br><br>
   <a href="https://github.com/vishal-lokare"><img src="https://avatars.githubusercontent.com/u/31512838?v=4" alt="Vishal Lokare" width="35" height="35"></a> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
   <a href="https://github.com/freak-10"><img src="https://avatars.githubusercontent.com/u/62661394?v=4" alt="Kotikalapudi Sumanth" width="35" height="35"></a> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
