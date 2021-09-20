@@ -11,7 +11,7 @@
   <br>
   
   <p align="center">
-    [vishal-lokare](https://github.com/vishal-lokare)   [freak-10](https://github.com/freak-10)    [karynaur](https://github.com/karynaur)    [tomid9999](https://github.com/tomid9999)   [nikhil9302](https://github.com/nikhil9302)
+    <a href="https://github.com/vishal-lokare">vishal-lokare</a>   <a href="https://github.com/freak-10">freak-10</a>    <a href="https://github.com/karynaur">karynaur</a>    <a href="https://github.com/tomid9999">tomid9999</a>   <a href="https://github.com/nikhil9302">nikhil9302</a>
   </p>
   <br>
 </p>
