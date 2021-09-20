@@ -2,7 +2,7 @@
   <a href="https://github.com/vishal-lokare/AutoJoomer/"><img src="https://github.com/vishal-lokare/AutoJoomer/blob/main/icon.png?raw=true" alt="AutoJoomer" width="100" height="100"></a><br>
   <a href="https://github.com/vishal-lokare/AutoJoomer/"><b>AutoJoomer</b></a>
   <br><br><hr>
-  
+
   <p align="center">
   Amazing contributors-<br><br>
   <table align='center' rules='none'>
@@ -40,10 +40,10 @@
         <a href="https://github.com/nikhil9302">nikhil9302</a>
       </td>  
     </tr>  
-  <table>    
+  </table>
   </p>
-  
-  <br>  
+
+  <br>
   <br>
 </p>
 
