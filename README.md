@@ -2,12 +2,17 @@
   <img src="https://github.com/vishal-lokare/AutoJoomer/blob/main/icon.png?raw=true" alt="AutoJoomer" width="100" height="100" > <br>
   <b>AutoJoomer</b>
   <br><br>
-  <a href="https://github.com/vishal-lokare"><img src="https://avatars.githubusercontent.com/u/31512838?v=4" alt="Vishal Lokare" width="50" height="50" > </a>
+  <a href="https://github.com/vishal-lokare"><img src="https://avatars.githubusercontent.com/u/31512838?v=4" alt="Vishal Lokare" width="35" height="35" > </a>
+  <a href="https://github.com/freak-10"><img src="https://avatars.githubusercontent.com/u/62661394?v=4" alt="Kotikalapudi Sumanth" width="35" height="35" > </a>
+  <a href="https://github.com/karynaur"><img src="https://avatars.githubusercontent.com/u/25678782?v=4" alt="Aditya Srinivas Menon" width="35" height="35" > </a>
+  <a href="https://github.com/tomid9999"><img src="https://avatars.githubusercontent.com/u/28211612?v=4" alt="Rishabh Srivastava" width="35" height="35" > </a>
+  <a href="https://github.com/nikhil9302"><img src="https://avatars.githubusercontent.com/u/74824711?v=4" alt="Nikhil Menon" width="35" height="35" > </a>
   
   <br>
   
-  vishal-lokare
-  
+  <p align="center">
+    vishal-lokare   freak-10    karynaur    tomid9999   nikhil9302
+  </p>
   <br>
 </p>
 
