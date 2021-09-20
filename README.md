@@ -1,6 +1,19 @@
 <p align="center">
-  <img src="https://github.com/vishal-lokare/AutoJoomer/blob/main/icon.png?raw=true" alt="AutoJoomer" width="100" height="100" > <br>
-  <b>AutoJoomer</b>
+  <a href="https://github.com/vishal-lokare/AutoJoomer/"><img src="https://github.com/vishal-lokare/AutoJoomer/blob/main/icon.png?raw=true" alt="AutoJoomer" width="100" height="100"></a><br>
+  <a href="https://github.com/vishal-lokare/AutoJoomer/"><b>AutoJoomer</b></a>
+  <br><br>
+  <a href="https://github.com/vishal-lokare"><img src="https://avatars.githubusercontent.com/u/31512838?v=4" alt="Vishal Lokare" width="35" height="35"></a> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  <a href="https://github.com/freak-10"><img src="https://avatars.githubusercontent.com/u/62661394?v=4" alt="Kotikalapudi Sumanth" width="35" height="35"></a> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  <a href="https://github.com/karynaur"><img src="https://avatars.githubusercontent.com/u/25678782?v=4" alt="Aditya Srinivas Menon" width="35" height="35"></a> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  <a href="https://github.com/tomid9999"><img src="https://avatars.githubusercontent.com/u/28211612?v=4" alt="Rishabh Srivastava" width="35" height="35"></a> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  <a href="https://github.com/nikhil9302"><img src="https://avatars.githubusercontent.com/u/74824711?v=4" alt="Nikhil Menon" width="35" height="35"></a> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  
+  <br>
+  
+  <p align="center">
+    <a href="https://github.com/vishal-lokare">vishal-lokare</a>&nbsp;&nbsp;&nbsp;&nbsp;<a href="https://github.com/freak-10">freak-10</a>&nbsp;&nbsp;&nbsp;&nbsp;<a href="https://github.com/karynaur">karynaur</a>&nbsp;&nbsp;&nbsp;&nbsp;<a href="https://github.com/tomid9999">tomid9999</a>&nbsp;&nbsp;&nbsp;&nbsp;<a href="https://github.com/nikhil9302">nikhil9302</a>
+  </p>
+  <br>
 </p>
 
 # AutoJoomer
@@ -30,6 +43,7 @@ repeat the installation process again.
 2. If values are not set, error will be displayed. In this case, set the values in "AutoJoomer" popup in "Extensions" panel.
 3. In case you open your browser after a class has already started, the extension will automatically open that class as well given that it started in the last hour.
 4. The extension will stop working when the browser is closed OR the day is over.
+5. And thats it, you are good to go now.
 
 ## Contributing to this project
 <p>Hop on in our discord server - <a href="https://discord.gg/AXsjAWzj"><img src="https://logos-world.net/wp-content/uploads/2020/12/Discord-Logo.png" alt="AutoJoomer Discord" width="40" height="20"></a>, we will be happy to have you on board.</p>
