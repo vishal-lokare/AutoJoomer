@@ -36,7 +36,7 @@ function runningscript() {
 	if (day != 0 && day != 6) {
 
 		if ((day == 3 || day == 5) && branch == "C")
-			var m = [0, 0, 40, 50, 0, 0, 30];
+			m[1] = 0;
 
 		var fetchLink = ""
 		if (branch == "C")
@@ -55,6 +55,8 @@ function runningscript() {
 				thatClassLink[i] = thatClass['class_link'];
 
 				if (thatClassName[i] == '') continue;
+
+				if (thatClassLink[i] == '') continue;
 
 				millisOfThatClass[i] = new Date(now.getFullYear(), now.getMonth(), now.getDate(), h[i], m[i], 0, 0) - now;
 

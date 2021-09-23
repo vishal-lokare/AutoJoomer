@@ -21,6 +21,6 @@ $(document).ready(function () {
         document.getElementsByClassName('btn btn-primary btn-block mt-3')[0].click();
     }
 
-    if (url == 'https://lms.iiitkottayam.ac.in/mod/bigbluebuttonbn/view.php?id=1232' || url == 'https://lms.iiitkottayam.ac.in/mod/bigbluebuttonbn/view.php?id=1233' || url == 'https://lms.iiitkottayam.ac.in/mod/bigbluebuttonbn/view.php?id=1167' || url == 'https://lms.iiitkottayam.ac.in/mod/bigbluebuttonbn/view.php?id=1165' || url == 'https://lms.iiitkottayam.ac.in/mod/bigbluebuttonbn/view.php?id=1266' || url == 'https://lms.iiitkottayam.ac.in/mod/bigbluebuttonbn/view.php?id=1267')
+    if (url.includes('https://lms.iiitkottayam.ac.in/mod/bigbluebuttonbn/view.php?id='))
         setTimeout(function () { document.getElementById("join_button_input").click(); }, 5000);
 })
