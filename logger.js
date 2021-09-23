@@ -21,6 +21,6 @@ $(document).ready(function () {
         document.getElementsByClassName('btn btn-primary btn-block mt-3')[0].click();
     }
 
-    if (url == 'https://lms.iiitkottayam.ac.in/mod/bigbluebuttonbn/view.php?id=2266' || url == 'https://lms.iiitkottayam.ac.in/mod/bigbluebuttonbn/view.php?id=2270' || url == 'https://lms.iiitkottayam.ac.in/mod/bigbluebuttonbn/view.php?id=2269' || url == 'https://lms.iiitkottayam.ac.in/mod/bigbluebuttonbn/view.php?id=2268' || url == 'https://lms.iiitkottayam.ac.in/mod/bigbluebuttonbn/view.php?id=2267' || url == 'https://lms.iiitkottayam.ac.in/mod/bigbluebuttonbn/view.php?id=2277' || url == 'https://lms.iiitkottayam.ac.in/mod/bigbluebuttonbn/view.php?id=2276' || url == 'https://lms.iiitkottayam.ac.in/mod/bigbluebuttonbn/view.php?id=2275' || url == 'https://lms.iiitkottayam.ac.in/mod/bigbluebuttonbn/view.php?id=2274' || url == 'https://lms.iiitkottayam.ac.in/mod/bigbluebuttonbn/view.php?id=2273' || url == 'https://lms.iiitkottayam.ac.in/mod/bigbluebuttonbn/view.php?id=2272')
+    if (url.includes('https://lms.iiitkottayam.ac.in/mod/bigbluebuttonbn/view.php?id='))
         setTimeout(function () { document.getElementById("join_button_input").click(); }, 5000);
 })
