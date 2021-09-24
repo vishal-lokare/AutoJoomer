@@ -7,6 +7,7 @@ if ((branch == null) || (branch == "null") || (username == null) || (password ==
 	alert("Some values have not been set. Navigate to the extensions panel in your browser, choose \"AutoJoomer\",  save your values and restart your browser for changes to take effect.");
 }
 else {
+	document.
 	runningscript();
 }
 
@@ -27,7 +28,7 @@ function runningscript() {
 
 	var now = new Date();
 	var h = [0, 8, 9, 10, 12, 14, 16];
-	var m = [0, 30, 40, 50, 0, 0, 30];
+	var m = [0, 30, 40, 50, 0, 0, 0];
 	var thatClassLink = ['', '', '', '', '', '', '', '']
 	var thatClassName = ['', '', '', '', '', '', '', '']
 	var millisOfThatClass = [0, 0, 0, 0, 0, 0, 0, 0]
