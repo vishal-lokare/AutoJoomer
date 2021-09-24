@@ -7,7 +7,6 @@ if ((branch == null) || (branch == "null") || (username == null) || (password ==
 	alert("Some values have not been set. Navigate to the extensions panel in your browser, choose \"AutoJoomer\",  save your values and restart your browser for changes to take effect.");
 }
 else {
-	document.
 	runningscript();
 }
 
