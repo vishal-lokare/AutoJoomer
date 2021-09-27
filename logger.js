@@ -28,12 +28,10 @@ $(document).ready(function () {
         var timerId = setInterval(function(){ 
                if(btn){
                      btn.click();
-                     console.log("btn exists");
                      clearInterval(timerId);
                }
                else{
                      btn = document.getElementById("join_button_input");
-                     console.log("new var selected")
                }
         }, 1000);
     }
