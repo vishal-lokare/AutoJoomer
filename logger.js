@@ -21,6 +21,20 @@ $(document).ready(function () {
         document.getElementsByClassName('btn btn-primary btn-block mt-3')[0].click();
     }
 
-    if (url.includes('?reason=AutoJoomer'))
-        setTimeout(function () { document.getElementById("join_button_input").click(); }, 5000);
+
+    if (url.includes('?reason=AutoJoomer')){
+        var btn = document.getElementById("join_button_input");
+        
+        var timerId = setInterval(function(){ 
+               if(btn){
+                     btn.click();
+                     console.log("btn exists");
+                     clearInterval(timerId);
+               }
+               else{
+                     btn = document.getElementById("join_button_input");
+                     console.log("new var selected")
+               }
+        }, 1000);
+    }
 })
