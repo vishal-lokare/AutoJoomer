@@ -20,7 +20,18 @@ $(document).ready(function () {
         document.getElementById('password').value = replacepassword;
         document.getElementsByClassName('btn btn-primary btn-block mt-3')[0].click();
     }
-
+    
     if (url.includes('https://lms.iiitkottayam.ac.in/mod/bigbluebuttonbn/view.php?id='))
-        setTimeout(function () { document.getElementById("join_button_input").click(); }, 5000);
+        var btn = document.getElementById("join_button_input");
+        
+        var timerId = setInterval(function(){ 
+               if(btn){
+                     btn.click();
+                     console.log("Button exists, joining class");
+                     clearInterval(timerId);
+               }
+               else{
+                     btn = document.getElementById("join_button_input");
+               }
+        }, 1000);
 })
