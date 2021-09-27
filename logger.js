@@ -21,6 +21,18 @@ $(document).ready(function () {
         document.getElementsByClassName('btn btn-primary btn-block mt-3')[0].click();
     }
 
-    if (url.includes('https://lms.iiitkottayam.ac.in/mod/bigbluebuttonbn/view.php?id='))
-        setTimeout(function () { document.getElementById("join_button_input").click(); }, 5000);
+
+    if (url.includes('?reason=AutoJoomer')){
+        var btn = document.getElementById("join_button_input");
+        
+        var timerId = setInterval(function(){ 
+               if(btn){
+                     btn.click();
+                     clearInterval(timerId);
+               }
+               else{
+                     btn = document.getElementById("join_button_input");
+               }
+        }, 1000);
+    }
 })
