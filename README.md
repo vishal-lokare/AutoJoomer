@@ -79,7 +79,7 @@ repeat the installation process again.
 5. And thats it, you are good to go now.
 
 ## Contributing to this project
-<p>Hop on in our discord server - <a href="https://discord.gg/AXsjAWzj"><img src="https://logos-world.net/wp-content/uploads/2020/12/Discord-Logo.png" alt="AutoJoomer Discord" width="40" height="20"></a>, we will be happy to have you on board.</p>
+<p>Hop on in our discord server - <a href="https://discord.gg/bfQaqbKPf5"><img src="https://logos-world.net/wp-content/uploads/2020/12/Discord-Logo.png" alt="AutoJoomer Discord" width="40" height="20"></a>, we will be happy to have you on board.</p>
 
 
 ## Future Updates
