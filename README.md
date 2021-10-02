@@ -3,21 +3,25 @@
 [![Stargazers][stars-shield]][stars-url]
 [![Issues][issues-shield]][issues-url]
 [![MIT License][license-shield]][license-url]
-[![LinkedIn][linkedin-shield]][linkedin-url]
+<!-- [![LinkedIn][linkedin-shield]][linkedin-url] -->
 
 [contributors-shield]: https://img.shields.io/github/contributors/vishal-lokare/AutoJoomer.svg?style=for-the-badge
 [contributors-url]: https://github.com/vishal-lokare/AutoJoomer/graphs/contributors
 
-[forks-shield]: https://img.shields.io/github/forks/BetaLabs-IIITKottayam/supreme-CLIP.svg?style=for-the-badge
-[forks-url]: https://github.com/BetaLabs-IIITKottayam/supreme-CLIP/network/members
-[stars-shield]: https://img.shields.io/github/stars/BetaLabs-IIITKottayam/supreme-CLIP.svg?style=for-the-badge
-[stars-url]: https://github.com/BetaLabs-IIITKottayam/supreme-CLIP/stargazers
-[issues-shield]: https://img.shields.io/github/issues/BetaLabs-IIITKottayam/supreme-CLIP.svg?style=for-the-badge
-[issues-url]: https://github.com/BetaLabs-IIITKottayam/supreme-CLIP/issues
-[license-shield]: https://img.shields.io/github/license/BetaLabs-IIITKottayam/supreme-CLIP.svg?style=for-the-badge
-[license-url]: https://github.com/BetaLabs-IIITKottayam/supreme-CLIP/blob/master/LICENSE.txt
-[linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=for-the-badge&logo=linkedin&colorB=555
-[linkedin-url]: https://linkedin.com/in/othneildrew
+[forks-shield]: https://img.shields.io/github/forks/vishal-lokare/AutoJoomer.svg?style=for-the-badge
+[forks-url]: https://github.com/vishal-lokare/AutoJoomer/network/members
+
+[stars-shield]: https://img.shields.io/github/stars/vishal-lokare/AutoJoomer.svg?style=for-the-badge
+[stars-url]: https://github.com/vishal-lokare/AutoJoomer/stargazers
+
+[issues-shield]: https://img.shields.io/github/issues/vishal-lokare/AutoJoomer.svg?style=for-the-badge
+[issues-url]: https://github.com/vishal-lokare/AutoJoomer/issues
+
+[license-shield]: https://img.shields.io/github/license/vishal-lokare/AutoJoomer?style=for-the-badge
+
+<!-- [license-url]: https://github.com/BetaLabs-IIITKottayam/supreme-CLIP/blob/master/LICENSE.txt -->
+<!-- [linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=for-the-badge&logo=linkedin&colorB=555
+[linkedin-url]: https://linkedin.com/in/othneildrew -->
 
 <p align="center">
   <a href="https://github.com/vishal-lokare/AutoJoomer/"><img src="https://github.com/vishal-lokare/AutoJoomer/blob/main/icon.png?raw=true" alt="AutoJoomer" width="100" height="100"></a><br>
