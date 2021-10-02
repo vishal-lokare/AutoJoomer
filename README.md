@@ -18,8 +18,7 @@
 [issues-url]: https://github.com/vishal-lokare/AutoJoomer/issues
 
 [license-shield]: https://img.shields.io/github/license/vishal-lokare/AutoJoomer?style=for-the-badge
-
-<!-- [license-url]: https://github.com/BetaLabs-IIITKottayam/supreme-CLIP/blob/master/LICENSE.txt -->
+[license-url]: https://github.com/vishal-lokare/AutoJoomer/blob/main/LICENSE
 <!-- [linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=for-the-badge&logo=linkedin&colorB=555
 [linkedin-url]: https://linkedin.com/in/othneildrew -->
 
