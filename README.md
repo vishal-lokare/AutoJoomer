@@ -43,9 +43,6 @@
          <a href="https://github.com/freak-10"><img src="https://avatars.githubusercontent.com/u/62661394?v=4" alt="Kotikalapudi Sumanth" width="35" height="35"></a> 
       </td> 
       <td>
-         <a href="https://github.com/Abhijit25Mishra"><img src="https://avatars.githubusercontent.com/Abhijit25Mishra" alt="Abhijit Mishra" width="35" height="35"></a> 
-      </td>
-      <td>
         <a href="https://github.com/karynaur"><img src="https://avatars.githubusercontent.com/u/25678782?v=4" alt="Aditya Srinivas Menon" width="35" height="35"></a>
       </td> 
       <td>
@@ -54,6 +51,9 @@
       <td>
         <a href="https://github.com/nikhil9302"><img src="https://avatars.githubusercontent.com/u/74824711?v=4" alt="Nikhil Menon" width="35" height="35"></a> 
       </td> 
+      <td>
+         <a href="https://github.com/Abhijit25Mishra"><img src="https://avatars.githubusercontent.com/Abhijit25Mishra" alt="Abhijit Mishra" width="35" height="35"></a> 
+      </td>
     </tr>
     <tr>
       <td>
@@ -70,7 +70,10 @@
       </td>  
       <td>
         <a href="https://github.com/nikhil9302">nikhil9302</a>
-      </td>  
+      </td>
+      <td>
+        <a href="https://github.com/Abhijit25Mishra">Abhijit25Mishra</a>
+      </td>
     </tr>  
   </table>
   </p>
