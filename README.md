@@ -3,6 +3,7 @@
 [![Stargazers][stars-shield]][stars-url]
 [![Issues][issues-shield]][issues-url]
 [![MIT License][license-shield]][license-url]
+[![Generic badge](https://img.shields.io/badge/Version-2.0-Green.svg?style=for-the-badge)](https://github.com/vishal-lokare/AutoJoomer)
 
 
 [contributors-shield]: https://img.shields.io/github/contributors/vishal-lokare/AutoJoomer.svg?style=for-the-badge
@@ -19,6 +20,10 @@
 
 [license-shield]: https://img.shields.io/github/license/vishal-lokare/AutoJoomer?style=for-the-badge
 [license-url]: https://github.com/vishal-lokare/AutoJoomer/blob/main/LICENSE
+
+![HTML5](https://img.shields.io/badge/html5-%23E34F26.svg?style=for-the-badge&logo=html5&logoColor=white)
+![JavaScript](https://img.shields.io/badge/javascript-%23323330.svg?style=for-the-badge&logo=javascript&logoColor=%23F7DF1E)
+
 
 <!-- Possible linkedin page in future -->
 <!-- [![LinkedIn][linkedin-shield]][linkedin-url] -->
