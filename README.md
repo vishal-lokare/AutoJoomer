@@ -28,8 +28,7 @@
 <p align="center">
   <a href="https://github.com/vishal-lokare/AutoJoomer/"><img src="https://github.com/vishal-lokare/AutoJoomer/blob/main/icon.png?raw=true" alt="AutoJoomer" width="100" height="100"></a><br>
   <a href="https://github.com/vishal-lokare/AutoJoomer/"><b>AutoJoomer</b></a>
-  <br><br><hr>
-
+  <br><br><hr>  
   <p align="center">
   Amazing contributors-<br><br>
   </p>
@@ -85,13 +84,22 @@
 # AutoJoomer
 AutoJoomer will help you join classes on time (IIIT Kottayam 2020). Works for all classes, including labs; and also coding classes; fetches data from hosted database which can be changed whenever there are changes in the timetable.
 
+
+
 ## Installation
 1. Download all the files to a folder either by the "Download as ZIP" button or by cloning the repo.
+<p align='center'><img src="screenshots/ziporclone.jpg"/></p>
+
 2. Open your browser, navigate to "Extensions" panel -> "Manage Extensions".
 3. Enable "Developer Mode" in the top-right.
+
+<p align='center'><img src="screenshots/devmode.jpg"/></p>
+
 4. Click on "Load Unpacked" and select the folder where you downloaded/cloned the files.
 5. Navigate to "Extensions" panel -> click on "AutoJoomer".
 6. Set the required values, click "SAVE", and restart your browser / reload the extension.
+
+<p align='center'><img src="screenshots/autojoomer.jpg" width='500' height='500'/></p>
 
 ## How to stay updated
 To stay up-to-date with the latest version hosted on github, while being in the same directory where the downloaded files are, run
