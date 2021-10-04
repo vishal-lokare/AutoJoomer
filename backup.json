@@ -1,7 +1,9 @@
 {
     "links": {
         "CSE": {
+            "a":"a",
             "1": {
+                "a":"a",
                 "1": {
                     "class_name": "ICS212",
                     "class_link": "https://lms.iiitkottayam.ac.in/mod/zoom/loadmeeting.php?id=2315",
@@ -34,6 +36,7 @@
                 }
             },
             "2": {
+                "a":"a",
                 "1": {
                     "class_name": "ICS211",
                     "class_link": "https://lms.iiitkottayam.ac.in/mod/bigbluebuttonbn/view.php?id=2270?reason=AutoJoomer",
@@ -66,6 +69,7 @@
                 }
             },
             "3": {
+                "a":"a",
                 "1": {
                     "class_name": "ISC211",
                     "class_link": "https://lms.iiitkottayam.ac.in/mod/zoom/loadmeeting.php?id=2312",
@@ -98,6 +102,7 @@
                 }
             },
             "4": {
+                "a":"a",
                 "1": {
                     "class_name": "ICS215",
                     "class_link": "https://lms.iiitkottayam.ac.in/mod/zoom/loadmeeting.php?id=2318",
@@ -130,6 +135,7 @@
                 }
             },
             "5": {
+                "a":"a",
                 "1": {
                     "class_name": "ISC211",
                     "class_link": "https://lms.iiitkottayam.ac.in/mod/zoom/loadmeeting.php?id=2312",
@@ -163,7 +169,9 @@
             }
         },
         "ECE": {
+            "a":"a",
             "1": {
+                "a":"a",
                 "1": {
                     "class_name": "IEC212",
                     "class_link": "https://lms.iiitkottayam.ac.in/mod/bigbluebuttonbn/view.php?id=2275?reason=AutoJoomer",
@@ -196,6 +204,7 @@
                 }
             },
             "2": {
+                "a":"a",
                 "1": {
                     "class_name": "IEC212",
                     "class_link": "https://lms.iiitkottayam.ac.in/mod/bigbluebuttonbn/view.php?id=2275?reason=AutoJoomer",
@@ -228,6 +237,7 @@
                 }
             },
             "3": {
+                "a":"a",
                 "1": {
                     "class_name": "IEC215",
                     "class_link": "https://lms.iiitkottayam.ac.in/mod/bigbluebuttonbn/view.php?id=2272?reason=AutoJoomer",
@@ -260,6 +270,7 @@
                 }
             },
             "4": {
+                "a":"a",
                 "1": {
                     "class_name": "ICS215",
                     "class_link": "https://lms.iiitkottayam.ac.in/mod/zoom/loadmeeting.php?id=2318",
@@ -292,6 +303,7 @@
                 }
             },
             "5": {
+                "a":"a",
                 "1": {
                     "class_name": "IEC214",
                     "class_link": "https://lms.iiitkottayam.ac.in/mod/bigbluebuttonbn/view.php?id=2273?reason=AutoJoomer",
