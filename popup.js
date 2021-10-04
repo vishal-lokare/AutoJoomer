@@ -2,6 +2,14 @@ window.onload = function () {
     document.getElementById("button").addEventListener("click", savevalues);
     document.getElementById("button").innerHTML = "SAVE";
     document.getElementById("button").disabled = false;
+
+    ghManifestLink = 'https://www.vishal-lokare.co/AutoJoomer/manifest.json'
+    $.getJSON(ghManifestLink, function(links) {
+        var thisVersion = chrome.runtime.getManifest().version;
+        if(links['version'] != thisVersion)
+        alert('New update : '+links['version']+' available.\nCurrent version : '+thisVersion+'\nPlease update from GH repo.');
+    });
+
 }
 
 function savevalues() {
