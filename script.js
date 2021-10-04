@@ -45,19 +45,18 @@ function runningscript() {
 			console.log("Started AutoJoomer");
 
 			var thatDay = (links[day])
+			//counts the number of lectures on that day
 			var nooflec = Object.keys(thatDay).length-1;  
 			for (let i = 1; i <= nooflec; i++) {
 
 				var thatClass = thatDay[i];
 				thatClassName[i] = thatClass['class_name'];
 				thatClassLink[i] = thatClass['class_link'];
+				//parseint to convert string to integer
 				var h=parseInt(String(thatClass['class_time'][0])+String(thatClass['class_time'][1]));
 				var m=parseInt(String(thatClass['class_time'][2])+String(thatClass['class_time'][3]));
-				//Temporary Fix for CSE 8:00 AM classes
-				if ((day == 3 || day == 5) && branch == "C" && i==1){
-					m[0] = 0;
-				}
 				
+				//to check if the class name or link is empty				
 				if ((thatClassName[i] == '') || (thatClassLink[i]=='')) continue;
 
 				millisOfThatClass[i] = new Date(now.getFullYear(), now.getMonth(), now.getDate(), h, m, 0, 0) - now;
