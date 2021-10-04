@@ -1,3 +1,35 @@
+[![Contributors][contributors-shield]][contributors-url]
+[![Forks][forks-shield]][forks-url]
+[![Stargazers][stars-shield]][stars-url]
+[![Issues][issues-shield]][issues-url]
+[![MIT License][license-shield]][license-url]
+[![Generic badge](https://img.shields.io/badge/Version-2.0-Green.svg?style=for-the-badge)](https://github.com/vishal-lokare/AutoJoomer)
+
+
+[contributors-shield]: https://img.shields.io/github/contributors/vishal-lokare/AutoJoomer.svg?style=for-the-badge
+[contributors-url]: https://github.com/vishal-lokare/AutoJoomer/graphs/contributors
+
+[forks-shield]: https://img.shields.io/github/forks/vishal-lokare/AutoJoomer.svg?style=for-the-badge
+[forks-url]: https://github.com/vishal-lokare/AutoJoomer/network/members
+
+[stars-shield]: https://img.shields.io/github/stars/vishal-lokare/AutoJoomer.svg?style=for-the-badge
+[stars-url]: https://github.com/vishal-lokare/AutoJoomer/stargazers
+
+[issues-shield]: https://img.shields.io/github/issues/vishal-lokare/AutoJoomer.svg?style=for-the-badge
+[issues-url]: https://github.com/vishal-lokare/AutoJoomer/issues
+
+[license-shield]: https://img.shields.io/github/license/vishal-lokare/AutoJoomer?style=for-the-badge
+[license-url]: https://github.com/vishal-lokare/AutoJoomer/blob/main/LICENSE
+
+![HTML5](https://img.shields.io/badge/html5-%23E34F26.svg?style=for-the-badge&logo=html5&logoColor=white)
+![JavaScript](https://img.shields.io/badge/javascript-%23323330.svg?style=for-the-badge&logo=javascript&logoColor=%23F7DF1E)
+
+
+<!-- Possible linkedin page in future -->
+<!-- [![LinkedIn][linkedin-shield]][linkedin-url] -->
+<!-- [linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=for-the-badge&logo=linkedin&colorB=555
+[linkedin-url]: https://linkedin.com/in/ -->
+
 <p align="center">
   <a href="https://github.com/vishal-lokare/AutoJoomer/"><img src="https://github.com/vishal-lokare/AutoJoomer/blob/main/icon.png?raw=true" alt="AutoJoomer" width="100" height="100"></a><br>
   <a href="https://github.com/vishal-lokare/AutoJoomer/"><b>AutoJoomer</b></a>
@@ -23,6 +55,9 @@
       <td>
         <a href="https://github.com/nikhil9302"><img src="https://avatars.githubusercontent.com/u/74824711?v=4" alt="Nikhil Menon" width="35" height="35"></a> 
       </td> 
+      <td>
+         <a href="https://github.com/Abhijit25Mishra"><img src="https://avatars.githubusercontent.com/Abhijit25Mishra" alt="Abhijit Mishra" width="35" height="35"></a> 
+      </td>
     </tr>
     <tr>
       <td>
@@ -39,7 +74,10 @@
       </td>  
       <td>
         <a href="https://github.com/nikhil9302">nikhil9302</a>
-      </td>  
+      </td>
+      <td>
+        <a href="https://github.com/Abhijit25Mishra">Abhijit25Mishra</a>
+      </td>
     </tr>  
   </table>
   </p>
