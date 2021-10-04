@@ -30,11 +30,10 @@ function runningscript() {
 	//var m = [0, 30, 40, 50, 0, 0, 0];
 	var thatClassLink = []
 	var thatClassName = []
-	var millisOfThatClass = [0, 0, 0, 0, 0, 0, 0, 0]
+	var millisOfThatClass = []
 
 	var day = now.getDay();
 	if (day != 0 && day != 6) {
-
 
 		var fetchLink = ""
 		if (branch == "C")
