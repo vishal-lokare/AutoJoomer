@@ -10,6 +10,25 @@ else {
 	runningscript();
 }
 
+ghManifestLink = 'https://www.vishal-lokare.co/AutoJoomer/manifest.json'
+$.getJSON(ghManifestLink, function(links) {
+        var thisVersion = chrome.runtime.getManifest().version;
+        if(links['version'] != thisVersion)
+        alert('New update : '+links['version']+' available.\nCurrent version : '+thisVersion+'\nPlease update from GH repo.');
+});
+
+chrome.runtime.onInstalled.addListener(function(details){
+    var thisVersion = chrome.runtime.getManifest().version;
+    if(details.reason == "install"){
+        window.alert("Welcome to AutoJoomer!!");
+	window.localStorage.setItem("AutoJoomerVersion", thisVersion)
+    }
+    else if(details.reason == "update"){
+	if(details.previousVersion != thisVersion)
+	        window.alert("AutoJoomer updated from " + details.previousVersion + " to " + thisVersion + "!");
+    }
+});
+
 chrome.runtime.onMessage.addListener((message, sender, sendResponse) => {
 	if (message === 'getUsername') {
 		sendResponse(username);
