@@ -8,9 +8,9 @@ window.onload = function () {
         var thisVersion = chrome.runtime.getManifest().version;
         if(links['version'] != thisVersion){
             if(window.confirm('New update : '+links['version']+' available.\nCurrent version : '+thisVersion+'\nPlease update from GH repo.')){
-                window.location('https://github.com/vishal-lokare/AutoJoomer', "_blank");
+                window.open('https://github.com/vishal-lokare/AutoJoomer', "_blank");
             }
-        }        
+        }
     });
 
 }
