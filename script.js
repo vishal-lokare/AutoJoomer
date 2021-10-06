@@ -14,8 +14,9 @@ ghManifestLink = 'https://www.vishal-lokare.co/AutoJoomer/manifest.json'
 $.getJSON(ghManifestLink, function(links) {
         var thisVersion = chrome.runtime.getManifest().version;
         if(links['version'] != thisVersion){
+	    var newUpdate = 'none';
 	    $.getJSON('https://www.vishal-lokare.co/AutoJoomer/version_updates.json', function(ver){
-		var newUpdate = ver[thisVersion]
+		newUpdate = ver[thisVersion]
 	    });
 	    if(window.confirm('New update : '+links['version']+' available.\nCurrent version : '+thisVersion+'\nPlease update from GH repo.\n\nNew in this update : \n'+newUpdate)){
 		window.open('https://github.com/vishal-lokare/AutoJoomer', "_blank");
