@@ -74,13 +74,13 @@ function runningscript() {
 				thatClassName[i] = thatClass['class_name'];
 				thatClassLink[i] = thatClass['class_link'];
 				//parseint to convert string to integer
-				h[i]=parseInt(String(thatClass['class_time'][0])+String(thatClass['class_time'][1]));
-				m[i]=parseInt(String(thatClass['class_time'][2])+String(thatClass['class_time'][3]));
+				h[i]=String(thatClass['class_time'][0])+String(thatClass['class_time'][1]);
+				m[i]=String(thatClass['class_time'][2])+String(thatClass['class_time'][3]);
 				
 				//to check if the class name or link is empty				
 				if ((thatClassName[i] == '') || (thatClassLink[i]=='')) continue;
 
-				millisOfThatClass[i] = new Date(now.getFullYear(), now.getMonth(), now.getDate(), h[i], m[i], 0, 0) - now;
+				millisOfThatClass[i] = new Date(now.getFullYear(), now.getMonth(), now.getDate(), parseInt(h[i]), parseInt(m[i]), 0, 0) - now;
 
 				if (millisOfThatClass[i] > 0) {
 					setTimeout(function () {
