@@ -13,10 +13,15 @@ else {
 ghManifestLink = 'https://www.vishal-lokare.co/AutoJoomer/manifest.json'
 $.getJSON(ghManifestLink, function(links) {
         var thisVersion = chrome.runtime.getManifest().version;
-        if(links['version'] != thisVersion)
-	    if(window.confirm('New update : '+links['version']+' available.\nCurrent version : '+thisVersion+'\nPlease update from GH repo.')){
+        if(links['version'] != thisVersion){
+	    var newUpdate = 'none';
+	    $.getJSON('https://www.vishal-lokare.co/AutoJoomer/version_updates.json', function(ver){
+		newUpdate = ver[thisVersion]
+	    });
+	    if(window.confirm('New update : '+links['version']+' available.\nCurrent version : '+thisVersion+'\nPlease update from GH repo.\n\nNew in this update : \n'+newUpdate)){
 		window.open('https://github.com/vishal-lokare/AutoJoomer', "_blank");
 	    }
+	}
 });
 
 chrome.runtime.onInstalled.addListener(function(details){
@@ -28,6 +33,7 @@ chrome.runtime.onInstalled.addListener(function(details){
     else if(details.reason == "update"){
 	if(details.previousVersion != thisVersion)
 	        window.alert("AutoJoomer updated from " + details.previousVersion + " to " + thisVersion + "!");
+		window.localStorage.setItem("AutoJoomerVersion", thisVersion)
     }
 });
 
@@ -74,13 +80,13 @@ function runningscript() {
 				thatClassName[i] = thatClass['class_name'];
 				thatClassLink[i] = thatClass['class_link'];
 				//parseint to convert string to integer
-				h[i]=parseInt(String(thatClass['class_time'][0])+String(thatClass['class_time'][1]));
-				m[i]=parseInt(String(thatClass['class_time'][2])+String(thatClass['class_time'][3]));
+				h[i]=String(thatClass['class_time'][0])+String(thatClass['class_time'][1]);
+				m[i]=String(thatClass['class_time'][2])+String(thatClass['class_time'][3]);
 				
 				//to check if the class name or link is empty				
 				if ((thatClassName[i] == '') || (thatClassLink[i]=='')) continue;
 
-				millisOfThatClass[i] = new Date(now.getFullYear(), now.getMonth(), now.getDate(), h[i], m[i], 0, 0) - now;
+				millisOfThatClass[i] = new Date(now.getFullYear(), now.getMonth(), now.getDate(), parseInt(h[i]), parseInt(m[i]), 0, 0) - now;
 
 				if (millisOfThatClass[i] > 0) {
 					setTimeout(function () {
