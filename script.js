@@ -16,24 +16,27 @@ $.getJSON(ghManifestLink, function(links) {
         if(links['version'] != thisVersion){
 	    var newUpdate = 'none';
 	    $.getJSON('https://www.vishal-lokare.co/AutoJoomer/version_updates.json', function(ver){
-		newUpdate = ver[thisVersion]
-	    });
+		newUpdate = ver[links['version']]
 	    if(window.confirm('New update : '+links['version']+' available.\nCurrent version : '+thisVersion+'\nPlease update from GH repo.\n\nNew in this update : \n'+newUpdate)){
 		window.open('https://github.com/vishal-lokare/AutoJoomer', "_blank");
 	    }
+	    });
 	}
 });
 
 chrome.runtime.onInstalled.addListener(function(details){
     var thisVersion = chrome.runtime.getManifest().version;
     if(details.reason == "install"){
-        window.alert("Welcome to AutoJoomer!!");
+        window.alert("Welcome to AutoJoomer!!\nVersion - "+thisVersion);
 	window.localStorage.setItem("AutoJoomerVersion", thisVersion)
     }
     else if(details.reason == "update"){
 	if(details.previousVersion != thisVersion)
-	        window.alert("AutoJoomer updated from " + details.previousVersion + " to " + thisVersion + "!");
-		window.localStorage.setItem("AutoJoomerVersion", thisVersion)
+		$.getJSON('https://www.vishal-lokare.co/AutoJoomer/version_updates.json', function(ver){
+		    var newUpdate = ver[thisVersion];
+	            window.alert("AutoJoomer updated from " + details.previousVersion + " to " + thisVersion + "!\n\nNew in this version - \n"+newUpdate);
+		    window.localStorage.setItem("AutoJoomerVersion", thisVersion)
+		});
     }
 });
 
