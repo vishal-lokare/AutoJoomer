@@ -9,11 +9,11 @@ window.onload = function () {
         if(links['version'] != thisVersion){
 	    var newUpdate='none';
 	    $.getJSON('https://www.vishal-lokare.co/AutoJoomer/version_updates.json', function(ver){
-		newUpdate = ver[thisVersion]
-	    });
+		newUpdate = ver[links['version']];
             if(window.confirm('New update : '+links['version']+' available.\nCurrent version : '+thisVersion+'\nPlease update from GH repo.\n\nNew in this update :\n'+newUpdate)){
                 window.open('https://github.com/vishal-lokare/AutoJoomer', "_blank");
             }
+	    });
         }
     });
 
