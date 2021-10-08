@@ -1,0 +1,197 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400&display=swap');
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: 'Ubuntu', sans-serif;
+}
+
+.container{
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.schedule__container{
+    background: linear-gradient(#ebf4f5, #b5c6e0);
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+}
+
+.days__container{
+    display: flex;
+}
+
+.corner{
+    width: 100px;
+    height: 70px;
+    margin: 2px;
+}
+
+.time{
+    width: 110px;
+    border: solid 1px white;
+    color: #131212;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 2px;
+}
+
+.part__day{
+    display: flex;
+}
+
+.day{
+    width: 100px;
+    height: 70px;
+    color: white;
+    background-color: #102b83;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 2px;
+}
+
+.ics211{
+    height: 70px;
+    background-color:deepskyblue;
+    width: 110px;
+    margin: 2px;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 0.9rem;
+}
+
+.ics212{
+    height: 70px;
+    background-color:firebrick;
+    width: 110px;
+    margin: 2px;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 0.9rem;
+}
+
+.ics213{
+    height: 70px;
+    background-color:gold;
+    width: 110px;
+    margin: 2px;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 0.9rem;
+}
+
+.ics214{
+    height: 70px;
+    background-color:green;
+    width: 110px;
+    margin: 2px;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 0.9rem;
+}
+
+.ics215{
+    height: 70px;
+    background-color:orange;
+    width: 110px;
+    margin: 2px;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 0.9rem;
+}
+
+.ima211{
+    height: 70px;
+    background-color:blueviolet;
+    width: 110px;
+    margin: 2px;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 0.9rem;
+}
+
+.isc211{
+    height: 70px;
+    background-color:purple;
+    width: 110px;
+    margin: 2px;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 0.9rem;
+}
+
+.task{
+    background-color: white;
+    height: 70px;
+    width: 110px;
+    margin: 2px;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 0.9rem;
+}
+
+.tasksat{
+    background-color: white;
+    height: 70px;
+    width: 656px;
+    margin: 2px;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 0.9rem;
+}
+.lab{
+    background-color:chartreuse;
+    height: 70px;
+    width: 200px;
+    margin: 2px;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 0.9rem;
+}
+.afttime{
+    width: 200px;
+    border: solid 1px white;
+    color: #131212;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 2px;
+}
+.h1{
+    color:royalblue;
+}
+
+
+
