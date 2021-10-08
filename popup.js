@@ -17,6 +17,9 @@ window.onload = function () {
         }
     });
 
+    document.getElementById("fpage").addEventListener("click", function(){
+	chrome.tabs.create({url : chrome.runtime.getURL("full_page.html")});
+    });
 }
 
 function savevalues() {
