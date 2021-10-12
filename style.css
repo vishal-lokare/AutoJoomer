@@ -7,7 +7,7 @@
     font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
-.container{
+#container{
     height: 100vh;
     width: 100%;
     display: flex;
@@ -16,24 +16,24 @@
     align-items: center;
 }
 
-.schedule__container{
-    background: linear-gradient(#ebf4f5, #fc3737);
+#schedule__container{
+    background: linear-gradient(#ebf4f5, #00ffea);
     display: flex;
     flex-direction: column;
     padding: 1rem;
 }
 
-.days__container{
+#days__container{
     display: flex;
 }
 
-.corner{
+#corner{
     width: 100px;
     height: 70px;
     margin: 2px;
 }
 
-.time{
+#time{
     width: 110px;
     border: solid 1px white;
     color: #131212;
@@ -53,11 +53,11 @@
     margin:2px;
 }
 
-.part__day{
+#part__day{
     display: flex;
 }
 
-.day{
+#day{
     width: 100px;
     height: 70px;
     color: white;
@@ -199,7 +199,7 @@
     align-items: center;
     font-size: 0.9rem;
 }
-.afttime{
+#afttime{
     width: 200px;
     border: solid 1px white;
     color: #131212;
@@ -208,7 +208,7 @@
     align-items: center;
     margin: 2px;
 }
-.h1{
+#h1{
     color:royalblue;
 }
 
