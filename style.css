@@ -4,13 +4,10 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
-body{
-    font-family: 'Ubuntu', sans-serif;
-}
-
-.container{
+#container{
     height: 100vh;
     width: 100%;
     display: flex;
@@ -19,24 +16,24 @@ body{
     align-items: center;
 }
 
-.schedule__container{
-    background: linear-gradient(#ebf4f5, #b5c6e0);
+#schedule__container{
+    background: linear-gradient(#ebf4f5, #00ffea);
     display: flex;
     flex-direction: column;
     padding: 1rem;
 }
 
-.days__container{
+#days__container{
     display: flex;
 }
 
-.corner{
+#corner{
     width: 100px;
     height: 70px;
     margin: 2px;
 }
 
-.time{
+#time{
     width: 110px;
     border: solid 1px white;
     color: #131212;
@@ -46,11 +43,21 @@ body{
     margin: 2px;
 }
 
-.part__day{
+#lunch{
+    width: 70px;
+    border: solid 1px white;
+    color:#131212;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    margin:2px;
+}
+
+#part__day{
     display: flex;
 }
 
-.day{
+#day{
     width: 100px;
     height: 70px;
     color: white;
@@ -62,7 +69,19 @@ body{
     margin: 2px;
 }
 
-.ics211{
+#lb{
+    height: 70px;
+    background-color:ivory;
+    width: 70px;
+    margin: 2px;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 0.9rem;
+}
+
+#ics211{
     height: 70px;
     background-color:deepskyblue;
     width: 110px;
@@ -74,9 +93,9 @@ body{
     font-size: 0.9rem;
 }
 
-.ics212{
+#ics212{
     height: 70px;
-    background-color:firebrick;
+    background-color:orchid;
     width: 110px;
     margin: 2px;
     cursor: pointer;
@@ -86,9 +105,9 @@ body{
     font-size: 0.9rem;
 }
 
-.ics213{
+#ics213{
     height: 70px;
-    background-color:gold;
+    background-color:darkgrey ;
     width: 110px;
     margin: 2px;
     cursor: pointer;
@@ -98,7 +117,7 @@ body{
     font-size: 0.9rem;
 }
 
-.ics214{
+#ics214{
     height: 70px;
     background-color:green;
     width: 110px;
@@ -110,7 +129,7 @@ body{
     font-size: 0.9rem;
 }
 
-.ics215{
+#ics215{
     height: 70px;
     background-color:orange;
     width: 110px;
@@ -122,7 +141,7 @@ body{
     font-size: 0.9rem;
 }
 
-.ima211{
+#ima211{
     height: 70px;
     background-color:blueviolet;
     width: 110px;
@@ -134,9 +153,9 @@ body{
     font-size: 0.9rem;
 }
 
-.isc211{
+#isc211{
     height: 70px;
-    background-color:purple;
+    background-color:mediumseagreen;
     width: 110px;
     margin: 2px;
     cursor: pointer;
@@ -146,7 +165,7 @@ body{
     font-size: 0.9rem;
 }
 
-.task{
+#task{
     background-color: white;
     height: 70px;
     width: 110px;
@@ -158,10 +177,10 @@ body{
     font-size: 0.9rem;
 }
 
-.tasksat{
+#tasksat{
     background-color: white;
     height: 70px;
-    width: 656px;
+    width: 845px;
     margin: 2px;
     cursor: pointer;
     display: flex;
@@ -169,8 +188,8 @@ body{
     align-items: center;
     font-size: 0.9rem;
 }
-.lab{
-    background-color:chartreuse;
+#lab{
+    background-color:royalblue ;
     height: 70px;
     width: 200px;
     margin: 2px;
@@ -180,7 +199,7 @@ body{
     align-items: center;
     font-size: 0.9rem;
 }
-.afttime{
+#afttime{
     width: 200px;
     border: solid 1px white;
     color: #131212;
@@ -189,9 +208,21 @@ body{
     align-items: center;
     margin: 2px;
 }
-.h1{
+#h1{
     color:royalblue;
 }
 
+a:link{
+    color:white;
+}
+a:active{
+    color:white;
+} 
+a:hover{
+    color:white;
+}
+a:visited{
+    color:white;
+}
 
 
