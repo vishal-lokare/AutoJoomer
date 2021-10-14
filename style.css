@@ -80,10 +80,11 @@
     align-items: center;
     font-size: 0.9rem;
 }
+/*--------------------------------------------------------*/
 
-#ics211{
+#d1p1{
     height: 70px;
-    background-color:deepskyblue;
+    background-color:darkgrey;
     width: 110px;
     margin: 2px;
     cursor: pointer;
@@ -92,8 +93,7 @@
     align-items: center;
     font-size: 0.9rem;
 }
-
-#ics212{
+#d1p2{
     height: 70px;
     background-color:orchid;
     width: 110px;
@@ -104,10 +104,9 @@
     align-items: center;
     font-size: 0.9rem;
 }
-
-#ics213{
+#d1p3{
     height: 70px;
-    background-color:darkgrey ;
+    background-color:blueviolet;
     width: 110px;
     margin: 2px;
     cursor: pointer;
@@ -116,20 +115,7 @@
     align-items: center;
     font-size: 0.9rem;
 }
-
-#ics214{
-    height: 70px;
-    background-color:green;
-    width: 110px;
-    margin: 2px;
-    cursor: pointer;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 0.9rem;
-}
-
-#ics215{
+#d1p4{
     height: 70px;
     background-color:orange;
     width: 110px;
@@ -141,7 +127,29 @@
     font-size: 0.9rem;
 }
 
-#ima211{
+#d2p1{
+    height: 70px;
+    background-color:darkgray;
+    width: 110px;
+    margin: 2px;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 0.9rem;
+}
+#d2p2{
+    height: 70px;
+    background-color:orchid;
+    width: 110px;
+    margin: 2px;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 0.9rem;
+}
+#d2p3{
     height: 70px;
     background-color:blueviolet;
     width: 110px;
@@ -152,10 +160,9 @@
     align-items: center;
     font-size: 0.9rem;
 }
-
-#isc211{
+#d2p4{
     height: 70px;
-    background-color:mediumseagreen;
+    background-color:orange;
     width: 110px;
     margin: 2px;
     cursor: pointer;
@@ -164,6 +171,143 @@
     align-items: center;
     font-size: 0.9rem;
 }
+
+#d3p1{
+    height: 70px;
+    background-color:darkgray;
+    width: 110px;
+    margin: 2px;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 0.9rem;
+}
+#d3p2{
+    height: 70px;
+    background-color:orchid;
+    width: 110px;
+    margin: 2px;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 0.9rem;
+}
+#d3p3{
+    height: 70px;
+    background-color:blueviolet;
+    width: 110px;
+    margin: 2px;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 0.9rem;
+}
+#d3p4{
+    height: 70px;
+    background-color:orange;
+    width: 110px;
+    margin: 2px;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 0.9rem;
+}
+
+#d4p1{
+    height: 70px;
+    background-color:darkgray;
+    width: 110px;
+    margin: 2px;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 0.9rem;
+}
+#d4p2{
+    height: 70px;
+    background-color:orchid;
+    width: 110px;
+    margin: 2px;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 0.9rem;
+}
+#d4p3{
+    height: 70px;
+    background-color:blueviolet;
+    width: 110px;
+    margin: 2px;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 0.9rem;
+}
+#d4p4{
+    height: 70px;
+    background-color:orange;
+    width: 110px;
+    margin: 2px;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 0.9rem;
+}
+
+#d5p1{
+    height: 70px;
+    background-color:darkgray;
+    width: 110px;
+    margin: 2px;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 0.9rem;
+}
+#d5p2{
+    height: 70px;
+    background-color:orchid;
+    width: 110px;
+    margin: 2px;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 0.9rem;
+}
+#d5p3{
+    height: 70px;
+    background-color:blueviolet;
+    width: 110px;
+    margin: 2px;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 0.9rem;
+}
+#d5p4{
+    height: 70px;
+    background-color:orange;
+    width: 110px;
+    margin: 2px;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 0.9rem;
+}
+
+/*--------------------------------------------------------*/
 
 #task{
     background-color: white;
@@ -179,6 +323,7 @@
 
 #tasksat{
     background-color: white;
+    color:#131212;
     height: 70px;
     width: 845px;
     margin: 2px;
@@ -188,8 +333,8 @@
     align-items: center;
     font-size: 0.9rem;
 }
-#lab{
-    background-color:royalblue ;
+.lab{
+    background-color:green ;
     height: 70px;
     width: 200px;
     margin: 2px;
