@@ -2,10 +2,11 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <script language="JavaScript"  src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.0/jquery.min.js"></script>
+    <script type="text/Javascript" src="timetable.js"></script>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css" integrity="sha256-mmgLkCYLUQbXn0B1SRqzHar6dCnv9oZFPEC1g1cwlkk=" crossorigin="anonymous" />
-
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css" integrity="sha256-mmgLkCYLUQbXn0B1SRqzHar6dCnv9oZFPEC1g1cwlkk=" crossorigin="anonymous" />   
     <title>Time Table</title>
 </head>
 <body>
@@ -27,53 +28,53 @@
             </div>
             <div id="part__day">
                 <span id="day">Monday</span>
-                <a href="https://lms.iiitkottayam.ac.in/mod/zoom/view.php?id=2315"><div id="ics212">ICS212/<br>VP+KG</div></a>
-                <a href="https://lms.iiitkottayam.ac.in/mod/bigbluebuttonbn/view.php?id=2270"><div id="ics211">ICS211/<br>DSL</div></a>
-                <a href="https://lms.iiitkottayam.ac.in/mod/bigbluebuttonbn/view.php?id=2268"><div id="ics213">ICS213/<br>SBK+RGK</div></a>
-                <a href="https://lms.iiitkottayam.ac.in/mod/zoom/view.php?id=2313"><div id="ics214">ICS214/<br>[MBC+AA]</div></a>
-                <div id="lb">Lunch Break</div>
-                <a href="https://lms.iiitkottayam.ac.in/mod/bigbluebuttonbn/view.php?id=2268"><div id="lab">ICS213 (Lab)/SBK+RGK</div></a>
-                <div id="task">Coding Club Activities</div>
+                <div id="d1p1"></div>
+                <div id="d1p2"></div>
+                <div id="d1p3"></div>
+                <div id="d1p4"></div>
+                <div id="lb">Lunch<br>Break</div>
+                <div id="d1l" class="lab"></div>
+                <div id="task">Coding Club<br>Activities</div>
             </div>
             <div id="part__day">
                 <span id="day">Tuesday</span>
-                <a href="https://lms.iiitkottayam.ac.in/mod/bigbluebuttonbn/view.php?id=2270"><div id="ics211">ICS211(T)/<br>DSL</div></a>
-                <a href="https://lms.iiitkottayam.ac.in/mod/zoom/view.php?id=2319"><div id="ima211">IMA211/<br>DMV</div></a>
-                <a href="https://lms.iiitkottayam.ac.in/mod/bigbluebuttonbn/view.php?id=2270"><div id="ics211">ICS211/<br>DSL</div></a>
-                <a href="https://lms.iiitkottayam.ac.in/mod/bigbluebuttonbn/view.php?id=2268"><div id="ics213">ICS213/<br>SBK+RGK</div></a>
-                <div id="lb">Lunch Break</div>
-                <a href="https://lms.iiitkottayam.ac.in/mod/zoom/view.php?id=2313"><div id="lab">ICS214(Lab)/<br>[MBC+AA]</div></a>
-                <div id="task">Coding Club Activities</div>
+                <div id="d2p1"></div>
+                <div id="d2p2"></div>
+                <div id="d2p3"></div>
+                <div id="d2p4"></div>
+                <div id="lb">Lunch<br>Break</div>
+                <div id="d2l" class="lab"></div>
+                <div id="task">Coding Club<br>Activities</div>
             </div>
             <div id="part__day">
                 <span id="day">Wednesday</span>
-                <a href="https://lms.iiitkottayam.ac.in/mod/zoom/view.php?id=2312"><div id="isc211">ISC211/<br>OKM<br>(8:00 - 8:55)</div></a>
-                <a href="https://lms.iiitkottayam.ac.in/mod/bigbluebuttonbn/view.php?id=2268"><div id="ics213">ICS213(T)/<br>SBK+RGK</div></a>
-                <a href="https://lms.iiitkottayam.ac.in/mod/zoom/view.php?id=2315"><div id="ics212">ICS212(T)/<br>VP+KG</div></a>
-                <a href="https://lms.iiitkottayam.ac.in/mod/zoom/view.php?id=2319"><div id="ima211">IMA211(T)/<br>DMV</div></a>
-                <div id="lb">Lunch Break</div>
-                <a href="https://youtu.be/O91DT1pR1ew"><div id="lab">Seminar, Colloq</div></a>
-                <div id="task">Coding Club Activities</div>
+                <div id="d3p1"></div>
+                <div id="d3p2"></div>
+                <div id="d3p3"></div>
+                <div id="d3p4"></div>
+                <div id="lb">Lunch<br>Break</div>
+                <a href="https://youtu.be/O91DT1pR1ew"><div class="lab">Seminar, Colloq</div></a>
+                <div id="task">Coding Club<br>Activities</div>
             </div>
             <div id="part__day">
                 <span id="day">Thursday</span>
-                <a href="https://lms.iiitkottayam.ac.in/mod/zoom/view.php?id=2318"><div id="ics215">ICS215/<br>MSS</div></a>
-                <a href="https://lms.iiitkottayam.ac.in/mod/zoom/view.php?id=2319"><div id="ima211">IMA211/<br>DMV</div></a>
-                <a href="https://lms.iiitkottayam.ac.in/mod/zoom/view.php?id=2315"><div id="ics212">ICS212/<br>VP+KG</div></a>
-                <a href="https://lms.iiitkottayam.ac.in/mod/zoom/view.php?id=2313"><div id="ics214">ICS214(T)/<br>[MBC+AA]</div></a>
-                <div id="lb">Lunch Break</div>
-                <a href="https://lms.iiitkottayam.ac.in/mod/zoom/view.php?id=2318"><div id="lab">ICS215(Lab)/<br>MSS</div></a>
-                <div id="task">Coding Club Activities</div>
+                <div id="d4p1"></div>
+                <div id="d4p2"></div>
+               <div id="d4p3"></div>
+                <div id="d4p4"></div>
+                <div id="lb">Lunch<br>Break</div>
+                <div id="d4l" class="lab"></div>
+                <div id="task">Coding Club<br>Activities</div>
             </div>
             <div id="part__day">
                 <span id="day">Friday</span>
-                <a href="https://lms.iiitkottayam.ac.in/mod/zoom/view.php?id=2312"><div id="isc211">ISC211/<br>OKM<br>(8:00 - 8:55)</div></a>
-                <a href="https://lms.iiitkottayam.ac.in/mod/zoom/view.php?id=2319"><div id="ima211">IMA211/<br>DMV</div></a>
-                <a href="https://lms.iiitkottayam.ac.in/mod/zoom/view.php?id=2313"><div id="ics214">ICS214/<br>[MBC+AA]</div></a>
-                <a href="https://lms.iiitkottayam.ac.in/mod/zoom/view.php?id=2315"><div id="ics212">ICS212/<br>VP+KG</div></a>
-                <div id="lb">Lunch Break</div>
-                <a href="https://lms.iiitkottayam.ac.in/mod/bigbluebuttonbn/view.php?id=2270"><div id="lab">ICS211/<br>DSL<br>(2:00 - 2:55 pm)</div></a>
-                <div id="task">Coding Club Activities</div>
+                <div id="d5p1"></div>
+                <div id="d5p2"></div>
+                <div id="d5p3"></div>
+                <div id="d5p4"></div>
+                <div id="lb">Lunch<br>Break</div>
+                <div id="d5l" class="lab"></div>
+                <div id="task">Coding Club<br>Activities</div>
             </div>
             <div id="part__day">
                 <span id="day">Saturday</span>
