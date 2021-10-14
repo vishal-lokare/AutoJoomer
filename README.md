@@ -58,6 +58,9 @@
       <td>
          <a href="https://github.com/Abhijit25Mishra"><img src="https://avatars.githubusercontent.com/Abhijit25Mishra" alt="Abhijit Mishra" width="35" height="35"></a> 
       </td>
+      <td>
+         <a href="https://github.com/nogi2k2"><img src="https://avatars.githubusercontent.com/nogi2k2" alt="Ashutosh Rai" width="35" height="35"></a> 
+      </td> 
     </tr>
     <tr>
       <td>
@@ -78,6 +81,9 @@
       <td>
         <a href="https://github.com/Abhijit25Mishra">Abhijit25Mishra</a>
       </td>
+      <td>
+        <a href="https://github.com/nogi2k2">nogi2k2</a>
+      </td> 
     </tr>  
   </table>
   </p>
