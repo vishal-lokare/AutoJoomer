@@ -63,19 +63,20 @@ function runningscript() {
 	var millisOfThatClass = []
 
 	var day = now.getDay();
-	if (day != 0 && day != 6) {
 
-		var fetchLink = ""
-		if (branch == "C")
-			fetchLink = "https://autojoomer-45dc2-default-rtdb.asia-southeast1.firebasedatabase.app/links/CSE.json";
-		else
-			fetchLink = "https://autojoomer-45dc2-default-rtdb.asia-southeast1.firebasedatabase.app/links/ECE.json";
+	var fetchLink = ""
+	if (branch == "C")
+		fetchLink = "https://autojoomer-45dc2-default-rtdb.asia-southeast1.firebasedatabase.app/links/CSE.json";
+	else
+		fetchLink = "https://autojoomer-45dc2-default-rtdb.asia-southeast1.firebasedatabase.app/links/ECE.json";
 
-		$.getJSON(fetchLink, function (links) {
-			console.log("Started AutoJoomer");
+	$.getJSON(fetchLink, function (links) {
+		console.log("Started AutoJoomer");
 
-			var thatDay = (links[day])
-			//counts the number of lectures on that day
+		var thatDay = links[day];
+		//counts the number of lectures on that day
+
+		if(thatDay != null) {
 			var nooflec = Object.keys(thatDay).length-1;  
 			for (let i = 1; i <= nooflec; i++) {
 
@@ -112,6 +113,6 @@ function runningscript() {
 						window.open(thatClassLink[i], "_blank");
 				}
 			}
-		});
-	}
+		}
+	});
 }
