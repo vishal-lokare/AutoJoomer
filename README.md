@@ -35,7 +35,7 @@
   <a href="https://github.com/vishal-lokare/AutoJoomer/"><b>AutoJoomer</b></a>
   <br><br><hr>  
   <p align="center">
-  Amazing contributors-<br><br>
+  Maintainers-<br><br>
   </p>
   <p align="center">
   <table align='center' rules='none'>
@@ -55,12 +55,6 @@
       <td>
         <a href="https://github.com/nikhil9302"><img src="https://avatars.githubusercontent.com/u/74824711?v=4" alt="Nikhil Menon" width="35" height="35"></a> 
       </td> 
-      <td>
-         <a href="https://github.com/Abhijit25Mishra"><img src="https://avatars.githubusercontent.com/Abhijit25Mishra" alt="Abhijit Mishra" width="35" height="35"></a> 
-      </td>
-      <td>
-         <a href="https://github.com/nogi2k2"><img src="https://avatars.githubusercontent.com/nogi2k2" alt="Ashutosh Rai" width="35" height="35"></a> 
-      </td> 
     </tr>
     <tr>
       <td>
@@ -78,12 +72,6 @@
       <td>
         <a href="https://github.com/nikhil9302">nikhil9302</a>
       </td>
-      <td>
-        <a href="https://github.com/Abhijit25Mishra">Abhijit25Mishra</a>
-      </td>
-      <td>
-        <a href="https://github.com/nogi2k2">nogi2k2</a>
-      </td> 
     </tr>  
   </table>
   </p>
@@ -91,6 +79,35 @@
   <br>
   <br>
 </p>
+ <p align="center">
+  Amazing contributors-<br><br>
+  </p>
+   <table align='center' rules='none'>
+    <tr align='center'>
+       <td>
+         <a href="https://github.com/Abhijit25Mishra"><img src="https://avatars.githubusercontent.com/Abhijit25Mishra" alt="Abhijit Mishra" width="35" height="35"></a> 
+      </td>
+      <td>
+         <a href="https://github.com/nogi2k2"><img src="https://avatars.githubusercontent.com/nogi2k2" alt="Ashutosh Rai" width="35" height="35"></a> 
+      </td> 
+      <td>
+         <a href="https://github.com/aditivibgyor"><img src="https://avatars.githubusercontent.com/aditivibgyor" alt="Aditi Shukla" width="35" height="35"></a> 
+      </td> 
+  </tr>
+  <tr>
+     <td>
+        <a href="https://github.com/Abhijit25Mishra">Abhijit25Mishra</a>
+      </td>
+      <td>
+        <a href="https://github.com/nogi2k2">nogi2k2</a>
+      </td> 
+     <td>
+        <a href="https://github.com/aditivibgyor">aditivibgyor</a>
+      </td> 
+  </tr>
+  </table>
+  </p>
+    
 
 # AutoJoomer
 AutoJoomer will help you join classes on time (IIIT Kottayam 2020). Works for all classes, including labs; and also coding classes; fetches data from hosted database which can be changed whenever there are changes in the timetable.
