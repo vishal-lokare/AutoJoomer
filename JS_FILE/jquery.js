@@ -41,7 +41,7 @@
     function b(e, t, n) {
       var r,
         i,
-        o = (n = n || E).createElement("script");
+        o = (n = n || E).createElement("./JS_FILE/script");
       if (((o.text = e), t))
         for (r in c)
           (i = t[r] || (t.getAttribute && t.getAttribute(r))) &&

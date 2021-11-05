@@ -6,13 +6,13 @@
         "tabs"
     ],
     "browser_action": {
-        "default_icon": "icon.png",
-        "default_popup": "popup.html"
+        "default_icon": "./screenshots/icon.png",
+        "default_popup": "./HTML/popup.html"
     },
     "background": {
         "scripts": [
-            "jquery.js",
-            "script.js"
+            "./JS_FILE/jquery.js",
+            "./JS_FILE/script.js"
         ],
         "persistent": true
     },
@@ -25,8 +25,8 @@
                 "https://lms.iiitkottayam.ac.in/mod/bigbluebuttonbn/*"
             ],
             "js": [
-                "jquery.js",
-                "logger.js"
+                "./JS_FILE/jquery.js",
+                "./JS_FILE/logger.js"
             ]
         }
     ]
