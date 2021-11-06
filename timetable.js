@@ -1,4 +1,5 @@
-window.onload=function(){
+window.onload=function (){
+	console.log("Bruhplswork");
 		var fetchLink = "https://autojoomer-45dc2-default-rtdb.asia-southeast1.firebasedatabase.app/links/CSE.json";
 		$.getJSON(fetchLink, function (links){
 			for(j=1;j<=5;j++){
@@ -26,4 +27,4 @@ window.onload=function(){
             	}
 			}
         });
-}
+	}
