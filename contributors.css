@@ -1,0 +1,195 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #FAF0E6;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.container{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.container h1{
+    text-transform: uppercase;
+    color: #00b7ff;
+}
+
+.container p{
+    color: #001524;
+    max-width: 400px;
+    text-align: center;
+    margin: 20px;
+}
+
+.members__container{
+    width: 80%;
+    max-width: 800px;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+}
+
+.member{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    height: 220px;
+    margin: 1rem;
+}
+
+/* top card */
+
+.member .top{
+    position: relative;
+    height: 150px;
+}
+
+.top .photo{
+    position: absolute;
+    top: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    height: 150px;
+    width: 150px;
+    border-radius: 50%;
+    position: relative;
+    clip-path: circle(50% at 50% 50%); 
+}
+
+.photo .social{
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    bottom: -50px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: white;
+    width: 100%;
+    height: 40px;
+    transition: all 0.2s ease-in;
+}
+
+.member:hover .social{
+    bottom: 0;
+}
+
+.social a{
+    color: #00b7ff;
+    padding: 6px;
+    font-size: 20px;
+}
+
+.color__top{
+    position: absolute;
+    top: 15px;
+    left: 50%;
+    transform: translateX(-50%);
+    height: 150px;
+    width: 150px;
+    border-radius: 50%;
+    background-color: #ff0000;
+    z-index: -1;
+    transition: all 0.2s ease-in;
+}
+
+.member:hover .color__top{
+    background-color: #00b7ff;
+    top: 10px;
+}
+
+
+/* backgorund pictures */
+#photo1{
+    background: url(imgs/vishal.png);
+    background-position: center;
+    background-size: cover;
+}
+#photo2{
+    background: url(imgs/sumanth.png);
+    background-position: center;
+    background-size: cover;
+}
+#photo3{
+    background: url(imgs/rishabh.jpg);
+    background-position: center;
+    background-size: cover;
+}
+#photo4{
+    background: url(imgs/nikhil.jpg);
+    background-position: center;
+    background-size: cover;
+}
+#photo5{
+    background: url(imgs/abhijit.png);
+    background-position: center;
+    background-size: cover;
+}
+#photo6{
+    background: url(imgs/aditya.png);
+    background-position: center;
+    background-size: cover;
+}
+#photo7{
+    background: url(imgs/ashutosh.png);
+    background-position: center;
+    background-size: cover;
+}
+#photo8{
+    background: url(imgs/aditi.png);
+    background-position: center;
+    background-size: cover;
+}
+
+
+
+.bottom{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    color: #000000;
+}
+
+.bottom__line_maintaner{
+    height: 2px;
+    width: 100%;
+    background-color: #00b7ff;
+    margin: 5px auto;
+    transform: scale(0);
+    transition: all 0.5s ease-in;
+}
+.bottom__line_owner{
+    height: 2px;
+    width: 100%;
+    background-color: #ff0000;
+    margin: 5px auto;
+    transform: scale(0);
+    transition: all 0.5s ease-in;
+}
+.bottom__line_contributor{
+    height: 2px;
+    width: 100%;
+    background-color: #7700ff;
+    margin: 5px auto;
+    transform: scale(0);
+    transition: all 0.5s ease-in;
+}
+
+.member:hover .bottom__line_maintaner{
+    transform: scale(1);
+}
+.member:hover .bottom__line_owner{
+    transform: scale(1);
+}
+.member:hover .bottom__line_contributor{
+    transform: scale(1);
+}

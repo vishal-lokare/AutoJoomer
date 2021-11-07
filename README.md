@@ -35,7 +35,7 @@
   <a href="https://github.com/vishal-lokare/AutoJoomer/"><b>AutoJoomer</b></a>
   <br><br><hr>  
   <p align="center">
-  Amazing contributors-<br><br>
+  Maintainers-<br><br>
   </p>
   <p align="center">
   <table align='center' rules='none'>
@@ -55,12 +55,6 @@
       <td>
         <a href="https://github.com/nikhil9302"><img src="https://avatars.githubusercontent.com/u/74824711?v=4" alt="Nikhil Menon" width="35" height="35"></a> 
       </td> 
-      <td>
-         <a href="https://github.com/Abhijit25Mishra"><img src="https://avatars.githubusercontent.com/Abhijit25Mishra" alt="Abhijit Mishra" width="35" height="35"></a> 
-      </td>
-      <td>
-         <a href="https://github.com/nogi2k2"><img src="https://avatars.githubusercontent.com/nogi2k2" alt="Ashutosh Rai" width="35" height="35"></a> 
-      </td> 
     </tr>
     <tr>
       <td>
@@ -78,12 +72,6 @@
       <td>
         <a href="https://github.com/nikhil9302">nikhil9302</a>
       </td>
-      <td>
-        <a href="https://github.com/Abhijit25Mishra">Abhijit25Mishra</a>
-      </td>
-      <td>
-        <a href="https://github.com/nogi2k2">nogi2k2</a>
-      </td> 
     </tr>  
   </table>
   </p>
@@ -91,6 +79,35 @@
   <br>
   <br>
 </p>
+ <p align="center">
+  Amazing contributors-<br><br>
+  </p>
+   <table align='center' rules='none'>
+    <tr align='center'>
+       <td>
+         <a href="https://github.com/Abhijit25Mishra"><img src="https://avatars.githubusercontent.com/Abhijit25Mishra" alt="Abhijit Mishra" width="35" height="35"></a> 
+      </td>
+      <td>
+         <a href="https://github.com/nogi2k2"><img src="https://avatars.githubusercontent.com/nogi2k2" alt="Ashutosh Rai" width="35" height="35"></a> 
+      </td> 
+      <td>
+         <a href="https://github.com/aditivibgyor"><img src="https://avatars.githubusercontent.com/aditivibgyor" alt="Aditi Shukla" width="35" height="35"></a> 
+      </td> 
+  </tr>
+  <tr>
+     <td>
+        <a href="https://github.com/Abhijit25Mishra">Abhijit25Mishra</a>
+      </td>
+      <td>
+        <a href="https://github.com/nogi2k2">nogi2k2</a>
+      </td> 
+     <td>
+        <a href="https://github.com/aditivibgyor">aditivibgyor</a>
+      </td> 
+  </tr>
+  </table>
+  </p>
+    
 
 # AutoJoomer
 AutoJoomer will help you join classes on time (IIIT Kottayam 2020). Works for all classes, including labs; and also coding classes; fetches data from hosted database which can be changed whenever there are changes in the timetable.
@@ -121,17 +138,17 @@ in the terminal and restart your browser / reload the extension.
 
 OR
 
-repeat the installation process again.
+Repeat the installation process again.
 
 ## How to use
 1. Open your browser.
 2. If values are not set, error will be displayed. In this case, set the values in "AutoJoomer" popup in "Extensions" panel.
-3. In case you open your browser after a class has already started, the extension will automatically open that class as well given that it started in the last hour.
+3. In case you open your browser after a class has already started, the extension will automatically add you to that class as well, as the class started in the last hour.
 4. The extension will stop working when the browser is closed OR the day is over.
-5. And thats it, you are good to go now.
+5. And that's it, now you are good to go!
 
 ## Contributing to this project
-<p>Hop on in our discord server - <a href="https://discord.gg/bfQaqbKPf5"><img src="https://logos-world.net/wp-content/uploads/2020/12/Discord-Logo.png" alt="AutoJoomer Discord" width="40" height="20"></a>, we will be happy to have you on board.</p>
+<p>Hop on in our discord server - <a href="https://discord.gg/spzaqNkNkU"><img src="https://logos-world.net/wp-content/uploads/2020/12/Discord-Logo.png" alt="AutoJoomer Discord" width="40" height="20"></a>, we will be happy to have you on board.</p>
 
 
 ## Future Updates

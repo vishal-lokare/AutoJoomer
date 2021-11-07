@@ -1,4 +1,5 @@
 window.onload = function () {
+    // document.getElementById("reload").addEventListener("click", chrome.runtime.reload());
     document.getElementById("button").addEventListener("click", savevalues);
     document.getElementById("button").innerHTML = "SAVE";
     document.getElementById("button").disabled = false;
@@ -19,6 +20,10 @@ window.onload = function () {
 
     document.getElementById("fpage").addEventListener("click", function(){
 	chrome.tabs.create({url : chrome.runtime.getURL("full_page.html")});
+    });
+
+    document.getElementById("aboutus").addEventListener("click", function(){
+    chrome.tabs.create({url : chrome.runtime.getURL("contributors.html")});
     });
 }
 
