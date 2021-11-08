@@ -20,7 +20,6 @@
 		font-size: small;
 	    }
         #aboutus{
-            align-items: right;
             padding: 1px;
             font-size:small;
         }
@@ -116,17 +115,27 @@
             .slider.round:before {
                 border-radius: 100%;
             }
-            .reload{
-                background-color:deepskyblue;
-                border:2px white;
+            #reload{
+                padding:1px;
+                font-size: small;
+                position:right;
+                float:right;
+                height:59%;
+                width:32%;
+            }
+            .clearfix::after {
+                content: "";
+                clear: both;
+                display: table;
             }
         </style>
     </head>
 
     <body>
+        <form>
         <div>
             <button type="button" id="aboutus">About Us</button>
-            <!-- <button id="reload"><image src="./reload.png" height="5" width="5"></image></button> -->
+            <input type="reset" id="reload" class="clearfix" style="background-color: white; color: black">
             <center><img src="icon.png" height="64" width="64"></center>
             <br>
             <input id="username" type="text" placeholder="Enter LMS username...">
@@ -153,6 +162,7 @@
 		<button type="button" id="fpage">Open Full page</button>
             </center>
         </div>
+    </form>
     </body>
 
 </html>
