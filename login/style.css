@@ -1,0 +1,211 @@
+* {
+	margin: 0;
+	padding: 0;
+	font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
+		sans-serif;
+}
+body {
+	height: 100vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-color: #f5f5f5;
+}
+.container {
+	width: 85%;
+	display: flex;
+	flex-direction: row;
+	box-shadow: 0 0 10px rgba(0, 0, 0, 0.411);
+	border-radius: 15px;
+	-webkit-border-radius: 15px;
+	-moz-border-radius: 15px;
+	-ms-border-radius: 15px;
+	-o-border-radius: 15px;
+}
+.container .left {
+	position: relative;
+	width: 50%;
+	background-color: #f5f5f5;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	padding: 40px;
+	border-radius: 15px 0 0 15px;
+	-webkit-border-radius: 15px 0 0 15px;
+	-moz-border-radius: 15px 0 0 15px;
+	-ms-border-radius: 15px 0 0 15px;
+	-o-border-radius: 15px 0 0 15px;
+}
+.container .left .go-back {
+	text-decoration: none;
+}
+.container .left .go-back i {
+	color: #463a3a;
+	position: absolute;
+	top: 20px;
+	left: 20px;
+	font-size: 25px;
+}
+.container .left h1 {
+	text-align: center;
+	font-size: 3rem;
+	color: #000;
+}
+.container .left form {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	margin-top: 10px;
+}
+.container .left form input {
+	text-align: center;
+	border: 2px solid #8c8987;
+	border-radius: 30px;
+	width: 120%;
+	padding: 10px;
+	margin: 10px;
+	background: 0 0;
+}
+.container .left form input:focus-visible {
+	border-collapse: separate;
+	border: none;
+	border-radius: 0;
+	-webkit-border-radius: 0;
+	-moz-border-radius: 0;
+	-ms-border-radius: 0;
+	-o-border-radius: 0;
+}
+.container .left form a {
+	text-decoration: none;
+	color: #fff;
+	background-color: #4892a5;
+	padding: 15px 35px;
+	border-radius: 30px;
+	margin: 10px;
+	-webkit-border-radius: 30px;
+	-moz-border-radius: 30px;
+	-ms-border-radius: 30px;
+	-o-border-radius: 30px;
+	transition: ease all 0.5s;
+	-webkit-transition: ease all 0.5s;
+	-moz-transition: ease all 0.5s;
+	-ms-transition: ease all 0.5s;
+	-o-transition: ease all 0.5s;
+}
+.container .left form a:hover {
+	cursor: pointer;
+	background-color: #76b0c2;
+	transition: ease all 0.5s;
+}
+.container .left .footer {
+	text-align: center;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	margin: 10px;
+}
+.container .left .footer p {
+	color: #000;
+	font-size: 1rem;
+}
+.container .left .footer .socials {
+	display: flex;
+}
+.container .left .footer .socials a {
+	margin: 10px 5px;
+	width: 30px;
+	height: 30px;
+	background-color: #3aa0ad;
+	border-radius: 50%;
+	-webkit-border-radius: 50%;
+	-moz-border-radius: 50%;
+	-ms-border-radius: 50%;
+	-o-border-radius: 50%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	transition: ease all 0.4s;
+}
+.container .left .footer .socials a:hover {
+	transform: scale(1.2);
+	background: 0 0;
+	-webkit-transform: scale(1.2);
+	-moz-transform: scale(1.2);
+	-ms-transform: scale(1.2);
+	-o-transform: scale(1.2);
+	transition: ease all 0.5s;
+	-webkit-transition: ease all 0.5s;
+	-moz-transition: ease all 0.5s;
+	-ms-transition: ease all 0.5s;
+	-o-transition: ease all 0.5s;
+}
+.container .left .footer .socials a i {
+	color: #fff;
+}
+.container .left .footer .socials a:hover i {
+	color: #5bc2bd;
+	transform: scale(1.2);
+}
+.container .left .footer p a {
+	text-decoration: none;
+}
+.container .right {
+	background-image: url(media/background.jpg);
+	background-position: left;
+	background-size: cover;
+	width: 50%;
+	transition: ease all 0.5s;
+	-webkit-transition: ease all 0.5s;
+	-moz-transition: ease all 0.5s;
+	-ms-transition: ease all 0.5s;
+	-o-transition: ease all 0.5s;
+	border-radius: 0 15px 15px 0;
+	-webkit-border-radius: 0 15px 15px 0;
+	-moz-border-radius: 0 15px 15px 0;
+	-ms-border-radius: 0 15px 15px 0;
+	-o-border-radius: 0 15px 15px 0;
+	display: flex;
+	justify-content: flex-end;
+	align-items: center;
+	flex-direction: column;
+}
+.container:hover .right {
+	background-position: right;
+}
+.container .right .text {
+	padding: 10px;
+	margin: 50px;
+	width: 80%;
+	background-color: rgba(0, 0, 0, 0.349);
+}
+.container .right .text h2 {
+	color: #fff;
+}
+.container .right .text h2::before {
+	content: "--- ";
+	color: #fff;
+}
+.container .right .text p {
+	color: #fff;
+}
+@media screen and (max-width: 660px) {
+	body {
+		background-image: url(media/background.jpg);
+		background-size: cover;
+		background-position: center;
+	}
+	.container .left {
+		width: 100%;
+		border-radius: 20px;
+		-webkit-border-radius: 20px;
+		-moz-border-radius: 20px;
+		-ms-border-radius: 20px;
+		-o-border-radius: 20px;
+	}
+	.container .right {
+		display: none;
+	}
+}
