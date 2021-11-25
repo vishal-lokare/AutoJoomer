@@ -106,7 +106,7 @@
       </td> 
   </tr>
   </table>
-  </p>
+
     
 
 # AutoJoomer
