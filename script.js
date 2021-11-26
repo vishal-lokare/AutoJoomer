@@ -75,12 +75,12 @@ function runningscript() {
 		measurementId: "G-JMRV971YRF"
 	};
 	firebase.initializeApp(firebaseConfig);
-	var db = firebase.database().ref().child('links').child(br)
+	var db = firebase.database().ref().child('links').child(br).child(day)
 	db.on('value', function (links) {
-		console.log("Started AutoJoomer");
+		alert("Started AutoJoomer");
 		for (let i = 0; i < timeouts.length; i++)
 			clearTimeout(timeouts[i]);
-		var thatDay = links.toJSON()[day];
+		var thatDay = links.toJSON();
 		//counts the number of lectures on that day
 		if (thatDay != null) {
 			var nooflec = Object.keys(thatDay).length;
