@@ -12,22 +12,24 @@
     "background": {
         "scripts": [
             "jquery.js",
+            "firebase-app.js",
+            "firebase-database.js",
+            "firebase-analytics.js",
             "script.js"
         ],
         "persistent": true
     },
-    "content_scripts": [
-        {
-            "matches": [
-                "https://lms.iiitkottayam.ac.in/",
-                "https://lms.iiitkottayam.ac.in/login/index.php",
-                "https://lms.iiitkottayam.ac.in/login/index.php/#",
-                "https://lms.iiitkottayam.ac.in/mod/bigbluebuttonbn/*"
-            ],
-            "js": [
-                "jquery.js",
-                "logger.js"
-            ]
-        }
-    ]
+    "content_scripts": [{
+        "matches": [
+            "https://lms.iiitkottayam.ac.in/",
+            "https://lms.iiitkottayam.ac.in/login/index.php",
+            "https://lms.iiitkottayam.ac.in/login/index.php/#",
+            "https://lms.iiitkottayam.ac.in/mod/bigbluebuttonbn/*"
+        ],
+        "js": [
+            "jquery.js",
+            "logger.js"
+        ]
+    }],
+    "content_security_policy": "script-src 'self' https://www.vishal-lokare.co https://www.googleapis.com https://*.firebasedatabase.app; object-src 'self'; connect-src 'self' wss://*.firebasedatabase.app https://www.vishal-lokare.co;"
 }
