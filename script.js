@@ -52,6 +52,7 @@ function runningscript() {
 	console.log("Password = " + password);
 	console.log("Branch = " + branch);
 	console.log("Confirmation Required = " + confirmation);
+
 	var now = new Date();
 	var timeouts = [];
 	var h = [];
@@ -64,6 +65,7 @@ function runningscript() {
 		br = "CSE";
 	else
 		br = "ECE";
+
 	const firebaseConfig = {
 		apiKey: "AIzaSyDbgLGtFvaeR_4n_9UPuvkhcXjsLc0-ERk",
 		authDomain: "autojoomer-45dc2.firebaseapp.com",
@@ -74,10 +76,11 @@ function runningscript() {
 		appId: "1:242655078934:web:9f086736bb92fb6c7ba337",
 		measurementId: "G-JMRV971YRF"
 	};
+
 	firebase.initializeApp(firebaseConfig);
 	var db = firebase.database().ref().child('links').child(br).child(day)
 	db.on('value', function (links) {
-		alert("Started AutoJoomer");
+		console.log("AutoJoomer started");
 		for (let i = 0; i < timeouts.length; i++)
 			clearTimeout(timeouts[i]);
 		var thatDay = links.toJSON();

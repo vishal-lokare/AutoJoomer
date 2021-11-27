@@ -3,8 +3,7 @@
 [![Stargazers][stars-shield]][stars-url]
 [![Issues][issues-shield]][issues-url]
 [![MIT License][license-shield]][license-url]
-[![Generic badge](https://img.shields.io/badge/Version-2.1.2-Green.svg?style=for-the-badge)](https://github.com/vishal-lokare/AutoJoomer)
-
+[![Generic badge](https://img.shields.io/badge/Version-2.2.0-Green.svg?style=for-the-badge)](https://github.com/vishal-lokare/AutoJoomer)
 
 [contributors-shield]: https://img.shields.io/github/contributors/vishal-lokare/AutoJoomer.svg?style=for-the-badge
 [contributors-url]: https://github.com/vishal-lokare/AutoJoomer/graphs/contributors
@@ -23,12 +22,6 @@
 
 ![HTML5](https://img.shields.io/badge/html5-%23E34F26.svg?style=for-the-badge&logo=html5&logoColor=white)
 ![JavaScript](https://img.shields.io/badge/javascript-%23323330.svg?style=for-the-badge&logo=javascript&logoColor=%23F7DF1E)
-
-
-<!-- Possible linkedin page in future -->
-<!-- [![LinkedIn][linkedin-shield]][linkedin-url] -->
-<!-- [linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=for-the-badge&logo=linkedin&colorB=555
-[linkedin-url]: https://linkedin.com/in/ -->
 
 <p align="center">
   <a href="https://github.com/vishal-lokare/AutoJoomer/"><img src="https://github.com/vishal-lokare/AutoJoomer/blob/main/icon.png?raw=true" alt="AutoJoomer" width="100" height="100"></a><br>
@@ -152,4 +145,5 @@ Repeat the installation process again.
 
 
 ## Future Updates
-Functionality for extra classes not in layout of original timetable.
+-> Search a student's name with roll number or vice-versa.
+
