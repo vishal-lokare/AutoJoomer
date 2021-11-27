@@ -1,158 +1,154 @@
 <!DOCTYPE html>
 <html lang="en">
 
-    <head>
-        <title>AutoJoomer</title>
-	<script src="jquery.js"></script>
-        <script type="text/javascript" src="popup.js"></script>
-        <style>
-            body {
-                background-color: black;
-            }
-
-            button {
-                padding: 5px;
-                font-size: large;
-            }
-
-	    #fpage {
-		padding: 1px;
-		font-size: small;
-	    }
-        #aboutus{
-            align-items: right;
-            padding: 1px;
-            font-size:small;
+<head>
+    <title>AutoJoomer</title>
+    <script src="jquery.js"></script>
+    <script type="text/javascript" src="popup.js"></script>
+    <style>
+        body {
+            background-color: black;
         }
 
-            input {
-                color: white;
-                background: none;
-                border: 0;
-                border-bottom: 1px solid white;
-                padding: 10px;
-            }
+        button {
+            padding: 5px;
+            font-size: large;
+        }
 
-            input:focus {
-                outline: none;
-            }
+        #fpage {
+            padding: 1px;
+            font-size: small;
+        }
 
-            select {
-                color: white;
-                background: none;
-                border: 0;
-            }
+        #aboutus {
+            align-items: right;
+            padding: 1px;
+            font-size: small;
+        }
 
-            select:focus {
-                outline: 0;
-            }
+        input {
+            color: white;
+            background: none;
+            border: 0;
+            border-bottom: 1px solid white;
+            padding: 10px;
+        }
 
-            option {
-                color: white;
-                background: black;
-            }
+        input:focus {
+            outline: none;
+        }
 
-            label {
-                color: white;
-                font-size: 110%;
-            }
+        select {
+            color: white;
+            background: none;
+            border: 0;
+        }
 
-            .switch {
-                position: relative;
-                display: inline-block;
-                width: 30px;
-                height: 17px;
-            }
+        select:focus {
+            outline: 0;
+        }
 
-            .switch input {
-                opacity: 0;
-                width: 0;
-                height: 0;
-            }
+        option {
+            color: white;
+            background: black;
+        }
 
-            .slider {
-                position: absolute;
-                cursor: pointer;
-                top: 0;
-                left: 0;
-                right: 0;
-                bottom: 0;
-                background-color: #ccc;
-                -webkit-transition: .4s;
-                transition: .4s;
-            }
+        label {
+            color: white;
+            font-size: 110%;
+        }
 
-            .slider:before {
-                position: absolute;
-                content: "";
-                height: 13px;
-                width: 13px;
-                left: 2px;
-                bottom: 2px;
-                background-color: white;
-                -webkit-transition: .4s;
-                transition: .4s;
-            }
+        .switch {
+            position: relative;
+            display: inline-block;
+            width: 30px;
+            height: 17px;
+        }
 
-            input:checked+.slider {
-                background-color: #2196F3;
-            }
+        .switch input {
+            opacity: 0;
+            width: 0;
+            height: 0;
+        }
 
-            input:focus+.slider {
-                box-shadow: 0 0 1px #2196F3;
-            }
+        .slider {
+            position: absolute;
+            cursor: pointer;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background-color: #ccc;
+            -webkit-transition: .4s;
+            transition: .4s;
+        }
 
-            input:checked+.slider:before {
-                -webkit-transform: translateX(13px);
-                -ms-transform: translateX(13px);
-                transform: translateX(13px);
-            }
+        .slider:before {
+            position: absolute;
+            content: "";
+            height: 13px;
+            width: 13px;
+            left: 2px;
+            bottom: 2px;
+            background-color: white;
+            -webkit-transition: .4s;
+            transition: .4s;
+        }
 
-            /* Rounded sliders */
-            .slider.round {
-                border-radius: 34px;
-            }
+        input:checked+.slider {
+            background-color: #2196F3;
+        }
 
-            .slider.round:before {
-                border-radius: 100%;
-            }
-            .reload{
-                background-color:deepskyblue;
-                border:2px white;
-            }
-        </style>
-    </head>
+        input:focus+.slider {
+            box-shadow: 0 0 1px #2196F3;
+        }
 
-    <body>
-        <div>
-            <button type="button" id="aboutus">About Us</button>
-            <!-- <button id="reload"><image src="./reload.png" height="5" width="5"></image></button> -->
-            <center><img src="icon.png" height="64" width="64"></center>
-            <br>
-            <input id="username" type="text" placeholder="Enter LMS username...">
+        input:checked+.slider:before {
+            -webkit-transform: translateX(13px);
+            -ms-transform: translateX(13px);
+            transform: translateX(13px);
+        }
+
+        /* Rounded sliders */
+        .slider.round {
+            border-radius: 34px;
+        }
+
+        .slider.round:before {
+            border-radius: 100%;
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        <button type="button" id="aboutus">About Us</button>
+        <center><img src="icon.png" height="64" width="64"></center>
+        <br>
+        <input id="username" type="text" placeholder="Enter LMS username...">
+        <br><br>
+        <input id="password" type="password" placeholder="Enter LMS password...">
+        <br><br>
+        <center>
+            <select name="branch" id="branch">
+                <option value="null" style="color: grey;" selected disabled>Select Branch</option>
+                <option value="C">CSE</option>
+                <option value="E">ECE</option>
+            </select>
             <br><br>
-            <input id="password" type="password" placeholder="Enter LMS password...">
+            <label for="confirmation">Confirmation Before Joining Classes ? </label>
+
+            <!-- <input type="checkbox" id="confirmation" name="confirmation" value="yes" checked> -->
+
+            <label class="switch">
+                <input type="checkbox" id='confirmation' checked>
+                <span class="slider round"></span>
+            </label>
             <br><br>
-            <center>
-                <select name="branch" id="branch">
-                    <option value="null" style="color: grey;" selected disabled>Select Branch</option>
-                    <option value="C">CSE</option>
-                    <option value="E">ECE</option>
-                </select>
-                <br><br>
-                <label for="confirmation">Confirmation Before Joining Classes ? </label>
-
-                <!-- <input type="checkbox" id="confirmation" name="confirmation" value="yes" checked> -->
-
-                <label class="switch">
-                    <input type="checkbox" id='confirmation' checked>
-                    <span class="slider round"></span>
-                </label>
-                <br><br>
-                <button type="button" id="button">SAVE</button> <br><br>
-		<button type="button" id="fpage">Open Full page</button>
-            </center>
-        </div>
-    </body>
+            <button type="button" id="button">SAVE</button> <br><br>
+            <button type="button" id="fpage">Open Full page</button>
+        </center>
+    </div>
+</body>
 
 </html>

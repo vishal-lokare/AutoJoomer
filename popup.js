@@ -1,29 +1,32 @@
 window.onload = function () {
-    // document.getElementById("reload").addEventListener("click", chrome.runtime.reload());
     document.getElementById("button").addEventListener("click", savevalues);
     document.getElementById("button").innerHTML = "SAVE";
     document.getElementById("button").disabled = false;
 
     ghManifestLink = 'https://www.vishal-lokare.co/AutoJoomer/manifest.json'
-    $.getJSON(ghManifestLink, function(links) {
+    $.getJSON(ghManifestLink, function (links) {
         var thisVersion = chrome.runtime.getManifest().version;
-        if(links['version'] != thisVersion){
-	    var newUpdate='none';
-	    $.getJSON('https://www.vishal-lokare.co/AutoJoomer/version_updates.json', function(ver){
-		newUpdate = ver[links['version']];
-            if(window.confirm('New update : '+links['version']+' available.\nCurrent version : '+thisVersion+'\nPlease update from GH repo.\n\nNew in this update :\n'+newUpdate)){
-                window.open('https://github.com/vishal-lokare/AutoJoomer', "_blank");
-            }
-	    });
+        if (links['version'] != thisVersion) {
+            var newUpdate = 'none';
+            $.getJSON('https://www.vishal-lokare.co/AutoJoomer/version_updates.json', function (ver) {
+                newUpdate = ver[links['version']];
+                if (window.confirm('New update : ' + links['version'] + ' available.\nCurrent version : ' + thisVersion + '\nPlease update from GH repo.\n\nNew in this update :\n' + newUpdate)) {
+                    window.open('https://github.com/vishal-lokare/AutoJoomer', "_blank");
+                }
+            });
         }
     });
 
-    document.getElementById("fpage").addEventListener("click", function(){
-	chrome.tabs.create({url : chrome.runtime.getURL("full_page.html")});
+    document.getElementById("fpage").addEventListener("click", function () {
+        chrome.tabs.create({
+            url: chrome.runtime.getURL("full_page.html")
+        });
     });
 
-    document.getElementById("aboutus").addEventListener("click", function(){
-    chrome.tabs.create({url : chrome.runtime.getURL("contributors.html")});
+    document.getElementById("aboutus").addEventListener("click", function () {
+        chrome.tabs.create({
+            url: chrome.runtime.getURL("contributors.html")
+        });
     });
 }
 
