@@ -28,8 +28,9 @@
         "matches": [
             "https://lms.iiitkottayam.ac.in/",
             "https://lms.iiitkottayam.ac.in/login/index.php",
-            "https://lms.iiitkottayam.ac.in/login/index.php/#",
-            "https://lms.iiitkottayam.ac.in/mod/bigbluebuttonbn/*"
+            "https://lms.iiitkottayam.ac.in/login/index.php/*",
+            "https://lms.iiitkottayam.ac.in/mod/bigbluebuttonbn/*",
+            "https://lmsone.iiitkottayam.ac.in/*"
         ],
         "js": [
             "jquery.js",

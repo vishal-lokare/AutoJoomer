@@ -1,9 +1,12 @@
 var username = JSON.parse(window.localStorage.getItem("AutoJoomerUsername"));
 var password = JSON.parse(window.localStorage.getItem("AutoJoomerPassword"));
+var year = JSON.parse(window.localStorage.getItem("AutoJoomerYear"));
 var branch = JSON.parse(window.localStorage.getItem("AutoJoomerBranch"));
+var batch = JSON.parse(window.localStorage.getItem("AutoJoomerBatch"));
 var confirmation = JSON.parse(window.localStorage.getItem("AutoJoomerConfirmation"));
 
-if ((branch == null) || (branch == "null") || (username == null) || (password == null) || (username == "null") || (password == "null") || (username == "") || (password == "") || (confirmation == null)) {
+// if ((year = "null") || (batch == "null") || (branch == "null") || (username == null) || (password == null) || (username == "null") || (password == "null") || (username == "") || (password == "") || (confirmation == null)) {
+if (year == "null" || branch == "null" || batch == "null" || username == "" || password == "" || confirmation == null) {
 	alert("Some values have not been set. Navigate to the extensions panel in your browser, choose \"AutoJoomer\",  save your values and restart your browser for changes to take effect.");
 } else {
 	runningscript();
@@ -65,6 +68,8 @@ function runningscript() {
 		br = "CSE";
 	else
 		br = "ECE";
+	var dbReference = year + br + batch;
+	console.log(dbReference);
 
 	const firebaseConfig = {
 		apiKey: "AIzaSyDbgLGtFvaeR_4n_9UPuvkhcXjsLc0-ERk",
@@ -78,22 +83,28 @@ function runningscript() {
 	};
 
 	firebase.initializeApp(firebaseConfig);
-	var db = firebase.database().ref().child('links').child(br).child(day)
+	var db = firebase.database().ref().child('links').child(dbReference);
 	db.on('value', function (links) {
 		console.log("AutoJoomer started");
+		if (links.val() == null) {
+			window.alert("No classes found for today.");
+			return;
+		}
 		for (let i = 0; i < timeouts.length; i++)
 			clearTimeout(timeouts[i]);
-		var thatDay = links.toJSON();
+		var thatDay = links.toJSON()[day];
+		console.log(thatDay);
 		//counts the number of lectures on that day
 		if (thatDay != null) {
 			var nooflec = Object.keys(thatDay).length;
 			for (let i = 1; i < nooflec; i++) {
 				var thatClass = thatDay[i];
+				console.log(thatClass);
 				thatClassName[i] = thatClass['class_name'];
 				thatClassLink[i] = thatClass['class_link'];
 				//parseint to convert string to integer
-				h[i] = String(thatClass['class_time'][0]) + String(thatClass['class_time'][1]);
-				m[i] = String(thatClass['class_time'][2]) + String(thatClass['class_time'][3]);
+				h[i] = thatClass['class_time'].substring(0, 2);
+				m[i] = thatClass['class_time'].substring(2, 4);
 				//to check if the class name or link is empty				
 				if ((thatClassName[i] == '') || (thatClassLink[i] == '')) continue;
 				millisOfThatClass[i] = new Date(now.getFullYear(), now.getMonth(), now.getDate(), parseInt(h[i]), parseInt(m[i]), 0, 0) - now;
