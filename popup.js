@@ -4,12 +4,6 @@ var password;
 var branch;
 var confirmation;
 window.onload = function () {
-    username = document.getElementById("username");
-    password = document.getElementById("password");
-    year = document.getElementById("year");
-    branch = document.getElementById("branch");
-    batch = document.getElementById("batch");
-    confirmation = document.getElementById("confirmation");
     populator();
     document.getElementById("button").addEventListener("click", saveValues);
     document.getElementById("button").innerHTML = "SAVE";
