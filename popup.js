@@ -1,5 +1,15 @@
+//global variables
+var username;
+var password;
+var branch;
+var confirmation;
 window.onload = function () {
-    document.getElementById("button").addEventListener("click", savevalues);
+    username = document.getElementById("username");
+    password = document.getElementById("password");
+    branch = document.getElementById("branch");
+    confirmation = document.getElementById("confirmation");
+    populator();
+    document.getElementById("button").addEventListener("click", saveValues);
     document.getElementById("button").innerHTML = "SAVE";
     document.getElementById("button").disabled = false;
 
@@ -30,20 +40,41 @@ window.onload = function () {
     });
 }
 
-function savevalues() {
+function saveValues() {
+    username = document.getElementById("username");
+    password = document.getElementById("password");
+    branch = document.getElementById("branch");
+    confirmation = document.getElementById("confirmation");
     document.getElementById("button").style.color = "white";
     document.getElementById("button").innerHTML = "RESTART BROWSER";
     document.getElementById("button").disabled = true;
-    var username = document.getElementById("username").value;
-    var password = document.getElementById("password").value;
-    var branch = document.getElementById("branch").value;
-    var confirmation;
+    var uname = username.value;
+    var pass = password.value;
+    var bran = branch.value;
     if (document.getElementById("confirmation").checked)
-        confirmation = 1;
+        conf = 1;
     else
-        confirmation = 0;
-    window.localStorage.setItem("AutoJoomerUsername", JSON.stringify(username));
-    window.localStorage.setItem("AutoJoomerPassword", JSON.stringify(password));
-    window.localStorage.setItem("AutoJoomerBranch", JSON.stringify(branch));
-    window.localStorage.setItem("AutoJoomerConfirmation", JSON.stringify(confirmation));
+        conf = 0;
+    window.localStorage.setItem("AutoJoomerUsername", JSON.stringify(uname));
+    window.localStorage.setItem("AutoJoomerPassword", JSON.stringify(pass));
+    window.localStorage.setItem("AutoJoomerBranch", JSON.stringify(bran));
+    window.localStorage.setItem("AutoJoomerConfirmation", JSON.stringify(conf));
+}
+
+function populator() {
+    username = document.getElementById("username");
+    password = document.getElementById("password");
+    branch = document.getElementById("branch");
+    confirmation = document.getElementById("confirmation");
+    //setting the values
+    if (JSON.parse(window.localStorage.getItem("AutoJoomerUsername")) != null)
+        username.value = JSON.parse(window.localStorage.getItem("AutoJoomerUsername"));
+    if (JSON.parse(window.localStorage.getItem("AutoJoomerPassword")) != null)
+        password.value = JSON.parse(window.localStorage.getItem("AutoJoomerPassword"));
+    if (JSON.parse(window.localStorage.getItem("AutoJoomerBranch")) != null)
+        branch.value = JSON.parse(window.localStorage.getItem("AutoJoomerBranch"));
+    if (JSON.parse(window.localStorage.getItem("AutoJoomerConfirmation")) == 1)
+        confirmation.checked = true;
+    if (JSON.parse(window.localStorage.getItem("AutoJoomerConfirmation")) == 0)
+        confirmation.checked = false;
 }

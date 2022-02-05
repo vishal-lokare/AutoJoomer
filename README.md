@@ -3,7 +3,7 @@
 [![Stargazers][stars-shield]][stars-url]
 [![Issues][issues-shield]][issues-url]
 [![MIT License][license-shield]][license-url]
-[![Generic badge](https://img.shields.io/badge/Version-2.2.0-Green.svg?style=for-the-badge)](https://github.com/vishal-lokare/AutoJoomer)
+[![Generic badge](https://img.shields.io/badge/Version-2.2.1-Green.svg?style=for-the-badge)](https://github.com/vishal-lokare/AutoJoomer)
 
 [contributors-shield]: https://img.shields.io/github/contributors/vishal-lokare/AutoJoomer.svg?style=for-the-badge
 [contributors-url]: https://github.com/vishal-lokare/AutoJoomer/graphs/contributors

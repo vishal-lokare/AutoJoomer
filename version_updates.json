@@ -3,5 +3,6 @@
 	"2.1.0": "Added full page time table.",
 	"2.1.1": "Added support for extra classes and all other club meets/events",
 	"2.1.2": "Added an About Us page",
-	"2.2.0": "Automatically updates in realtime on changes to database"
+	"2.2.0": "Automatically updates in realtime on changes to database",
+	"2.2.1": "Automatic values fill in popup"
 }
