@@ -4,14 +4,24 @@ var password;
 var branch;
 var confirmation;
 window.onload = function () {
-    username = document.getElementById("username");
-    password = document.getElementById("password");
-    branch = document.getElementById("branch");
-    confirmation = document.getElementById("confirmation");
     populator();
     document.getElementById("button").addEventListener("click", saveValues);
     document.getElementById("button").innerHTML = "SAVE";
     document.getElementById("button").disabled = false;
+    branch.disabled = true;
+    batch.disabled = true;
+    document.getElementById("year").addEventListener("change", function () {
+        branch.getElementsByTagName("option")[1].selected = true;
+        batch.getElementsByTagName("option")[0].selected = true;
+        if (year.value == "2019") {
+            branch.disabled = true;
+            batch.disabled = true;
+        } else {
+            batch.getElementsByTagName("option")[1].selected = true;
+            branch.disabled = false;
+            batch.disabled = false;
+        }
+    });
 
     ghManifestLink = 'https://www.vishal-lokare.co/AutoJoomer/manifest.json'
     $.getJSON(ghManifestLink, function (links) {
@@ -25,12 +35,6 @@ window.onload = function () {
                 }
             });
         }
-    });
-
-    document.getElementById("fpage").addEventListener("click", function () {
-        chrome.tabs.create({
-            url: chrome.runtime.getURL("full_page.html")
-        });
     });
 
     document.getElementById("aboutus").addEventListener("click", function () {
@@ -50,6 +54,9 @@ function saveValues() {
     document.getElementById("button").disabled = true;
     var uname = username.value;
     var pass = password.value;
+    var uyear = document.getElementById("year").value;
+    var ubatch = document.getElementById("batch").value;
+
     var bran = branch.value;
     if (document.getElementById("confirmation").checked)
         conf = 1;
@@ -57,22 +64,35 @@ function saveValues() {
         conf = 0;
     window.localStorage.setItem("AutoJoomerUsername", JSON.stringify(uname));
     window.localStorage.setItem("AutoJoomerPassword", JSON.stringify(pass));
+    window.localStorage.setItem("AutoJoomerYear", JSON.stringify(uyear));
     window.localStorage.setItem("AutoJoomerBranch", JSON.stringify(bran));
+    window.localStorage.setItem("AutoJoomerBatch", JSON.stringify(ubatch));
     window.localStorage.setItem("AutoJoomerConfirmation", JSON.stringify(conf));
 }
 
 function populator() {
     username = document.getElementById("username");
     password = document.getElementById("password");
+    year = document.getElementById("year");
     branch = document.getElementById("branch");
+    batch = document.getElementById("batch");
     confirmation = document.getElementById("confirmation");
     //setting the values
     if (JSON.parse(window.localStorage.getItem("AutoJoomerUsername")) != null)
         username.value = JSON.parse(window.localStorage.getItem("AutoJoomerUsername"));
     if (JSON.parse(window.localStorage.getItem("AutoJoomerPassword")) != null)
         password.value = JSON.parse(window.localStorage.getItem("AutoJoomerPassword"));
+    if (JSON.parse(window.localStorage.getItem("AutoJoomerYear")) != null)
+        year.value = JSON.parse(window.localStorage.getItem("AutoJoomerYear"));
+    if (year.value == "2019") {
+        branch.disabled = true;
+        batch.disabled = true;
+    }
     if (JSON.parse(window.localStorage.getItem("AutoJoomerBranch")) != null)
         branch.value = JSON.parse(window.localStorage.getItem("AutoJoomerBranch"));
+    if (JSON.parse(window.localStorage.getItem("AutoJoomerBatch")) != null)
+        batch.value = JSON.parse(window.localStorage.getItem("AutoJoomerBatch"));
+
     if (JSON.parse(window.localStorage.getItem("AutoJoomerConfirmation")) == 1)
         confirmation.checked = true;
     if (JSON.parse(window.localStorage.getItem("AutoJoomerConfirmation")) == 0)
