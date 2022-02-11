@@ -42,6 +42,7 @@
             color: white;
             background: none;
             border: 0;
+            width: fit-content;
         }
 
         select:focus {
@@ -55,7 +56,7 @@
 
         label {
             color: white;
-            font-size: 110%;
+            font-size: 100%;
         }
 
         .switch {
@@ -130,10 +131,21 @@
         <input id="password" type="password" placeholder="Enter LMS password...">
         <br><br>
         <center>
+            <select name="year" id="year">
+                <option value="" style="color: grey;" selected disabled>Year</option>
+                <option value="2019">2019</option>
+                <option value="2020">2020</option>
+                <option value="2021">2021</option>
+            </select>
             <select name="branch" id="branch">
-                <option value="null" style="color: grey;" selected disabled>Select Branch</option>
+                <option value="" style="color: grey;" selected disabled>Branch</option>
                 <option value="C">CSE</option>
                 <option value="E">ECE</option>
+            </select>
+            <select name="batch" id="batch">
+                <option value="" style="color: grey;" selected disabled>Batch</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
             </select>
             <br><br>
             <label for="confirmation">Confirmation Before Joining Classes ? </label>
@@ -146,7 +158,6 @@
             </label>
             <br><br>
             <button type="button" id="button">SAVE</button> <br><br>
-            <button type="button" id="fpage">Open Full page</button>
         </center>
     </div>
 </body>
