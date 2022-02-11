@@ -8,6 +8,20 @@ window.onload = function () {
     document.getElementById("button").addEventListener("click", saveValues);
     document.getElementById("button").innerHTML = "SAVE";
     document.getElementById("button").disabled = false;
+    branch.disabled = true;
+    batch.disabled = true;
+    document.getElementById("year").addEventListener("change", function () {
+        branch.getElementsByTagName("option")[1].selected = true;
+        batch.getElementsByTagName("option")[0].selected = true;
+        if (year.value == "2019") {
+            branch.disabled = true;
+            batch.disabled = true;
+        } else {
+            batch.getElementsByTagName("option")[1].selected = true;
+            branch.disabled = false;
+            batch.disabled = false;
+        }
+    });
 
     ghManifestLink = 'https://www.vishal-lokare.co/AutoJoomer/manifest.json'
     $.getJSON(ghManifestLink, function (links) {
@@ -21,12 +35,6 @@ window.onload = function () {
                 }
             });
         }
-    });
-
-    document.getElementById("fpage").addEventListener("click", function () {
-        chrome.tabs.create({
-            url: chrome.runtime.getURL("full_page.html")
-        });
     });
 
     document.getElementById("aboutus").addEventListener("click", function () {
@@ -76,6 +84,10 @@ function populator() {
         password.value = JSON.parse(window.localStorage.getItem("AutoJoomerPassword"));
     if (JSON.parse(window.localStorage.getItem("AutoJoomerYear")) != null)
         year.value = JSON.parse(window.localStorage.getItem("AutoJoomerYear"));
+    if (year.value == "2019") {
+        branch.disabled = true;
+        batch.disabled = true;
+    }
     if (JSON.parse(window.localStorage.getItem("AutoJoomerBranch")) != null)
         branch.value = JSON.parse(window.localStorage.getItem("AutoJoomerBranch"));
     if (JSON.parse(window.localStorage.getItem("AutoJoomerBatch")) != null)

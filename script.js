@@ -5,9 +5,11 @@ var branch = JSON.parse(window.localStorage.getItem("AutoJoomerBranch"));
 var batch = JSON.parse(window.localStorage.getItem("AutoJoomerBatch"));
 var confirmation = JSON.parse(window.localStorage.getItem("AutoJoomerConfirmation"));
 
-// if ((year = "null") || (batch == "null") || (branch == "null") || (username == null) || (password == null) || (username == "null") || (password == "null") || (username == "") || (password == "") || (confirmation == null)) {
-if (year == "null" || branch == "null" || batch == "null" || username == "" || password == "" || confirmation == null) {
-	alert("Some values have not been set. Navigate to the extensions panel in your browser, choose \"AutoJoomer\",  save your values and restart your browser for changes to take effect.");
+if (year == "" || branch == "" || batch == "" || username == "" || password == "" || confirmation == null) {
+	if (year == "2019")
+		runningscript();
+	else
+		alert("Some values have not been set. Navigate to the extensions panel in your browser, choose \"AutoJoomer\",  save your values and restart your browser for changes to take effect.");
 } else {
 	runningscript();
 }
@@ -69,7 +71,7 @@ function runningscript() {
 	else
 		br = "ECE";
 	var dbReference = year + br + batch;
-	console.log(dbReference);
+	// console.log(dbReference);
 
 	const firebaseConfig = {
 		apiKey: "AIzaSyDbgLGtFvaeR_4n_9UPuvkhcXjsLc0-ERk",
@@ -83,33 +85,37 @@ function runningscript() {
 	};
 
 	firebase.initializeApp(firebaseConfig);
-	var db = firebase.database().ref().child('links').child(dbReference);
+	var db = firebase.database().ref().child('links').child(dbReference).child(day);
 	db.on('value', function (links) {
 		console.log("AutoJoomer started");
-		if (links.val() == null) {
+		if (links.val() == null || links.val().length == 1) {
 			window.alert("No classes found for today.");
 			return;
 		}
 		for (let i = 0; i < timeouts.length; i++)
 			clearTimeout(timeouts[i]);
-		var thatDay = links.toJSON()[day];
-		console.log(thatDay);
-		//counts the number of lectures on that day
+		var thatDay = links.toJSON();
 		if (thatDay != null) {
+			//counts the number of lectures on that day
 			var nooflec = Object.keys(thatDay).length;
-			for (let i = 1; i < nooflec; i++) {
+			for (let i = 1, j = 0; i < nooflec; i++, j++) {
+				let now = new Date();
 				var thatClass = thatDay[i];
-				console.log(thatClass);
+
 				thatClassName[i] = thatClass['class_name'];
 				thatClassLink[i] = thatClass['class_link'];
+				//to check if the class name, link, time is/are empty
+				if (thatClassName[i] == '' || thatClassLink[i] == '' || thatClass['class_time'] == '') continue;
+				if (!thatClassName[i] || !thatClassLink[i] || !thatClass['class_time']) continue;
+
 				//parseint to convert string to integer
 				h[i] = thatClass['class_time'].substring(0, 2);
 				m[i] = thatClass['class_time'].substring(2, 4);
-				//to check if the class name or link is empty				
-				if ((thatClassName[i] == '') || (thatClassLink[i] == '')) continue;
+				console.log(thatClassName[i] + " " + thatClassLink[i].substring(thatClassLink[i].length - 22, thatClassLink[i].length - 18) + " " + h[i] + " " + m[i]);
+
 				millisOfThatClass[i] = new Date(now.getFullYear(), now.getMonth(), now.getDate(), parseInt(h[i]), parseInt(m[i]), 0, 0) - now;
 				if (millisOfThatClass[i] > 0) {
-					timeouts[i] = setTimeout(function () {
+					timeouts[j] = setTimeout(function () {
 						if (confirmation == 1) {
 							if (window.confirm('Now the class is ' + thatClassName[i] + ' at ' + h[i] + ":" + m[i]))
 								window.open(thatClassLink[i], "_blank");
