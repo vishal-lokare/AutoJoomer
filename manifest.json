@@ -2,6 +2,11 @@
     "name": "AutoJoomer",
     "version": "2.2.1",
     "manifest_version": 2,
+    "icons": {
+        "16": "icon.png",
+        "48": "icon.png",
+        "128": "icon.png"
+    },
     "permissions": [
         "tabs"
     ],
@@ -23,8 +28,9 @@
         "matches": [
             "https://lms.iiitkottayam.ac.in/",
             "https://lms.iiitkottayam.ac.in/login/index.php",
-            "https://lms.iiitkottayam.ac.in/login/index.php/#",
-            "https://lms.iiitkottayam.ac.in/mod/bigbluebuttonbn/*"
+            "https://lms.iiitkottayam.ac.in/login/index.php/*",
+            "https://lms.iiitkottayam.ac.in/mod/bigbluebuttonbn/*",
+            "https://lmsone.iiitkottayam.ac.in/*"
         ],
         "js": [
             "jquery.js",
