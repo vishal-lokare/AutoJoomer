@@ -1,8 +1,7 @@
 # Description
 
 Please include a summary of the change and which issue is fixed. Please also include relevant motivation and context. List any dependencies that are required for this change.
-
-Fixes # (issue)
+### Any PRs should be done to the **update** branch only
 
 ## Type of change
 
