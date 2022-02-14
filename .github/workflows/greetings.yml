@@ -13,4 +13,4 @@ jobs:
       with:
         repo-token: ${{ secrets.GITHUB_TOKEN }}
         issue-message: 'Thanks for your great evaluation in making up this issue for our AutoJoomer extension. Kindly allow us some time, while code maintainers or reviewers see your addressed issue.'
-        pr-message: 'Yay!!! You just made your first pull request for AutoJoomer. Thanks for taking time in doing so. Hope you love the project, would love to see more PRs from you. Kindly wait for one of the reviewer to check out the code and its addressed bug or feature.'
+        pr-message: 'Yay!!! You just made your first pull request for AutoJoomer. Thanks for taking time in doing so. Hope you love the project, would love to see more PRs from you. Kindly wait for one of the reviewer to check out the code and address the bug or feature.'
