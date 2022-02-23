@@ -150,8 +150,8 @@ Repeat the installation process again.
 2. If values are not set, error will be displayed. In this case, set the values in "AutoJoomer" popup in "Extensions" panel.
 3. In case you open your browser after a class has already started, the extension will automatically add you to that class as well, as the class started in the last hour. If "confirmation before joining class" is selected, the extension will show an alert as shown below:
 <p align='center'><img src="screenshots/class_alert.PNG" width='779' height='374'/></p>
-4. The extension will stop working when the browser is closed OR the day is over.
-5. And that's it, now you are good to go!
+<p>4. The extension will stop working when the browser is closed OR the day is over.</p>
+<p>5. And that's it, now you are good to go!</p>
 
 ## Tech Stack Used
 *	HTML
