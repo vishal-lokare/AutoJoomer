@@ -3,7 +3,7 @@
 [![Stargazers][stars-shield]][stars-url]
 [![Issues][issues-shield]][issues-url]
 [![MIT License][license-shield]][license-url]
-[![Generic badge](https://img.shields.io/badge/Version-2.2.1-Green.svg?style=for-the-badge)](https://github.com/vishal-lokare/AutoJoomer)
+[![Generic badge](https://img.shields.io/badge/Version-2.3-brightgreen?style=for-the-badge&logo=appveyor)](https://github.com/vishal-lokare/AutoJoomer)
 
 [contributors-shield]: https://img.shields.io/github/contributors/vishal-lokare/AutoJoomer.svg?style=for-the-badge
 [contributors-url]: https://github.com/vishal-lokare/AutoJoomer/graphs/contributors
@@ -22,6 +22,7 @@
 
 ![HTML5](https://img.shields.io/badge/html5-%23E34F26.svg?style=for-the-badge&logo=html5&logoColor=white)
 ![JavaScript](https://img.shields.io/badge/javascript-%23323330.svg?style=for-the-badge&logo=javascript&logoColor=%23F7DF1E)
+![Firebase](https://camo.githubusercontent.com/ea0283d34b92d1905070c14ffe1c48412fef80c44232679c0657db176708403f/68747470733a2f2f696d672e736869656c64732e696f2f62616467652f46697265626173652d79656c6c6f773f7374796c653d666f722d7468652d6261646765266c6f676f3d666972656261736526)
 
 <p align="center">
   <a href="https://github.com/vishal-lokare/AutoJoomer/"><img src="https://github.com/vishal-lokare/AutoJoomer/blob/main/icon.png?raw=true" alt="AutoJoomer" width="100" height="100"></a><br>
@@ -103,8 +104,13 @@
     
 
 # AutoJoomer
-AutoJoomer will help you join classes on time (IIIT Kottayam 2020). Works for all classes, including labs; and also coding classes; fetches data from hosted database which can be changed whenever there are changes in the timetable.
+AutoJoomer is an Open Source browser extension that automatically joins classes for you on time (IIIT Kottayam 2022). Classes include lab and coding classes; Data fetched from hosted database, updated according to timetable. Currently available as a Chrome extension.
 
+## Getting Started
+Three-pointers to get you started:
+* <p><a href="https://github.com/vishal-lokare/AutoJoomer/blob/main/CONTRIBUTING.md">Contributing.md</a></p>
+* <p><a href="https://github.com/vishal-lokare/AutoJoomer/blob/main/LICENSE">License</a></p>
+* <p><a href="https://github.com/vishal-lokare/AutoJoomer/tree/main/screenshots">Screenshots</a></p>
 
 
 ## Installation
@@ -136,14 +142,32 @@ Repeat the installation process again.
 ## How to use
 1. Open your browser.
 2. If values are not set, error will be displayed. In this case, set the values in "AutoJoomer" popup in "Extensions" panel.
-3. In case you open your browser after a class has already started, the extension will automatically add you to that class as well, as the class started in the last hour.
-4. The extension will stop working when the browser is closed OR the day is over.
-5. And that's it, now you are good to go!
+3. In case you open your browser after a class has already started, the extension will automatically add you to that class as well, as the class started in the last hour. If "confirmation before joining class" is selected, the extension will show an alert as shown below:
+<img src="screenshots/class_alert.PNG" width="972" height="471">
 
-## Contributing to this project
-<p>Hop on in our discord server - <a href="https://discord.gg/spzaqNkNkU"><img src="https://logos-world.net/wp-content/uploads/2020/12/Discord-Logo.png" alt="AutoJoomer Discord" width="40" height="20"></a>, we will be happy to have you on board.</p>
+4. <p>The extension will stop working when the browser is closed OR the day is over.</p>
+5. <p>And that's it, now you are good to go!</p>
+
+## Tech Stack Used
+* HTML
+* CSS
+* JavaScript
+* Firebase (RTDB)
+
+## Contributing 
+<p>Please let us know if you encounter a bug by filing an <a href="https://github.com/vishal-lokare/AutoJoomer/issues">issue.</a> We appreciate all contributions. If you are planning to contribute back bug-fixes, please claim the issue in the issues tab. If you plan to contribute new features, utility functions, or extensions to the core, please first open an issue and discuss the feature with us. Sending a PR without discussion might end up resulting in a rejected PR because we might be taking the core in a different direction than you might be aware of. To learn more about making a contribution to AutoJoomer, please see our <a href="https://github.com/vishal-lokare/AutoJoomer/blob/main/CONTRIBUTING.md">Contribution page</a></p>
+
+## Communication
+* <p>Discord: Hop on in our discord server - <a href="https://discord.gg/spzaqNkNkU"><img src="https://logos-world.net/wp-content/uploads/2020/12/Discord-Logo.png" alt="AutoJoomer Discord" width="40" height="20"></a>, we will be happy to have you on board.</p>
+* <p>GitHub Issues: Bug reports, feature requests, install issues etc.</p>
 
 
 ## Future Updates
--> Search a student's name with roll number or vice-versa.
+<p>-> Search a student's name with roll number or vice-versa.</p>
+<p>-> Publish extension in the Chrome Web Store.</p>
+<p>-> Leave a class automatically after a certain period of time(Optional feature).</p>
+<p>-> Rejoin classes automatically.</p>
+
+## License
+AutoJoomer is distributed under the Apache 2.0 license
 
