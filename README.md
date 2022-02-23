@@ -3,7 +3,8 @@
 [![Stargazers][stars-shield]][stars-url]
 [![Issues][issues-shield]][issues-url]
 [![MIT License][license-shield]][license-url]
-[![Generic badge](https://img.shields.io/badge/Version-2.2.1-Green.svg?style=for-the-badge)](https://github.com/vishal-lokare/AutoJoomer)
+[![Generic badge](https://img.shields.io/badge/Version-2.3-brightgreen?style=for-the-badge&logo=appveyor)](https://github.com/vishal-lokare/AutoJoomer)
+
 
 [contributors-shield]: https://img.shields.io/github/contributors/vishal-lokare/AutoJoomer.svg?style=for-the-badge
 [contributors-url]: https://github.com/vishal-lokare/AutoJoomer/graphs/contributors
@@ -22,8 +23,11 @@
 
 ![HTML5](https://img.shields.io/badge/html5-%23E34F26.svg?style=for-the-badge&logo=html5&logoColor=white)
 ![JavaScript](https://img.shields.io/badge/javascript-%23323330.svg?style=for-the-badge&logo=javascript&logoColor=%23F7DF1E)
+![Firebase](https://camo.githubusercontent.com/ea0283d34b92d1905070c14ffe1c48412fef80c44232679c0657db176708403f/68747470733a2f2f696d672e736869656c64732e696f2f62616467652f46697265626173652d79656c6c6f773f7374796c653d666f722d7468652d6261646765266c6f676f3d666972656261736526)
 
 <p align="center">
+  <br>
+  <br>
   <a href="https://github.com/vishal-lokare/AutoJoomer/"><img src="https://github.com/vishal-lokare/AutoJoomer/blob/main/icon.png?raw=true" alt="AutoJoomer" width="100" height="100"></a><br>
   <a href="https://github.com/vishal-lokare/AutoJoomer/"><b>AutoJoomer</b></a>
   <br><br><hr>  
@@ -144,7 +148,8 @@ Repeat the installation process again.
 ## How to use
 1. Open your browser.
 2. If values are not set, error will be displayed. In this case, set the values in "AutoJoomer" popup in "Extensions" panel.
-3. In case you open your browser after a class has already started, the extension will automatically add you to that class as well, as the class started in the last hour.
+3. In case you open your browser after a class has already started, the extension will automatically add you to that class as well, as the class started in the last hour. If "confirmation before joining class" is selected, the extension will show an alert as shown below:
+<p align='center'><img src="screenshots/class_alert.png" width='779' height='374'/></p>
 4. The extension will stop working when the browser is closed OR the day is over.
 5. And that's it, now you are good to go!
 
@@ -167,9 +172,10 @@ To learn more about making a contribution to AutoJoomer, please see our <a href=
 
 
 ## Future Updates
--> Search a student's name with roll number or vice-versa.
--> Leave a class automatically after a certain period of time(Optional feature).
--> Rejoin classes automatically.
+<p>-> Search a student's name with roll number or vice-versa.</p>
+<p>-> Publish extension in the Chrome Web Store.</p>
+<p>-> Leave a class automatically after a certain period of time(Optional feature).</p>
+<p>-> Rejoin classes automatically.</p>
 
 ## License
 AutoJoomer is distributed under the Apache 2.0 license
