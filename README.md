@@ -103,7 +103,7 @@
     
 
 # AutoJoomer
-AutoJoomer automatically joins classes for you on time (IIIT Kottayam 2022). Classes include lab and coding classes; Data fetched from hosted database, updated according to timetable;
+AutoJoomer is an Open Source browser extension that automatically joins classes for you on time (IIIT Kottayam 2022). Classes include lab and coding classes; Data fetched from hosted database, updated according to timetable. Currently available as a Chrome extension.
 
 ## Getting Started
 
@@ -168,6 +168,8 @@ To learn more about making a contribution to AutoJoomer, please see our <a href=
 
 ## Future Updates
 -> Search a student's name with roll number or vice-versa.
+-> Leave a class automatically after a certain period of time(Optional feature).
+-> Rejoin classes automatically.
 
 ## License
 AutoJoomer is distributed under the Apache 2.0 license
