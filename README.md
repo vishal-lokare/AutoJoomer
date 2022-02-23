@@ -126,7 +126,7 @@ Three-pointers to get you started:
 5. Navigate to "Extensions" panel -> click on "AutoJoomer".
 6. Set the required values, click "SAVE", and restart your browser / reload the extension.
 
-<p align='center'><img src="screenshots/autojoomer.jpg" width='500' height='500'/></p>
+<p align='center'><img src="screenshots/autojoomer.jpg" width='764' height='451'/></p>
 
 ## How to stay updated
 To stay up-to-date with the latest version hosted on github, while being in the same directory where the downloaded files are, run
