@@ -103,7 +103,15 @@
     
 
 # AutoJoomer
-AutoJoomer will help you join classes on time (IIIT Kottayam 2020). Works for all classes, including labs; and also coding classes; fetches data from hosted database which can be changed whenever there are changes in the timetable.
+AutoJoomer automatically joins classes for you on time (IIIT Kottayam 2022). Classes include lab and coding classes; Data fetched from hosted database, updated according to timetable;
+
+## Getting Started
+
+Three-pointers to get you started:
+  *	<p><a href="https://github.com/vishal-lokare/AutoJoomer/blob/main/CONTRIBUTING.md">Contributing.md</a></p>
+  *	<p><a href="https://github.com/vishal-lokare/AutoJoomer/blob/main/LICENSE">License</a>
+  *	<p><a href="https://github.com/vishal-lokare/AutoJoomer/tree/main/screenshots">Screenshots</a>
+
 
 
 
@@ -140,10 +148,27 @@ Repeat the installation process again.
 4. The extension will stop working when the browser is closed OR the day is over.
 5. And that's it, now you are good to go!
 
-## Contributing to this project
-<p>Hop on in our discord server - <a href="https://discord.gg/spzaqNkNkU"><img src="https://logos-world.net/wp-content/uploads/2020/12/Discord-Logo.png" alt="AutoJoomer Discord" width="40" height="20"></a>, we will be happy to have you on board.</p>
+## Tech Stack Used
+*	HTML
+*	CSS
+*	JavaScript
+*	Firebase (RTDB)
+
+## Contributing
+<p>Please let us know if you encounter a bug by filing an <a href="https://github.com/vishal-lokare/AutoJoomer/issues">issue.</a>
+We appreciate all contributions. If you are planning to contribute back bug-fixes, please claim the issue in the issues tab.
+If you plan to contribute new features, utility functions, or extensions to the core, please first open an issue and discuss the feature with us. Sending a PR without discussion might end up resulting in a rejected PR because we might be taking the core in a different direction than you might be aware of.
+To learn more about making a contribution to AutoJoomer, please see our <a href="https://github.com/vishal-lokare/AutoJoomer/blob/main/CONTRIBUTING.md">Contribution page</a></p>
+
+## Communication
+
+  * <p>Hop on in our discord server - <a href="https://discord.gg/spzaqNkNkU"><img src="https://logos-world.net/wp-content/uploads/2020/12/Discord-Logo.png" alt="AutoJoomer Discord" width="40" height="20"></a>, we will be happy to have you on board.</p>
+  *	GitHub Issues: Bug reports, feature requests, install issues etc. 
 
 
 ## Future Updates
 -> Search a student's name with roll number or vice-versa.
+
+## License
+AutoJoomer is distributed under the Apache 2.0 license
 
