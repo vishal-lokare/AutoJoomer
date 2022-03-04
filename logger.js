@@ -10,7 +10,7 @@ chrome.runtime.sendMessage('getPassword', (password) => {
     replacepassword = password;
 });
 
-function getCookie(name) { //changes
+function getCookie(name) { //Cookie to keep track of failed login attempts
     var dc = document.cookie;
     var prefix = name + "=";
     var begin = dc.indexOf("; " + prefix);
@@ -30,7 +30,7 @@ function getCookie(name) { //changes
     //return unescape(dc.substring(begin + prefix.length, end));
     return decodeURI(dc.substring(begin + prefix.length, end));
 }
-function setCookie(cname, cvalue, exsec) {
+function setCookie(cname, cvalue, exsec) { //Set name,value and expiry of cookie
     var d = new Date();
     d.setTime(d.getTime() + exsec);
     var expires = "expires="+ d.toUTCString();
@@ -39,27 +39,27 @@ function setCookie(cname, cvalue, exsec) {
 
 
 $(document).ready(function () {
-    //changes
+
     var numLoads = parseInt(getCookie('pageLoads'), 10);
 
-    if (isNaN(numLoads) || numLoads <= 0) { setCookie('pageLoads', 1,5000); }
+    if (isNaN(numLoads) || numLoads <= 0) { setCookie('pageLoads', 1,5000); }//set cookie with expiry 5 seconds
     else { setCookie('pageLoads', numLoads + 1); }
 
     console.log(getCookie('pageLoads'));
 
-    if(numLoads==3){
+    if(numLoads==3){ //If three failed login attempts
         if(document.getElementsByClassName('loginerrors mt-3')[0])
         {
         
-            //window.location = "https://www.google.co.in/";
+            
             alert("Incorrect Username/Password provided in AutoJoomer.Please change it.");
             window.stop();
             
             
         }
     }
-    //changes
-    if(numLoads>3){setCookie('pageLoads', 0);numLoads=0; }
+    
+    if(numLoads>3){setCookie('pageLoads', 0);numLoads=0; } //Reset cookie to initial values if count>3
        
     var url = window.location.href;
     if (url == 'https://lms.iiitkottayam.ac.in/' || url == 'https://lmsone.iiitkottayam.ac.in/')
