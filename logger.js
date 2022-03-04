@@ -40,7 +40,7 @@ function setCookie(cname, cvalue, exsec) { //Set name,value and expiry of cookie
 
 $(document).ready(function () {
 
-    var numLoads = parseInt(getCookie('pageLoads'), 10);
+    var numLoads = parseInt(getCookie('pageLoads'), 10); //get cookie
 
     if (isNaN(numLoads) || numLoads <= 0) { setCookie('pageLoads', 1,5000); }//set cookie with expiry 5 seconds
     else { setCookie('pageLoads', numLoads + 1); }
