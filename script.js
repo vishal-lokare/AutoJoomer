@@ -3,6 +3,7 @@ var password = JSON.parse(window.localStorage.getItem("AutoJoomerPassword"));
 var year = JSON.parse(window.localStorage.getItem("AutoJoomerYear"));
 var branch = JSON.parse(window.localStorage.getItem("AutoJoomerBranch"));
 var batch = JSON.parse(window.localStorage.getItem("AutoJoomerBatch"));
+var earlyjoin = JSON.parse(window.localStorage.getItem("AutoJoomerearlyjoin"));
 var confirmation = JSON.parse(window.localStorage.getItem("AutoJoomerConfirmation"));
 
 if (year == "" || branch == "" || batch == "" || username == "" || password == "" || confirmation == null) {
@@ -65,6 +66,7 @@ function runningscript() {
 	var thatClassLink = [];
 	var thatClassName = [];
 	var millisOfThatClass = [];
+	earlyjoin =  parseInt(earlyjoin);
 	var day = now.getDay();
 	if (branch == "C")
 		br = "CSE";
@@ -111,8 +113,18 @@ function runningscript() {
 				//parseint to convert string to integer
 				h[i] = thatClass['class_time'].substring(0, 2);
 				m[i] = thatClass['class_time'].substring(2, 4);
+				//early join code
+				if(m[i]-earlyjoin>=0){
+					m[i]=m[i]-earlyjoin;
+					
+				}
+				else{
+					m[i]=m[i]-earlyjoin+60;
+					h[i]=h[i]-1;
+				}
 				console.log(thatClassName[i] + " " + thatClassLink[i].substring(thatClassLink[i].length - 22, thatClassLink[i].length - 18) + " " + h[i] + " " + m[i]);
-
+                                h[i] = thatClass['class_time'].substring(0, 2);
+				m[i] = thatClass['class_time'].substring(2, 4);
 				millisOfThatClass[i] = new Date(now.getFullYear(), now.getMonth(), now.getDate(), parseInt(h[i]), parseInt(m[i]), 0, 0) - now;
 				if (millisOfThatClass[i] > 0) {
 					timeouts[j] = setTimeout(function () {
