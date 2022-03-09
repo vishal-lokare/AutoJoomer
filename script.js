@@ -122,21 +122,19 @@ function runningscript() {
 					m[i]=m[i]-earlyjoin+60;
 					h[i]=h[i]-1;
 				}
-				console.log(thatClassName[i] + " " + thatClassLink[i].substring(thatClassLink[i].length - 22, thatClassLink[i].length - 18) + " " + h[i] + " " + m[i]);
-                                h[i] = thatClass['class_time'].substring(0, 2);
-				m[i] = thatClass['class_time'].substring(2, 4);
+				console.log(thatClassName[i] + " " + thatClassLink[i].substring(thatClassLink[i].length - 22, thatClassLink[i].length - 18) + " " + ho + " " + mi);
 				millisOfThatClass[i] = new Date(now.getFullYear(), now.getMonth(), now.getDate(), parseInt(h[i]), parseInt(m[i]), 0, 0) - now;
 				if (millisOfThatClass[i] > 0) {
 					timeouts[j] = setTimeout(function () {
 						if (confirmation == 1) {
-							if (window.confirm('Now the class is ' + thatClassName[i] + ' at ' + h[i] + ":" + m[i]))
+							if (window.confirm('Now the class is ' + thatClassName[i] + ' at ' + ho + ":" + mi))
 								window.open(thatClassLink[i], "_blank");
 						} else
 							window.open(thatClassLink[i], "_blank");
 					}, millisOfThatClass[i]);
 				} else if (millisOfThatClass[i] > -3600000) {
 					if (confirmation == 1) {
-						if (window.confirm('Now the class is ' + thatClassName[i] + ' at ' + h[i] + ":" + m[i]))
+						if (window.confirm('Now the class is ' + thatClassName[i] + ' at ' + ho + ":" + mi))
 							window.open(thatClassLink[i], "_blank");
 					} else
 						window.open(thatClassLink[i], "_blank");
