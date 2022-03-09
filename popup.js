@@ -3,6 +3,7 @@ var username;
 var password;
 var branch;
 var confirmation;
+var earlyjoin;
 window.onload = function () {
     populator();
     document.getElementById("button").addEventListener("click", saveValues);
@@ -48,6 +49,7 @@ function saveValues() {
     username = document.getElementById("username");
     password = document.getElementById("password");
     branch = document.getElementById("branch");
+    earlyjoin = document.getElementById("earlyjoin");
     confirmation = document.getElementById("confirmation");
     document.getElementById("button").style.color = "white";
     document.getElementById("button").innerHTML = "RESTART BROWSER";
@@ -56,6 +58,7 @@ function saveValues() {
     var pass = password.value;
     var uyear = document.getElementById("year").value;
     var ubatch = document.getElementById("batch").value;
+    var ejoin = document.getElementById("earlyjoin").value;
 
     var bran = branch.value;
     if (document.getElementById("confirmation").checked)
@@ -67,6 +70,7 @@ function saveValues() {
     window.localStorage.setItem("AutoJoomerYear", JSON.stringify(uyear));
     window.localStorage.setItem("AutoJoomerBranch", JSON.stringify(bran));
     window.localStorage.setItem("AutoJoomerBatch", JSON.stringify(ubatch));
+    window.localStorage.setItem("AutoJoomerearlyjoin", JSON.stringify(ejoin));
     window.localStorage.setItem("AutoJoomerConfirmation", JSON.stringify(conf));
 }
 
@@ -76,6 +80,7 @@ function populator() {
     year = document.getElementById("year");
     branch = document.getElementById("branch");
     batch = document.getElementById("batch");
+    earlyjoin = document.getElementById("earlyjoin");
     confirmation = document.getElementById("confirmation");
     //setting the values
     if (JSON.parse(window.localStorage.getItem("AutoJoomerUsername")) != null)
@@ -92,6 +97,8 @@ function populator() {
         branch.value = JSON.parse(window.localStorage.getItem("AutoJoomerBranch"));
     if (JSON.parse(window.localStorage.getItem("AutoJoomerBatch")) != null)
         batch.value = JSON.parse(window.localStorage.getItem("AutoJoomerBatch"));
+    if (JSON.parse(window.localStorage.getItem("AutoJoomerearlyjoin")) != null)
+        earlyjoin.value = JSON.parse(window.localStorage.getItem("AutoJoomerearlyjoin"));
 
     if (JSON.parse(window.localStorage.getItem("AutoJoomerConfirmation")) == 1)
         confirmation.checked = true;
