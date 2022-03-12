@@ -665,7 +665,7 @@
                 "2": {
                     "class_name": "IHS 222 MC",
                     "class_time": "0940",
-                    "class_link": "https://lms.iiitkottayam.ac.in/mod/bigbluebuttonbn/view.php?id=3892?reason=AutoJoomer?reason=AutoJoomer"
+                    "class_link": "https://lms.iiitkottayam.ac.in/mod/bigbluebuttonbn/view.php?id=3892?reason=AutoJoomer"
                 },
                 "3": {
                     "class_name": "IEC 221 KS",
@@ -978,7 +978,8 @@
                 "3": {
                     "class_name": "IEC111",
                     "class_time": "1050",
-                    "class_link": "https://lmsone.iiitkottayam.ac.in/mod/bigbluebuttonbn/view.php?id=2131?reason=AutoJoomer"            },
+                    "class_link": "https://lmsone.iiitkottayam.ac.in/mod/bigbluebuttonbn/view.php?id=2131?reason=AutoJoomer"         
+                },
                 "4": {
                     "class_name": "ICS112",
                     "class_time": "1200",
@@ -987,7 +988,8 @@
                 "5": {
                     "class_name": "IEC111 LAB",
                     "class_time": "1400",
-                    "class_link": "https://lmsone.iiitkottayam.ac.in/mod/bigbluebuttonbn/view.php?id=2131?reason=AutoJoomer"            },
+                    "class_link": "https://lmsone.iiitkottayam.ac.in/mod/bigbluebuttonbn/view.php?id=2131?reason=AutoJoomer"      
+                },
                 "6": {
                     "class_name": "Coding Club Activities",
                     "class_time": "1615",
