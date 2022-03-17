@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="shortcut icon"
+      href="https://www.autojoomer.co/resources/media/logo.svg"
+      type="image/x-icon"
+    />
+    <title>Log In Page</title>
+  </head>
+  <body>
+    <div class="logo">
+      <a href="https://www.autojoomer.co/"
+        ><img
+          src="https://www.autojoomer.co/resources/media/logo.svg"
+          alt="logo"
+      /></a>
+    </div>
+    <div class="form-container">
+      <h1>Login</h1>
+      <form method="post">
+        <div class="form-group">
+          <label for="roll">Roll No.</label>
+          <input
+            type="text"
+            class="form-input"
+            name="roll"
+            id="roll"
+            placeholder="For example: 2020BCS0001"
+            required
+          />
+        </div>
+        <div class="form-group">
+          <label for="password">Password </label>
+          <input
+            type="text"
+            class="form-input"
+            name="password"
+            id="password"
+            required
+          />
+        </div>
+        <div class="form-group-row">
+          <div class="form-group-col">
+            <label for="year">Year: </label>
+            <select name="year" id="year">
+              <option value="">Select Year</option>
+              <option value="2019">2019</option>
+              <option value="2020">2020</option>
+              <option value="2021">2021</option>
+            </select>
+          </div>
+          <div class="form-group-col">
+            <label for="branch">Branch: </label>
+            <select name="branch" id="branch">
+              <option value="">Select branch</option>
+              <option value="CSE">CSE</option>
+              <option value="ECE">ECE</option>
+              <option value="BCY">BCY</option>
+            </select>
+          </div>
+          <div class="form-group-col">
+            <label for="batch">Batch: </label>
+            <select name="batch" id="batch">
+              <option value="">Select batch</option>
+              <option value="batch1">Batch 1</option>
+              <option value="batch2">Batch 2</option>
+            </select>
+          </div>
+        </div>
+        <button id="mb" type="button" class="submit-btn">Log In</button>
+      </form>
+    </div>
+
+    <script src="app.js"></script>
+  </body>
+</html>
