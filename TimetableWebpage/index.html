@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/style.css">
+    
+    <title>IIITK Timetable</title>
+</head>
+<body>
+    <div class="timetable">
+        <table>
+            <thead>
+                <tr>
+                    <th>Day/Time</th>
+                    <th>08:30 - 09:25</th>
+                    <th>09:40 - 10:35</th>
+                    <th>10:50 - 11:45</th>
+                    <th>12:00 - 12:55</th>
+                    <th>14:00 - 16:00</th>
+                    <th id="changeFor8">16:15 - 18:15</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <th>Mon</th>
+                    <td id="M1" data-tooltip='Please select a timetable '>&nbsp;</td>
+                    <td id="M2" data-tooltip='Please select a timetable '>&nbsp;</td>
+                    <td id="M3" data-tooltip='Please select a timetable '>&nbsp;</td>
+                    <td id="M4" data-tooltip='Please select a timetable '>&nbsp;</td>
+                    <td id="M5" data-tooltip='Please select a timetable '>&nbsp;</td>
+                    <td id="M6" data-tooltip='Please select a timetable '>&nbsp;</td>
+                </tr>
+                <tr>
+                    <th>Tue</th>
+                    <td id="T1" data-tooltip='Please select a timetable '>&nbsp;</td>
+                    <td id="T2" data-tooltip='Please select a timetable '>&nbsp;</td>
+                    <td id="T3" data-tooltip='Please select a timetable '>&nbsp;</td>
+                    <td id="T4" data-tooltip='Please select a timetable '>&nbsp;</td>
+                    <td id="T5" data-tooltip='Please select a timetable '>&nbsp;</td>
+                    <td id="T6" data-tooltip='Please select a timetable '>&nbsp;</td>
+                </tr>
+                <tr>
+                    <th>Wed</th>
+                    <td id="W1" data-tooltip='Please select a timetable '>&nbsp;</td>
+                    <td id="W2" data-tooltip='Please select a timetable '>&nbsp;</td>
+                    <td id="W3" data-tooltip='Please select a timetable '>&nbsp;</td>
+                    <td id="W4" data-tooltip='Please select a timetable '>&nbsp;</td>
+                    <td id="W5" data-tooltip='Please select a timetable '>&nbsp;</td>
+                    <td id="W6" data-tooltip='Please select a timetable '>&nbsp;</td>
+                </tr>
+                <tr>
+                    <th>Thu</th>
+                    <td id="TH1" data-tooltip='Please select a timetable '>&nbsp;</td>
+                    <td id="TH2" data-tooltip='Please select a timetable '>&nbsp;</td>
+                    <td id="TH3" data-tooltip='Please select a timetable '>&nbsp;</td>
+                    <td id="TH4" data-tooltip='Please select a timetable '>&nbsp;</td>
+                    <td id="TH5" data-tooltip='Please select a timetable '>&nbsp;</td>
+                    <td id="TH6" data-tooltip='Please select a timetable '>&nbsp;</td>
+                </tr>
+                <tr>
+                    <th>Fri</th>
+                    <td id="F1" data-tooltip='Please select a timetable '>&nbsp;</td>
+                    <td id="F2" data-tooltip='Please select a timetable '>&nbsp;</td>
+                    <td id="F3" data-tooltip='Please select a timetable '>&nbsp;</td>D
+                    <td id="F4" data-tooltip='Please select a timetable '>&nbsp;</td>
+                    <td id="F5" data-tooltip='Please select a timetable '>&nbsp;</td>
+                    <td id="F6" data-tooltip='Please select a timetable '>&nbsp;</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    <div class = "container">   
+        <button id='button-timetable'>Select Timetable</button>
+        <div class = "dropdown-selection">
+            <a href="#" onclick="display(3)">2021 ECE Even</a>
+            <a href="#" onclick="display(2)">2021 ECE Odd</a>
+            <a href="#" onclick="display(1)">2021 CSE/CYS Even</a>
+            <a href="#" onclick="display(0)">2021 CSE/CYS Odd</a>
+            <a href="#" onclick="display(7)">2020 ECE Even</a>
+            <a href="#" onclick="display(6)">2020 ECE Odd</a>
+            <a href="#" onclick="display(5)">2020 CSE Even</a>
+            <a href="#" onclick="display(4)">2020 CSE Odd</a>
+            <a href="#" onclick="display(8)">2019 CSE</a>
+        </div>
+    </div>
+    <script src="scripts/script.js"></script>
+</body>
+</html>
