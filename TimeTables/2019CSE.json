@@ -1,0 +1,175 @@
+{
+    "2019CSE": {
+        "0": {
+            "a": "a"
+        },
+        "1": {
+            "a": "a",
+            "1": {
+                "class_name": "ICS 322 BA",
+                "class_time": "0830",
+                "class_link": "https://lmsone.iiitkottayam.ac.in/mod/bigbluebuttonbn/view.php?id=2151?reason=AutoJoomer"    
+            },
+            "2": {
+                "class_name": "CSE 322 SB",
+                "class_time": "0940",
+                "class_link": "https://lmsone.iiitkottayam.ac.in/mod/bigbluebuttonbn/view.php?id=2152?reason=AutoJoomer"  
+            },
+            "3": {
+                "class_name": "CSE 321 SKA",
+                "class_time": "1050",
+                "class_link": "https://lmsone.iiitkottayam.ac.in/mod/bigbluebuttonbn/view.php?id=2149?reason=AutoJoomer"     
+            },
+            "4": {
+                "class_name": "ISC 321 KS + DMV",
+                "class_time": "1200",
+                "class_link": "https://lmsone.iiitkottayam.ac.in/mod/bigbluebuttonbn/view.php?id=2148?reason=AutoJoomer"
+            },
+            "5": {
+                "class_name": "CSE 321 LAB",
+                "class_time": "1400",
+                "class_link": "https://lmsone.iiitkottayam.ac.in/mod/bigbluebuttonbn/view.php?id=2149?reason=AutoJoomer"
+            },
+            "6": {
+                "class_name": "Honours I",
+                "class_time": "1615",
+                "class_link": "https://lmsone.iiitkottayam.ac.in/"
+            }
+        },
+        "2": {
+            "a": "a",
+            "1": {
+                "class_name": "CSE 322 SB",
+                "class_time": "0830",
+                "class_link": "https://lmsone.iiitkottayam.ac.in/mod/bigbluebuttonbn/view.php?id=2152?reason=AutoJoomer"
+            },
+            "2": {
+                "class_name": "CSE 321 SKA",
+                "class_time": "0940",
+                "class_link": "https://lmsone.iiitkottayam.ac.in/mod/bigbluebuttonbn/view.php?id=2149?reason=AutoJoomer"
+            },
+            "3": {
+                "class_name": "ICS 322 BA",
+                "class_time": "1050",
+                "class_link": "https://lmsone.iiitkottayam.ac.in/mod/bigbluebuttonbn/view.php?id=2151?reason=AutoJoomer"
+            },
+            "4": {
+                "class_name": "ISC 321 KS + DMV",
+                "class_time": "1200",
+                "class_link": "https://lmsone.iiitkottayam.ac.in/mod/bigbluebuttonbn/view.php?id=2148?reason=AutoJoomer"
+            },
+            "5": {
+                "class_name": "ICS 321 LAB",
+                "class_time": "1400",
+                "class_link": "https://lmsone.iiitkottayam.ac.in/mod/bigbluebuttonbn/view.php?id=2144?reason=AutoJoomer"
+            },
+            "6": {
+                "class_name": "Coding Club Activities",
+                "class_time": "1615",
+                "class_link": ""
+            }
+        },
+        "3": {
+            "a": "a",
+            "1": {
+                "class_name": "ISC 321 KS + DMV",
+                "class_time": "0830",
+                "class_link": "https://lmsone.iiitkottayam.ac.in/mod/bigbluebuttonbn/view.php?id=2148?reason=AutoJoomer"
+            },
+            "2": {
+                "class_name": "IOE 321 KG",
+                "class_time": "0940",
+                "class_link": "https://lmsone.iiitkottayam.ac.in/mod/bigbluebuttonbn/view.php?id=2150?reason=AutoJoomer"
+            },
+            "3": {
+                "class_name": "ICS 321 LLT",
+                "class_time": "1050",
+                "class_link": "https://lmsone.iiitkottayam.ac.in/mod/bigbluebuttonbn/view.php?id=2144?reason=AutoJoomer"
+            },
+            "4": {
+                "class_name": "Honours I",
+                "class_time": "1200",
+                "class_link": "https://lmsone.iiitkottayam.ac.in/"
+            },
+            "5": {
+                "class_name": "CSE 322 LAB",
+                "class_time": "1400",
+                "class_link": "https://lmsone.iiitkottayam.ac.in/mod/bigbluebuttonbn/view.php?id=2152?reason=AutoJoomer"
+            },
+            "6": {
+                "class_name": "Seminar",
+                "class_time": "1615",
+                "class_link": ""
+            }
+        },
+        "4": {
+            "a": "a",
+            "1": {
+                "class_name": "ICS 321 LLT",
+                "class_time": "0830",
+                "class_link": "https://lmsone.iiitkottayam.ac.in/mod/bigbluebuttonbn/view.php?id=2144?reason=AutoJoomer"
+            },
+            "2": {
+                "class_name": "CSE 322 SB",
+                "class_time": "0940",
+                "class_link": "https://lmsone.iiitkottayam.ac.in/mod/bigbluebuttonbn/view.php?id=2152?reason=AutoJoomer"
+            },
+            "3": {
+                "class_name": "CSE 321 SKA",
+                "class_time": "1050",
+                "class_link": "https://lmsone.iiitkottayam.ac.in/mod/bigbluebuttonbn/view.php?id=2149?reason=AutoJoomer"
+            },
+            "4": {
+                "class_name": "IOE 321 KG",
+                "class_time": "1200",
+                "class_link": "https://lmsone.iiitkottayam.ac.in/mod/bigbluebuttonbn/view.php?id=2150?reason=AutoJoomer"
+            },
+            "5": {
+                "class_name": "Honours I",
+                "class_time": "1400",
+                "class_link": "https://lmsone.iiitkottayam.ac.in/"
+            },
+            "6": {
+                "class_name": "Coding Club Activities",
+                "class_time": "1615",
+                "class_link": ""
+            }
+        },
+        "5": {
+            "a": "a",
+            "1": {
+                "class_name": "IOE 321 KG",
+                "class_time": "0830",
+                "class_link": "https://lmsone.iiitkottayam.ac.in/mod/bigbluebuttonbn/view.php?id=2150?reason=AutoJoomer"
+            },
+            "2": {
+                "class_name": "ICS 321 LLT",
+                "class_time": "0940",
+                "class_link": "https://lmsone.iiitkottayam.ac.in/mod/bigbluebuttonbn/view.php?id=2144?reason=AutoJoomer"
+            },
+            "3": {
+                "class_name": "Honours I",
+                "class_time": "1050",
+                "class_link": "https://lmsone.iiitkottayam.ac.in/"
+            },
+            "4": {
+                "class_name": "ICS 322 BA",
+                "class_time": "1200",
+                "class_link": "https://lmsone.iiitkottayam.ac.in/mod/bigbluebuttonbn/view.php?id=2151?reason=AutoJoomer"
+            },
+            "5": {
+                "class_name": "TCA",
+                "class_time": "1400",
+                "class_link": ""
+            },
+            "6": {
+                "class_name": "TPA",
+                "class_time": "1615",
+                "class_link": ""
+            }
+        }, 
+        "6": {
+            "a": "a"
+        }
+    }
+}
