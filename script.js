@@ -104,6 +104,16 @@ function runningscript() {
 			var nooflec = Object.keys(thatDay).length;
 			for (let i = 1, j = 0; i < nooflec; i++, j++) {
 				let now = new Date();
+
+				//Convert Timezone to IST
+	
+				let utcOffset = now.getTimezoneOffset() * 60000;
+				let localTime = now.getTime();
+				let utc = localTime + utcOffset;
+				let istOffset = 5.5;  
+				let ist = utc + (3600000*istOffset);
+				now = new Date(ist);
+				
 				var thatClass = thatDay[i];
 
 				thatClassName[i] = thatClass['class_name'];
