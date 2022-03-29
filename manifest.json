@@ -1,6 +1,6 @@
 {
     "name": "AutoJoomer",
-    "version": "2.4",
+    "version": "2.5",
     "manifest_version": 2,
     "icons": {
         "16": "icon.png",
@@ -24,18 +24,21 @@
         ],
         "persistent": true
     },
-    "content_scripts": [{
-        "matches": [
-            "https://lms.iiitkottayam.ac.in/",
-            "https://lms.iiitkottayam.ac.in/login/index.php",
-            "https://lms.iiitkottayam.ac.in/login/index.php/*",
-            "https://lms.iiitkottayam.ac.in/mod/bigbluebuttonbn/*",
-            "https://lmsone.iiitkottayam.ac.in/*"
-        ],
-        "js": [
-            "jquery.js",
-            "logger.js"
-        ]
-    }],
+    "content_scripts": [
+        {
+            "matches": [
+                "http://172.16.222.1:1000/*",
+                "https://lms.iiitkottayam.ac.in/",
+                "https://lms.iiitkottayam.ac.in/login/index.php",
+                "https://lms.iiitkottayam.ac.in/login/index.php/*",
+                "https://lms.iiitkottayam.ac.in/mod/bigbluebuttonbn/*",
+                "https://lmsone.iiitkottayam.ac.in/*"
+            ],
+            "js": [
+                "jquery.js",
+                "logger.js"
+            ]
+        }
+    ],
     "content_security_policy": "script-src 'self' https://www.vishal-lokare.co https://www.googleapis.com https://*.firebasedatabase.app; object-src 'self'; connect-src 'self' wss://*.firebasedatabase.app https://www.vishal-lokare.co;"
 }
