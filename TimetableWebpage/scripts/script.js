@@ -1,31 +1,41 @@
 var subjects = [
-    /*Sem 1*/
+    /*2021*/
     'IHS111,#08415c','ICS111,#cc2936','IEC111,#2e933c','IMA111,#a06cd5','IHS112,#2e1f27','ICS112,#dd7230','IEC112,#cc2936','TCA,#29274c','IPT111,#2e1f27',
     'CCA,#012a36','ICS111-LAB,#cc2936','IEC111-LAB,#2e933c','ICS112-LAB,#dd7230','Sem./Colloq,#93092E',
     
-    /*Sem 3*/
+    /*2020*/
     'IMA221,#08415c','ICS221,#cc2936','ICS222,#2e933c','ICS223,#a06cd5','ICS224,#2e1f27','IHS221,#759aab','IHS222,#1E392A','ICS225,#a87532','IEC221,#cc2936','IEC222,#2e933c',
     'IEC223,#a06cd5','ICS222-LAB,#2e933c','ICS224-LAB,#2e1f27','ICS225-LAB,#a87532','ICS223-LAB,#a06cd5','IEC223-LAB,#a06cd5','IEC221-LAB,#cc2936',
     
-    /*Sem 6*/
+    /*2019*/
     'CSE321,#08415c','CSE322,#cc2936','ICS321,#2e933c','ICS322,#a06cd5','ISC321,#2e1f27','IOE321,#759aab','CSE321-LAB,#08415c','ICS321-LAB,#2e933c','CSE322-LAB,#cc2936',
     'Honours-1,#dd7230','CCA/TPA,#2e1f27','TPA,#2e1f27']
 
 var tooltip_sub = [
-    /*Sem 1*/
+    /*2021*/
     'Communication Skills','IT Workshop','Electrical Circuits and Measurements','Discrete Mathematics','French','C Progamming','Network Theory','Technical Club Activities',
     'Physical Training','Coding Club Activities','IT Workshop LAB','Electronic Circuits and Measurements LAB','C Programming LAB','Seminars',
     
-    /*Sem 3*/
+    /*2020*/
     'Differential Equations and Transforms','Theory of Computation','Object Oriented Analysis and Design','Compiler Design','Computer Networks','Fundamentals of Economics',
     'Principles of Management','Data Structures','Digital Design with Hardware','Digital Communication','Electromagnetic Theory','Object Oriented Analysis and Design LAB',
     'Computer Networks LAB','Data Structures LAB','Compiler Design LAB','Electromagnetic Theory LAB','Digital Design with Hardware LAB',
     
-    /*Sem 6*/
+    /*2019*/
     'Microprocessors','Cloud Computing','Data Warehousing and Data Mining','Machine Learning','High Performance and Scientific Computing','Software Design Patterns',
     'Microprocessors-LAB','High Performance and Scientific Computing LAB','Cloud Computing LAB','Honours-1','Coding Club Activities/Training and Placement Activities',
-    'Training and Placement Activities']
+    'Training and Placement Activities'
+]
 
+var class_id = [
+    /*2021*/
+    [114,113],[110,109],[111,112],[106,107],[115,116],[98,108],[117,117],['#','#'],['#','#'],[134,134],[110,109],[111,112],[98,108],['#','#'],
+    
+    /*2020*/
+    [192,191],[204,204],[205,206],[207,208],[194,193],[198,197],[196,195],[200,199],[201,201],[202,202],[203,203],[205,206],[194,193],[200,199],[209,209],[203,203],[201,201],
+    /*2019*/
+    [93],[89],[94],[90],[118],[91],[93],[94],[89],['#'],['#'],['#']
+]
 
 //Timetables
 var y1cscyb1 = [[2,0,5,3,12,9],[1,3,5,0,-1,9],[5,3,1,3,10,13],[4,1,2,5,11,9],[2,1,0,2,7,8]]
@@ -47,10 +57,26 @@ var days = ['M','T','W','TH','F'];
 function display(selected){
     for(var i=1;i<6;i++){
         for(var j=1;j<7;j++){
-            var index = [classes[selected][i-1][j-1]];
+            var index = classes[selected][i-1][j-1];
             var target = document.getElementById(days[i-1]+String(j));
+            var HTML;
             if(index!=-1){
-                target.innerHTML = subjects[index].split(',')[0];
+                if(class_id[index][selected%2]=='#'){
+                    HTML = subjects[index].split(',')[0];
+                } else if(selected%8 > 3){
+                    if(index==9){
+                        HTML = subjects[index].split(',')[0];
+                    } else {
+                        HTML = "<a href = \"https://lms.iiitkottayam.ac.in/course/view.php?id=" + String(class_id[index][selected%2]) + "\" target=\"_blank\">" + subjects[index].split(',')[0] + "</a>";
+                    }
+                } else {
+                    if(index==9){
+                        HTML = subjects[index].split(',')[0];
+                    } else {
+                        HTML = "<a href=\"https://lmsone.iiitkottayam.ac.in/course/view.php?id=" + String(class_id[index][selected%2]) + "\" target=\"_blank\">" + subjects[index].split(',')[0] + "</a>";
+                    }
+                }
+                target.innerHTML = HTML;
                 target.style.backgroundColor = subjects[index].split(',')[1];
                 target.setAttribute('data-tooltip',tooltip_sub[index]);
             } else {
