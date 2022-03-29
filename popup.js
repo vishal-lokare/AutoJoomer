@@ -6,18 +6,21 @@ var confirmation;
 var earlyjoin;
 window.onload = function () {
     populator();
+    // Click event listener for Login to Wi-Fi button
+    document.getElementById("wifiLogin").addEventListener("click", function () {
+        window.open("https://msftconnecttest.com/redirect"), "_blank"
+    });
     document.getElementById("button").addEventListener("click", saveValues);
     document.getElementById("button").innerHTML = "SAVE";
     document.getElementById("button").disabled = false;
-    branch.disabled = true;
-    batch.disabled = true;
     document.getElementById("year").addEventListener("change", function () {
-        branch.getElementsByTagName("option")[1].selected = true;
-        batch.getElementsByTagName("option")[0].selected = true;
         if (year.value == "2019") {
+            branch.getElementsByTagName("option")[1].selected = true;
+            batch.getElementsByTagName("option")[0].selected = true;
             branch.disabled = true;
             batch.disabled = true;
         } else {
+            branch.getElementsByTagName("option")[1].selected = true;
             batch.getElementsByTagName("option")[1].selected = true;
             branch.disabled = false;
             batch.disabled = false;
@@ -52,7 +55,7 @@ function saveValues() {
     earlyjoin = document.getElementById("earlyjoin");
     confirmation = document.getElementById("confirmation");
     document.getElementById("button").style.color = "white";
-    document.getElementById("button").innerHTML = "RESTART BROWSER";
+    document.getElementById("button").innerHTML = "Restart Browser";
     document.getElementById("button").disabled = true;
     var uname = username.value;
     var pass = password.value;
