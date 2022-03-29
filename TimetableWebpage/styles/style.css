@@ -74,7 +74,7 @@ body {
 
 .timetable {
     position:absolute;
-    margin-top: 15vh;
+    margin-top: 17vh;
     width: 100%;
 }
 
@@ -91,6 +91,7 @@ body {
     font-size: 2em;
     height:3em;
     text-transform: uppercase;
+    cursor:pointer;
 }
 
 .timetable table td{
@@ -98,11 +99,16 @@ body {
     color: white;
     text-align: center;
     font-size: 1.5em;
+    transition: all 300m ease-out;
 }
 .timetable table td,th {
     border-radius: 5px;
-    cursor: default;
     padding: 7px;
+}
+
+.timetable table a{
+    text-decoration: none;
+    color: white;
 }
 
 [data-tooltip] {
