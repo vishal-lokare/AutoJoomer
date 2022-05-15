@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>AutoJoomer</title>
+    <script src="../dependencies/jquery.js"></script>
+    <script type="text/javascript" src="popup.js"></script>
+    <style>
+      body {
+        background-color: black;
+      }
+
+      button {
+        padding: 5px;
+        font-size: large;
+      }
+
+      #fpage {
+        padding: 1px;
+        font-size: small;
+      }
+
+      #aboutus {
+        align-items: right;
+        padding: 1px;
+        font-size: small;
+      }
+
+      input {
+        color: white;
+        background: none;
+        border: 0;
+        border-bottom: 1px solid white;
+        padding: 10px;
+      }
+
+      input:focus {
+        outline: none;
+      }
+
+      select {
+        color: white;
+        background: none;
+        border: 0;
+        width: fit-content;
+      }
+
+      select:focus {
+        outline: 0;
+      }
+
+      option {
+        color: white;
+        background: black;
+      }
+
+      label {
+        color: white;
+        font-size: 100%;
+      }
+
+      .switch {
+        position: relative;
+        display: inline-block;
+        width: 30px;
+        height: 17px;
+      }
+
+      .switch input {
+        opacity: 0;
+        width: 0;
+        height: 0;
+      }
+
+      .slider {
+        position: absolute;
+        cursor: pointer;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background-color: #ccc;
+        -webkit-transition: 0.4s;
+        transition: 0.4s;
+      }
+
+      .slider:before {
+        position: absolute;
+        content: "";
+        height: 13px;
+        width: 13px;
+        left: 2px;
+        bottom: 2px;
+        background-color: white;
+        -webkit-transition: 0.4s;
+        transition: 0.4s;
+      }
+
+      input:checked + .slider {
+        background-color: #2196f3;
+      }
+
+      input:focus + .slider {
+        box-shadow: 0 0 1px #2196f3;
+      }
+
+      input:checked + .slider:before {
+        -webkit-transform: translateX(13px);
+        -ms-transform: translateX(13px);
+        transform: translateX(13px);
+      }
+
+      /* Rounded sliders */
+      .slider.round {
+        border-radius: 34px;
+      }
+
+      .slider.round:before {
+        border-radius: 100%;
+      }
+      #wifiLogin,
+      #button {
+        margin: 0 auto;
+        padding: 5px;
+        font-size: 10px;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div>
+      <center><img src="../images/icon.jpeg" height="64" width="64" /></center>
+      <br />
+      <center><button id="wifiLogin">Login to Wi-Fi</button></center>
+      <input id="username" type="text" placeholder="Enter LMS username..." />
+      <br /><br />
+      <input
+        id="password"
+        type="password"
+        placeholder="Enter LMS password..."
+      />
+      <br /><br />
+      <center>
+        <select name="year" id="year">
+          <option value="" style="color: grey" selected disabled>Year</option>
+          <option value="2019">2019</option>
+          <option value="2020">2020</option>
+          <option value="2021">2021</option>
+        </select>
+        <select name="branch" id="branch">
+          <option value="" style="color: grey" selected disabled>Branch</option>
+          <option value="C">CSE</option>
+          <option value="E">ECE</option>
+        </select>
+        <select name="batch" id="batch">
+          <option value="" style="color: grey" selected disabled>Batch</option>
+          <option value="1">1</option>
+          <option value="2">2</option>
+        </select>
+        <br />
+        <h3 style="color: white">Early join</h3>
+        <input type="range" min="0" max="15" id="earlyjoin" value="0" />;
+        <h3 id="slider_value" style="color: white"></h3>
+        <script src="slider.js"></script>
+        <br />
+        <label for="confirmation">Confirmation Before Joining Classes ? </label>
+
+        <!-- <input type="checkbox" id="confirmation" name="confirmation" value="yes" checked> -->
+
+        <label class="switch">
+          <input type="checkbox" id="confirmation" checked />
+          <span class="slider round"></span>
+        </label>
+        <br /><br />
+        <button type="button" id="button">SAVE</button> <br /><br />
+      </center>
+    </div>
+  </body>
+</html>
