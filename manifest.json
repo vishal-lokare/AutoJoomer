@@ -1,6 +1,6 @@
 {
     "name": "AutoJoomer",
-    "version": "2.5",
+    "version": "2.6",
     "manifest_version": 2,
     "icons": {
         "16": "icon.png",
@@ -27,7 +27,7 @@
     "content_scripts": [
         {
             "matches": [
-                "http://172.16.222.1:1000/*",
+                "http://*/fgtauth*",
                 "https://lms.iiitkottayam.ac.in/",
                 "https://lms.iiitkottayam.ac.in/login/index.php",
                 "https://lms.iiitkottayam.ac.in/login/index.php/*",
