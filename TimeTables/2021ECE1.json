@@ -1,171 +1,148 @@
 {
     "2021ECE1": {
+        "a": {"class_name" : "a" , "class_time" : "0000"},
         "0": {
-            "a": "a"
+            "a": {"class_name" : "a" , "class_time" : "0000"}
         },
         "1": {
-            "a": "a",
+            "a": {"class_name" : "a" , "class_time" : "0000"},
             "1": {
-                "class_name": "IEC111",
-                "class_time": "0830",
-                "class_link": "https://lmsone.iiitkottayam.ac.in/mod/bigbluebuttonbn/view.php?id=2131?reason=AutoJoomer"
+                "class_name": "ICS122",
+                "class_time": "0800"
             },
             "2": {
-                "class_name": "IHS111",
-                "class_time": "0940",
-                "class_link": "https://lmsone.iiitkottayam.ac.in/mod/bigbluebuttonbn/view.php?id=2130?reason=AutoJoomer"
+                "class_name": "",
+                "class_time": "0900"
             },
             "3": {
-                "class_name": "ICS112",
-                "class_time": "1050",
-                "class_link": "https://lmsone.iiitkottayam.ac.in/mod/bigbluebuttonbn/view.php?id=2134?reason=AutoJoomer"
+                "class_name": "ICS121",
+                "class_time": "1005"
             },
             "4": {
-                "class_name": "IMA111",
-                "class_time": "1200",
-                "class_link": "https://lmsone.iiitkottayam.ac.in/mod/bigbluebuttonbn/view.php?id=2133?reason=AutoJoomer"
+                "class_name": "IMA121",
+                "class_time": "1105"
             },
             "5": {
-                "class_name": "ICS112 LAB",
-                "class_time": "1400",
-                "class_link": "https://lmsone.iiitkottayam.ac.in/mod/bigbluebuttonbn/view.php?id=2134?reason=AutoJoomer"
+                "class_name1": "ICS121 LAB",
+                "class_name2": "IEC121 LAB",
+                "class_time": "1330"
             },
             "6": {
                 "class_name": "Coding Club Activities",
-                "class_time": "1615",
-                "class_link": ""
+                "class_time": "1600"
             }
         },
         "2": {
-            "a": "a",
+            "a": {"class_name" : "a" , "class_time" : "0000"},
             "1": {
-                "class_name": "IEC112",
-                "class_time": "0830",
-                "class_link": "https://lmsone.iiitkottayam.ac.in/mod/bigbluebuttonbn/view.php?id=2141?reason=AutoJoomer"
+                "class_name": "IMA121",
+                "class_time": "0800"
             },
             "2": {
-                "class_name": "IMA111",
-                "class_time": "0940",
-                "class_link": "https://lmsone.iiitkottayam.ac.in/mod/bigbluebuttonbn/view.php?id=2133?reason=AutoJoomer"
+                "class_name": "ICS122",
+                "class_time": "0900"
             },
             "3": {
-                "class_name": "ICS112",
-                "class_time": "1050",
-                "class_link": "https://lmsone.iiitkottayam.ac.in/mod/bigbluebuttonbn/view.php?id=2134?reason=AutoJoomer"
+                "class_name": "ICS121",
+                "class_time": "1005"
             },
             "4": {
-                "class_name": "IHS111",
-                "class_time": "1200",
-                "class_link": "https://lmsone.iiitkottayam.ac.in/mod/bigbluebuttonbn/view.php?id=2130?reason=AutoJoomer"
+                "class_name": "IMA121",
+                "class_time": "1105"
             },
             "5": {
-                "a": "a"
+                "class_name": "IEC122",
+                "class_time": "1330"
             },
             "6": {
                 "class_name": "Coding Club Activities",
-                "class_time": "1615",
-                "class_link": ""
+                "class_time": "1600"
             }
         },
         "3": {
-            "a": "a",
+            "a": {"class_name" : "a" , "class_time" : "0000"},
             "1": {
-                "class_name": "ICS112",
-                "class_time": "0830",
-                "class_link": "https://lmsone.iiitkottayam.ac.in/mod/bigbluebuttonbn/view.php?id=2134?reason=AutoJoomer"
+                "class_name": "IEC121",
+                "class_time": "0800"
             },
             "2": {
-                "class_name": "IMA111",
-                "class_time": "0940",
-                "class_link": "https://lmsone.iiitkottayam.ac.in/mod/bigbluebuttonbn/view.php?id=2133?reason=AutoJoomer"
+                "class_name": "IMA121",
+                "class_time": "0900"
             },
             "3": {
-                "class_name": "IEC112",
-                "class_time": "1050",
-                "class_link": "https://lmsone.iiitkottayam.ac.in/mod/bigbluebuttonbn/view.php?id=2141?reason=AutoJoomer"
+                "class_name": "IEC121",
+                "class_time": "1005"
             },
             "4": {
-                "class_name": "IMA111",
-                "class_time": "1200",
-                "class_link": "https://lmsone.iiitkottayam.ac.in/mod/bigbluebuttonbn/view.php?id=2133?reason=AutoJoomer"
+                "class_name": "IEC122",
+                "class_time": "1105"
             },
             "5": {
-                "a": "a"
+                "class_name": "IHS121",
+                "class_time": "1330"
             },
             "6": {
                 "class_name": "Coding Club Activities",
-                "class_time": "1615",
-                "class_link": ""
+                "class_time": "1600"
             }
         },
         "4": {
-            "a": "a",
+            "a": {"class_name" : "a" , "class_time" : "0000"},
             "1": {
-                "class_name": "IHS112",
-                "class_time": "0830",
-                "class_link": "https://lmsone.iiitkottayam.ac.in/mod/bigbluebuttonbn/view.php?id=2129?reason=AutoJoomer"
+                "class_name": "IEC122",
+                "class_time": "0800"
             },
             "2": {
-                "class_name": "IEC112",
-                "class_time": "0940",
-                "class_link": "https://lmsone.iiitkottayam.ac.in/mod/bigbluebuttonbn/view.php?id=2141?reason=AutoJoomer"
+                "class_name": "IEC121",
+                "class_time": "0900"
             },
             "3": {
-                "class_name": "IEC111",
-                "class_time": "1050",
-                "class_link": "https://lmsone.iiitkottayam.ac.in/mod/bigbluebuttonbn/view.php?id=2131?reason=AutoJoomer"
+                "class_name": "ICS121",
+                "class_time": "1005"
             },
             "4": {
-                "class_name": "ICS112",
-                "class_time": "1200",
-                "class_link": "https://lmsone.iiitkottayam.ac.in/mod/bigbluebuttonbn/view.php?id=2134?reason=AutoJoomer"
+                "class_name": "ICS122",
+                "class_time": "1105"
             },
             "5": {
-                "class_name": "IEC111 LAB",
-                "class_time": "1400",
-                "class_link": "https://lmsone.iiitkottayam.ac.in/mod/bigbluebuttonbn/view.php?id=2131?reason=AutoJoomer"
+                "class_name1": "IEC121 LAB",
+                "class_name2": "ICS121 LAB",
+                "class_time": "1330"
             },
             "6": {
                 "class_name": "Coding Club Activities",
-                "class_time": "1615",
-                "class_link": ""
+                "class_time": "1600"
             }
         },
         "5": {
-            "a": "a",
+            "a": {"class_name" : "a" , "class_time" : "0000"},
             "1": {
-                "class_name": "IEC111",
-                "class_time": "0830",
-                "class_link": "https://lmsone.iiitkottayam.ac.in/mod/bigbluebuttonbn/view.php?id=2131?reason=AutoJoomer"
+                "class_name": "ICS121",
+                "class_time": "0800"
             },
             "2": {
-                "class_name": "IEC112",
-                "class_time": "0940",
-                "class_link": "https://lmsone.iiitkottayam.ac.in/mod/bigbluebuttonbn/view.php?id=2141?reason=AutoJoomer"
+                "class_name": "IEC122",
+                "class_time": "0900"
             },
             "3": {
-                "class_name": "IHS111",
-                "class_time": "1050",
-                "class_link": "https://lmsone.iiitkottayam.ac.in/mod/bigbluebuttonbn/view.php?id=2130?reason=AutoJoomer"
+                "class_name": "IEC121",
+                "class_time": "1005"
             },
             "4": {
-                "class_name": "IEC111",
-                "class_time": "1200",
-                "class_link": "https://lmsone.iiitkottayam.ac.in/mod/bigbluebuttonbn/view.php?id=2131?reason=AutoJoomer"
+                "class_name": "ICS122",
+                "class_time": "1105"
             },
             "5": {
                 "class_name": "Technical Club Activities",
-                "class_time": "1400",
-                "class_link": ""
+                "class_time": "1330"
             },
             "6": {
                 "class_name": "IPT111",
-                "class_time": "1615",
-                "class_link": ""
+                "class_time": "1600"
             }
         },
         "6": {
-            "a": "a"
+            "a": {"class_name" : "a" , "class_time" : "0000"}
         }
     }
 }
