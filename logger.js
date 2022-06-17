@@ -86,7 +86,7 @@ $(document).ready(function () {
     }
 
     //to auto login on college Wi-Fi
-    if (url.includes('http://172.16.222.1:1000/fgtauth')) {
+    if (url.includes('fgtauth')) {
         document.getElementById('ft_un').value = replaceusername;
         document.getElementById('ft_pd').value = replacepassword;
         document.getElementsByClassName('fer')[0].getElementsByTagName('input')[0].click();
