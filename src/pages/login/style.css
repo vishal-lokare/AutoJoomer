@@ -1,0 +1,120 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,900&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+:root {
+  --font-family: "Montserrat", sans-serif;
+  --light: white;
+  --dark: black;
+  --bg-gradient: linear-gradient(
+    to bottom right,
+    rgba(9, 9, 121, 1),
+    rgba(0, 207, 255, 1)
+  );
+}
+body {
+  background: var(--bg-gradient);
+  font-family: var(--font-family);
+  min-height: 100vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 20px 0;
+}
+.logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 120px;
+  height: 120px;
+  margin-bottom: 80px;
+}
+.logo img {
+  width: 100%;
+}
+.form-container {
+  padding: 24px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: column;
+  background-color: var(--light);
+  border-radius: 8px;
+}
+.form-container h1 {
+  padding-bottom: 2rem;
+  font-size: 2.5rem;
+}
+.form-group,
+.form-group-col {
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 1rem;
+}
+.form-group-row {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.form-group label,
+.form-group-col label {
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: rgba(0, 0, 0, 0.8);
+  padding-bottom: 0.5rem;
+}
+.form-group input {
+  padding: 12px 8px;
+  border-radius: 4px;
+  border: 1px solid rgba(0, 0, 0, 0.4);
+  width: 400px;
+}
+.form-group input:focus-visible,
+.form-group-col select:focus-visible {
+  outline: none;
+  border-color: rgba(9, 9, 121, 1);
+  box-shadow: 0 0 2px 0px rgba(0, 207, 255, 1);
+  color: var(--dark);
+}
+.form-group-col select {
+  padding: 8px;
+  border-radius: 4px;
+  border: 1px solid rgba(0, 0, 0, 0.4);
+  width: 120px;
+}
+.submit-btn {
+  padding: 8px 16px;
+  border-radius: 4px;
+  width: 100%;
+  font-weight: 800;
+  font-size: 1.2rem;
+  font-family: var(--font-family);
+  cursor: pointer;
+  border: 2px solid rgba(9, 9, 121, 1);
+  color: rgba(9, 9, 121, 1);
+  transition: all 200ms ease-in-out;
+}
+.submit-btn:hover {
+  background: rgba(9, 9, 121, 1);
+  color: var(--light);
+}
+
+@media screen and (max-width: 576px) {
+  .form-group input {
+    width: 280px;
+  }
+  .form-group-col select {
+    width: 80px;
+  }
+}
+
+/* .hidden {
+  display: none;
+} */
