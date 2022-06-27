@@ -1,29 +1,55 @@
+// RETRIEVING VALUES FROM LOCAL STORAGE
+
 var username = JSON.parse(window.localStorage.getItem("AutoJoomerUsername"));
 var password = JSON.parse(window.localStorage.getItem("AutoJoomerPassword"));
 var year = JSON.parse(window.localStorage.getItem("AutoJoomerYear"));
 var branch = JSON.parse(window.localStorage.getItem("AutoJoomerBranch"));
 var batch = JSON.parse(window.localStorage.getItem("AutoJoomerBatch"));
-var earlyjoin = JSON.parse(window.localStorage.getItem("AutoJoomerearlyjoin"));
+var earlyjoin = JSON.parse(window.localStorage.getItem("AutoJoomerEarlyJoin"));
 var confirmation = JSON.parse(
   window.localStorage.getItem("AutoJoomerConfirmation")
 );
 
+// DISPLAYING ALL VALUES FOR DEBUGGING
+
+console.log("Username = " + username);
+console.log("Password = " + password);
+console.log("Year = " + year);
+console.log("Branch = " + branch);
+console.log("Batch = " + batch);
+console.log("Early Join = " + earlyjoin);
+console.log("Confirmation Required = " + confirmation);
+
+// HANDLING ERRORS IN RETRIEVED VALUES
+
+// first time (never saved values)
 if (
-  year == "" ||
-  branch == "" ||
-  batch == "" ||
-  username == "" ||
-  password == "" ||
+  username == null &&
+  password == null &&
+  year == null &&
+  branch == null &&
+  batch == null &&
+  earlyjoin == null &&
   confirmation == null
 ) {
-  if (year == "2019") runningscript();
-  else
-    alert(
-      'Some values have not been set. Navigate to the extensions panel in your browser, choose "AutoJoomer",  save your values and restart your browser for changes to take effect.'
-    );
-} else {
-  runningscript();
+  alert(
+    'YOU ARE ALMOST DONE\n- open the extensions panel\n- click on "AutoJoomer"\n- fill up the form\n- restart extension/browser'
+  );
 }
+// improper filling (has saved atleast once)
+else if (
+  username == "" ||
+  password == "" ||
+  year == "" ||
+  branch == "" ||
+  (batch == "" && year != "2019")
+) {
+  alert(
+    'SOME VALUES ARE NOT PROPER\nTo fix this\n- click on "AutoJoomer"\n- fill up the form\n- restart extension/browser'
+  );
+}
+// no errors
+else runningscript();
 
 ghManifestLink = "https://www.vishal-lokare.co/AutoJoomer/manifest.json";
 $.getJSON(ghManifestLink, function (links) {
@@ -86,11 +112,6 @@ chrome.runtime.onMessage.addListener((message, sender, sendResponse) => {
 });
 
 function runningscript() {
-  console.log("Username = " + username);
-  console.log("Password = " + password);
-  console.log("Branch = " + branch);
-  console.log("Confirmation Required = " + confirmation);
-
   var now = new Date();
   var timeouts = [];
   var h = [];

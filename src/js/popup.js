@@ -80,7 +80,7 @@ function saveValues() {
   window.localStorage.setItem("AutoJoomerYear", JSON.stringify(uyear));
   window.localStorage.setItem("AutoJoomerBranch", JSON.stringify(bran));
   window.localStorage.setItem("AutoJoomerBatch", JSON.stringify(ubatch));
-  window.localStorage.setItem("AutoJoomerearlyjoin", JSON.stringify(ejoin));
+  window.localStorage.setItem("AutoJoomerEarlyJoin", JSON.stringify(ejoin));
   window.localStorage.setItem("AutoJoomerConfirmation", JSON.stringify(conf));
 }
 
@@ -111,9 +111,9 @@ function populator() {
     branch.value = JSON.parse(window.localStorage.getItem("AutoJoomerBranch"));
   if (JSON.parse(window.localStorage.getItem("AutoJoomerBatch")) != null)
     batch.value = JSON.parse(window.localStorage.getItem("AutoJoomerBatch"));
-  if (JSON.parse(window.localStorage.getItem("AutoJoomerearlyjoin")) != null)
+  if (JSON.parse(window.localStorage.getItem("AutoJoomerEarlyJoin")) != null)
     earlyjoin.value = JSON.parse(
-      window.localStorage.getItem("AutoJoomerearlyjoin")
+      window.localStorage.getItem("AutoJoomerEarlyJoin")
     );
 
   if (JSON.parse(window.localStorage.getItem("AutoJoomerConfirmation")) == 1)

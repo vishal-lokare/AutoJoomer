@@ -2,7 +2,7 @@
 
 let username, password;
 chrome.runtime.sendMessage("getUsername", (response) => {
-  username = response + "a";
+  username = response;
 });
 chrome.runtime.sendMessage("getPassword", (response) => {
   password = response;
