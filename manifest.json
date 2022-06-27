@@ -1,6 +1,6 @@
 {
   "name": "AutoJoomer",
-  "version": "2.5",
+  "version": "2.6",
   "manifest_version": 2,
   "icons": {
     "16": "src/images/icon.jpeg",
