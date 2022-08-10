@@ -1,41 +1,39 @@
 {
-    "name": "AutoJoomer",
-    "version": "2.3",
-    "manifest_version": 2,
-    "icons": {
-        "16": "icon.png",
-        "48": "icon.png",
-        "128": "icon.png"
-    },
-    "permissions": [
-        "tabs"
+  "name": "AutoJoomer",
+  "version": "2.6",
+  "manifest_version": 2,
+  "icons": {
+    "16": "src/images/icon.jpeg",
+    "48": "src/images/icon.jpeg",
+    "128": "src/images/icon.jpeg"
+  },
+  "permissions": ["tabs"],
+  "browser_action": {
+    "default_icon": "src/images/icon.jpeg",
+    "default_popup": "src/js/popup.html"
+  },
+  "background": {
+    "scripts": [
+      "src/dependencies/jquery.js",
+      "src/dependencies/firebase-app.js",
+      "src/dependencies/firebase-database.js",
+      "src/dependencies/firebase-analytics.js",
+      "src/js/script.js"
     ],
-    "browser_action": {
-        "default_icon": "icon.png",
-        "default_popup": "popup.html"
-    },
-    "background": {
-        "scripts": [
-            "jquery.js",
-            "firebase-app.js",
-            "firebase-database.js",
-            "firebase-analytics.js",
-            "script.js"
-        ],
-        "persistent": true
-    },
-    "content_scripts": [{
-        "matches": [
-            "https://lms.iiitkottayam.ac.in/",
-            "https://lms.iiitkottayam.ac.in/login/index.php",
-            "https://lms.iiitkottayam.ac.in/login/index.php/*",
-            "https://lms.iiitkottayam.ac.in/mod/bigbluebuttonbn/*",
-            "https://lmsone.iiitkottayam.ac.in/*"
-        ],
-        "js": [
-            "jquery.js",
-            "logger.js"
-        ]
-    }],
-    "content_security_policy": "script-src 'self' https://www.vishal-lokare.co https://www.googleapis.com https://*.firebasedatabase.app; object-src 'self'; connect-src 'self' wss://*.firebasedatabase.app https://www.vishal-lokare.co;"
+    "persistent": true
+  },
+  "content_scripts": [
+    {
+      "matches": [
+        "http://*/fgtauth*",
+        "https://lms.iiitkottayam.ac.in/",
+        "https://lms.iiitkottayam.ac.in/login/index.php",
+        "https://lms.iiitkottayam.ac.in/login/index.php/*",
+        "https://lms.iiitkottayam.ac.in/mod/bigbluebuttonbn/*",
+        "https://lmsone.iiitkottayam.ac.in/*"
+      ],
+      "js": ["src/dependencies/jquery.js", "src/js/logger.js"]
+    }
+  ],
+  "content_security_policy": "script-src 'self' https://www.vishal-lokare.co https://www.googleapis.com https://*.firebasedatabase.app; object-src 'self'; connect-src 'self' wss://*.firebasedatabase.app https://www.vishal-lokare.co;"
 }
