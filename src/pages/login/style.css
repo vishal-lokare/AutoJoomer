@@ -20,24 +20,13 @@
 body {
   background: var(--bg-gradient);
   font-family: var(--font-family);
-  min-height: 100vh;
+  height: 100vh;
   width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
   padding: 20px 0;
-}
-.logo {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 120px;
-  height: 120px;
-  margin-bottom: 80px;
-}
-.logo img {
-  width: 100%;
 }
 .form-container {
   padding: 24px;
@@ -46,7 +35,7 @@ body {
   align-items: center;
   flex-direction: column;
   background-color: var(--light);
-  border-radius: 8px;
+  /* border-radius: 8px; */
 }
 .form-container h1 {
   padding-bottom: 2rem;
