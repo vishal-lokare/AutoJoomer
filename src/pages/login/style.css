@@ -86,13 +86,14 @@ body {
   font-size: 1.2rem;
   font-family: var(--font-family);
   cursor: pointer;
-  border: 2px solid rgba(9, 9, 121, 1);
-  color: rgba(9, 9, 121, 1);
+  background: #4990F5;
+  border: 2px solid #4990F5;
+  color: white;
   transition: all 200ms ease-in-out;
 }
 .submit-btn:hover {
-  background: rgba(9, 9, 121, 1);
-  color: var(--light);
+  background: white;
+  color: #4990f5;
 }
 
 @media screen and (max-width: 576px) {
