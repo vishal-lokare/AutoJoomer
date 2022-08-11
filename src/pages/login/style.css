@@ -20,24 +20,13 @@
 body {
   background: var(--bg-gradient);
   font-family: var(--font-family);
-  min-height: 100vh;
+  height: 100vh;
   width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
   padding: 20px 0;
-}
-.logo {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 120px;
-  height: 120px;
-  margin-bottom: 80px;
-}
-.logo img {
-  width: 100%;
 }
 .form-container {
   padding: 24px;
@@ -46,7 +35,7 @@ body {
   align-items: center;
   flex-direction: column;
   background-color: var(--light);
-  border-radius: 8px;
+  /* border-radius: 8px; */
 }
 .form-container h1 {
   padding-bottom: 2rem;
@@ -97,13 +86,14 @@ body {
   font-size: 1.2rem;
   font-family: var(--font-family);
   cursor: pointer;
-  border: 2px solid rgba(9, 9, 121, 1);
-  color: rgba(9, 9, 121, 1);
+  background: #4990F5;
+  border: 2px solid #4990F5;
+  color: white;
   transition: all 200ms ease-in-out;
 }
 .submit-btn:hover {
-  background: rgba(9, 9, 121, 1);
-  color: var(--light);
+  background: white;
+  color: #4990f5;
 }
 
 @media screen and (max-width: 576px) {
