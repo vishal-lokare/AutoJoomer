@@ -62,7 +62,6 @@ roll.addEventListener("keyup", () => {
 });
 
 btn.addEventListener("click", () => {
-  if (!pattern.test(roll.value)) {
-    alert("Invalid Roll Number");
-  }
+  chrome.storage.local.set({["AutoJoomerUsername"]:roll.value});
+  chrome.storage.local.set({["AutoJoomerPassword"]:password.value});
 });
