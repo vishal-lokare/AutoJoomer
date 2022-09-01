@@ -4,11 +4,11 @@ window.onload = function () {
     theme();//checks theme
     // pingURL();
     //isOnline();
-  
 }
 
 document.addEventListener('DOMContentLoaded', function () {
-    document.getElementById("nav_button").addEventListener("click",mode_change)
+    document.getElementById("nav_button").addEventListener("click",mode_change);
+    document.getElementById("nav_logo").addEventListener("click",open_autojoomer);
    
 });
    
@@ -101,6 +101,10 @@ document.addEventListener('DOMContentLoaded', function () {
 //     });
 //  }
 
+
+function open_autojoomer() {
+    window.open('https://www.autojoomer.co/', target="_blank");
+}
 
 function mode_change() {
 
