@@ -3,7 +3,7 @@
 [![Stargazers][stars-shield]][stars-url]
 [![Issues][issues-shield]][issues-url]
 [![MIT License][license-shield]][license-url]
-[![Generic badge](https://img.shields.io/badge/Version-2.6-brightgreen?style=for-the-badge&logo=appveyor)](https://github.com/vishal-lokare/AutoJoomer)
+[![Generic badge](https://img.shields.io/badge/Version-3.0-brightgreen?style=for-the-badge&logo=appveyor)](https://github.com/vishal-lokare/AutoJoomer)
 
 [contributors-shield]: https://img.shields.io/github/contributors/vishal-lokare/AutoJoomer.svg?style=for-the-badge
 [contributors-url]: https://github.com/vishal-lokare/AutoJoomer/graphs/contributors
@@ -45,6 +45,12 @@
       <td>
         <a href="https://github.com/nikhil9302"><img src="https://avatars.githubusercontent.com/u/74824711?v=4" alt="Nikhil Menon" width="35" height="35"></a> 
       </td> 
+      <td>
+        <a href="https://github.com/AkshayWarrier"><img src="https://avatars.githubusercontent.com/u/58233418?v=4" alt="Akshay Warrier" width="35" height="35"></a> 
+      </td> 
+      <td>
+        <a href="https://github.com/Welf06"><img src="https://avatars.githubusercontent.com/u/85446331?v=4" alt="Ganesh Nathan" width="35" height="35"></a> 
+      </td> 
     </tr>
     <tr>
       <td>
@@ -62,44 +68,24 @@
       <td>
         <a href="https://github.com/nikhil9302">nikhil9302</a>
       </td>
+      <td>
+        <a href="https://github.com/AkshayWarrier">AkshayWarrier</a>
+      </td>
+      <td>
+        <a href="https://github.com/Welf06">Welf06</a>
+      </td>
     </tr>  
   </table>
   </p>
-
-  <br>
-  <br>
 </p>
- <p align="center">
-  Amazing contributors-<br><br>
-  </p>
-   <table align='center' rules='none'>
-    <tr align='center'>
-       <td>
-         <a href="https://github.com/Abhijit25Mishra"><img src="https://avatars.githubusercontent.com/Abhijit25Mishra" alt="Abhijit Mishra" width="35" height="35"></a> 
-      </td>
-      <td>
-         <a href="https://github.com/nogi2k2"><img src="https://avatars.githubusercontent.com/nogi2k2" alt="Ashutosh Rai" width="35" height="35"></a> 
-      </td> 
-      <td>
-         <a href="https://github.com/aditivibgyor"><img src="https://avatars.githubusercontent.com/aditivibgyor" alt="Aditi Shukla" width="35" height="35"></a> 
-      </td> 
-  </tr>
-  <tr>
-     <td>
-        <a href="https://github.com/Abhijit25Mishra">Abhijit25Mishra</a>
-      </td>
-      <td>
-        <a href="https://github.com/nogi2k2">nogi2k2</a>
-      </td> 
-     <td>
-        <a href="https://github.com/aditivibgyor">aditivibgyor</a>
-      </td> 
-  </tr>
-  </table>
 
 # AutoJoomer
 
-AutoJoomer is an Open Source browser extension that automatically joins classes for you on time (IIIT Kottayam 2022). Classes include lab and coding classes; Data fetched from hosted database, updated according to timetable. Currently available as a Chrome extension.
+AutoJoomer's chrome extension.
+
+Includes features like auto-login to wifi, LMS portal.
+
+Many more to come.
 
 ## Getting Started
 
@@ -107,23 +93,24 @@ Three-pointers to get you started:
 
 - <p><a href="https://github.com/vishal-lokare/AutoJoomer/blob/main/CONTRIBUTING.md">Contributing.md</a></p>
 - <p><a href="https://github.com/vishal-lokare/AutoJoomer/blob/main/LICENSE">License</a></p>
-- <p><a href="https://github.com/vishal-lokare/AutoJoomer/tree/main/src/images/screenshots">Screenshots</a></p>
 
 ## Installation
 
 1. Download all the files to a folder either by the "Download as ZIP" button or by cloning the repo.
-<p align='center'><img src="src/images/screenshots/ziporclone.jpg"/></p>
 
-2. Open your browser, navigate to "Extensions" panel -> "Manage Extensions".
-3. Enable "Developer Mode" in the top-right.
+2. Open your browser, go to
 
-<p align='center'><img src="src/images/screenshots/devmode.jpg"/></p>
+"chrome://extensions" || "brave://extensions"
 
-4. Click on "Load Unpacked" and select the folder where you downloaded/cloned the files.
+3. Enable "Developer Mode" in top-right.
+
+4. Click on "Load Unpacked" in top-left and select the folder where you downloaded/cloned the files.
+
 5. Navigate to "Extensions" panel -> click on "AutoJoomer".
-6. Set the required values, click "SAVE", and restart your browser / reload the extension.
 
-<p align='center'><img src="src/images/screenshots/autojoomer.jpg" width='764' height='451'/></p>
+6. Click on Login on bottom left, and set the required values.
+
+7. Now the extension will auto-login you to college's wifi portal and LMS portal.
 
 ## How to stay updated
 
@@ -138,16 +125,6 @@ in the terminal and restart your browser / reload the extension.
 OR
 
 Repeat the installation process again.
-
-## How to use
-
-1. Open your browser.
-2. If values are not set, error will be displayed. In this case, set the values in "AutoJoomer" popup in "Extensions" panel.
-3. In case you open your browser after a class has already started, the extension will automatically add you to that class as well, as the class started in the last hour. If "confirmation before joining class" is selected, the extension will show an alert as shown below:
-   <img src="src/images/screenshots/class_alert.PNG" width="972" height="471">
-
-4. <p>The extension will stop working when the browser is closed OR the day is over.</p>
-5. <p>And that's it, now you are good to go!</p>
 
 ## Tech Stack Used
 
@@ -167,10 +144,8 @@ Repeat the installation process again.
 
 ## Future Updates
 
-<p>-> Search a student's name with roll number or vice-versa.</p>
-<p>-> Publish extension in the Chrome Web Store.</p>
-<p>-> Leave a class automatically after a certain period of time(Optional feature).</p>
-<p>-> Rejoin classes automatically.</p>
+<p>-> Publish extension in the Chrome Web Store. (Published, review pending)</p>
+
 
 ## License
 
