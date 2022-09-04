@@ -11,7 +11,7 @@
   "content_scripts": [
     {
       "matches": [
-        "https://lms.iiitkottayam.ac.in/*", "http://*/fgtauth*"
+        "https://lms.iiitkottayam.ac.in/*", "https://lmsone.iiitkottayam.ac.in/*", "http://*/fgtauth*"
       ],
       "js": [
         "/src/js/logger.js"

@@ -8,7 +8,7 @@ chrome.storage.local.get(('AutoJoomerPassword'), function (result) {
     password = result['AutoJoomerPassword'];
 });
 
-// checking current url and acting accordingly
+// checking current url
 var url = window.location.href;
 
 // move to login page if on home page
@@ -20,12 +20,7 @@ if (
 }
 
 // fill credentials and click button
-if (
-    url == "https://lms.iiitkottayam.ac.in/login/index.php" ||
-    url == "https://lms.iiitkottayam.ac.in/login/index.php/#" ||
-    url == "https://lmsone.iiitkottayam.ac.in/login/index.php" ||
-    url == "https://lmsone.iiitkottayam.ac.in/login/index.php/#"
-) {
+if (url.includes("login/index.php")) {
     setTimeout(() => {
         if (typeof username !== 'undefined' && typeof password !== 'undefined') {
             document.getElementById("username").value = username;
