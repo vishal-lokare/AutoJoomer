@@ -4,7 +4,8 @@ const branch = document.querySelector("#branch");
 const batch = document.querySelector("#batch");
 const password = document.querySelector("#password");
 const btn = document.getElementById("mb");
-let pattern = /20[1-2][0-9]B[CE][ES]0[0-2][0-9][0-9]/gi;
+let pattern = /20(19BCS((000[1-9])|(00[1-9][0-9])|(01[01][0-9])|(012[0-2]))|(20BCS)((000[1-9])|(00[1-9][0-9])|(01[0-8][0-9])|(0190))|(21BCS)((000[1-9])|(00[1-9][0-9])|(01[0-9][0-9]))|(21BCY)((000[1-9])|(00[1-3][0-9])|(004[0-6]))|(20BEC)((000[1-9])|(00[1-3][0-9]))|(21BEC)((000[1-9])|(00[1-3][0-9])|(004[0-4])))/gim;
+
 
 //disabling them
 year.disabled = true;
@@ -49,19 +50,54 @@ roll.addEventListener("keyup", () => {
 var batchValue = "";
 roll.addEventListener("keyup", () => {
   let inputValue = roll.value.toUpperCase();
-  batchValue = inputValue.slice(10);
+  batchValue = inputValue[10];
   if (year.value != "2019") {
-    if (inputValue.length > 7) {
+    if (inputValue.length > 10) {
       if (batchValue % 2 == 0) {
-        batch.value = "batch2";
+        batch.value = "2";
       } else {
-        batch.value = "batch1";
+        batch.value = "1";
       }
-    }
+    } else batch.value = "";
   }
 });
 
 btn.addEventListener("click", () => {
-  chrome.storage.local.set({["AutoJoomerUsername"]:roll.value});
-  chrome.storage.local.set({["AutoJoomerPassword"]:password.value});
+  if (roll.value == "" || password.value == "") {
+    alert("Please fill values");
+    return;
+  }
+  if (roll.value.length != 11) {
+    alert("Invalid Roll Number");
+    return;
+  }
+  if (pattern.test(roll.value)) {
+    chrome.storage.local.set({ ["AutoJoomerUsername"]: roll.value });
+    chrome.storage.local.set({ ["AutoJoomerPassword"]: password.value });
+    btn.setAttribute(
+      "style",
+      "background: var(--light);  color: rgba(9, 9, 121, 1);"
+    );
+    btn.disabled = true;
+    // btn.value = "Saved";
+    btn.innerText = "Saved";
+  } else {
+    alert("Roll number does not exist");
+    return;
+  }
 });
+
+function populate() {
+  alert("fgfg");
+  let username, password;
+  chrome.storage.local.get("AutoJoomerUsername", function (result) {
+    username = result["AutoJoomerUsername"];
+  });
+
+  chrome.storage.local.get("AutoJoomerPassword", function (result) {
+    password = result["AutoJoomerPassword"];
+  });
+
+  document.getElementById("roll").value = username;
+  document.getElementById("password").value = "******";
+}
