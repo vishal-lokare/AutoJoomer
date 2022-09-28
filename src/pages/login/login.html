@@ -13,22 +13,26 @@
     <title>Log In Page</title>
   </head>
   <body>
+    <script>
+      window.onload = populate();
+    </script>
     <div class="form-container">
       <h1>Login</h1>
       <form method="post">
         <div class="form-group">
-          <label for="roll">Roll No.</label>
+          <label for="roll">LMS Roll No.</label>
           <input
             type="text"
             class="form-input"
             name="roll"
             id="roll"
-            placeholder="For example: 2020BCS0001"
+            maxlength="11"
+            placeholder="For example: 2020bcs0001"
             required
           />
         </div>
         <div class="form-group">
-          <label for="password">Password </label>
+          <label for="password">LMS Password </label>
           <input
             type="password"
             class="form-input"
@@ -60,8 +64,8 @@
             <label for="batch">Batch: </label>
             <select name="batch" id="batch">
               <option value="">Select batch</option>
-              <option value="batch1">Batch 1</option>
-              <option value="batch2">Batch 2</option>
+              <option value="1">1</option>
+              <option value="2">2</option>
             </select>
           </div>
         </div>
