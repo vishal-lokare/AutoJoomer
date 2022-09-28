@@ -1,11 +1,11 @@
-let username, password;
+let username, pwd;
 
 chrome.storage.local.get(('AutoJoomerUsername'), function (result) {
     username = result['AutoJoomerUsername'];
 });
 
 chrome.storage.local.get(('AutoJoomerPassword'), function (result) {
-    password = result['AutoJoomerPassword'];
+    pwd = result['AutoJoomerPassword'];
 });
 
 // checking current url
@@ -22,9 +22,9 @@ if (
 // fill credentials and click button
 if (url.includes("login/index.php")) {
     setTimeout(() => {
-        if (typeof username !== 'undefined' && typeof password !== 'undefined') {
+        if (typeof username !== 'undefined' && typeof pwd !== 'undefined') {
             document.getElementById("username").value = username;
-            document.getElementById("password").value = password;
+            document.getElementById("password").value = pwd;
             document
                 .getElementsByClassName("btn btn-primary btn-block")[0]
                 .click();
@@ -38,9 +38,9 @@ if (url.includes("login/index.php")) {
 // fill credentials on wifi authentication page
 if (url.includes("fgtauth")) {
     setTimeout(() => {
-        if (typeof username !== 'undefined' && typeof password !== 'undefined') {
+        if (typeof username !== 'undefined' && typeof pwd !== 'undefined') {
             document.getElementById("ft_un").value = username;
-            document.getElementById("ft_pd").value = password;
+            document.getElementById("ft_pd").value = pwd;
             document
                 .getElementsByClassName("fer")[0]
                 .getElementsByTagName("input")[0]
