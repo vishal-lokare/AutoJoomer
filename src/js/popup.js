@@ -173,7 +173,7 @@ async function connect_wifi() {
     }
   }
   await new Promise((done) => setTimeout(() => done(), 1000));
-  window.location.href='https://msftconnecttest.com/redirect';
+  window.open("http://www.msftconnecttest.com/redirect"), "_blank";
   // let offline=document.getElementById("dis_conn")
   // let online=document.getElementById("wifi_conn")
   // offline.style.display="none";
