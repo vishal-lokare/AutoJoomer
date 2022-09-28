@@ -5,12 +5,26 @@ const batch = document.querySelector("#batch");
 const password = document.querySelector("#password");
 const btn = document.getElementById("mb");
 let pattern = /20(19BCS((000[1-9])|(00[1-9][0-9])|(01[01][0-9])|(012[0-2]))|(20BCS)((000[1-9])|(00[1-9][0-9])|(01[0-8][0-9])|(0190))|(21BCS)((000[1-9])|(00[1-9][0-9])|(01[0-9][0-9]))|(21BCY)((000[1-9])|(00[1-3][0-9])|(004[0-6]))|(20BEC)((000[1-9])|(00[1-3][0-9]))|(21BEC)((000[1-9])|(00[1-3][0-9])|(004[0-4])))/gim;
-
+const elements = document.getElementsByTagName('input');
+let firstChange = 0;
 
 //disabling them
 year.disabled = true;
 branch.disabled = true;
 batch.disabled = true;
+
+for(let i = 0; i < elements.length; i++) {
+  elements[i].addEventListener("keyup", () => {
+    if (!firstChange) {
+      firstChange++;
+      roll.value = "";
+      password.value = "";
+      year.value = "";
+      branch.value = "";
+      batch.value = "";
+    }
+  });
+}
 
 //year
 var yearValue = "";
@@ -74,30 +88,17 @@ btn.addEventListener("click", () => {
   if (pattern.test(roll.value)) {
     chrome.storage.local.set({ ["AutoJoomerUsername"]: roll.value });
     chrome.storage.local.set({ ["AutoJoomerPassword"]: password.value });
+    chrome.storage.local.set({ ["AutoJoomerYear"]: yearValue });
+    chrome.storage.local.set({ ["AutoJoomerBranch"]: branchValue });
+    chrome.storage.local.set({ ["AutoJoomerBatch"]: batchValue });
     btn.setAttribute(
       "style",
       "background: var(--light);  color: rgba(9, 9, 121, 1);"
     );
     btn.disabled = true;
-    // btn.value = "Saved";
     btn.innerText = "Saved";
   } else {
     alert("Roll number does not exist");
     return;
   }
 });
-
-function populate() {
-  alert("fgfg");
-  let username, password;
-  chrome.storage.local.get("AutoJoomerUsername", function (result) {
-    username = result["AutoJoomerUsername"];
-  });
-
-  chrome.storage.local.get("AutoJoomerPassword", function (result) {
-    password = result["AutoJoomerPassword"];
-  });
-
-  document.getElementById("roll").value = username;
-  document.getElementById("password").value = "******";
-}
