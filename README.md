@@ -3,7 +3,7 @@
 [![Stargazers][stars-shield]][stars-url]
 [![Issues][issues-shield]][issues-url]
 [![MIT License][license-shield]][license-url]
-[![Generic badge](https://img.shields.io/badge/Version-3.0-brightgreen?style=for-the-badge&logo=appveyor)](https://github.com/vishal-lokare/AutoJoomer)
+[![Generic badge](https://img.shields.io/badge/Version-3.0.1-brightgreen?style=for-the-badge&logo=appveyor)](https://github.com/vishal-lokare/AutoJoomer)
 
 [contributors-shield]: https://img.shields.io/github/contributors/vishal-lokare/AutoJoomer.svg?style=for-the-badge
 [contributors-url]: https://github.com/vishal-lokare/AutoJoomer/graphs/contributors
@@ -23,61 +23,13 @@
 <p align="center">
   <a href="https://github.com/vishal-lokare/AutoJoomer/"><img src="https://github.com/vishal-lokare/AutoJoomer/blob/main/src/images/icon.jpeg?raw=true" alt="AutoJoomer" width="100" height="100"></a><br>
   <a href="https://github.com/vishal-lokare/AutoJoomer/"><b>AutoJoomer</b></a>
-  <br><br><hr>  
-  <p align="center">
-  Maintainers-<br><br>
-  </p>
-  <p align="center">
-  <table align='center' rules='none'>
-    <tr align='center'>
-      <td>
-        <a href="https://github.com/vishal-lokare"><img src="https://avatars.githubusercontent.com/u/31512838?v=4" alt="Vishal Lokare" width="35" height="35"></a> 
-      </td>
-      <td>
-         <a href="https://github.com/freak-10"><img src="https://avatars.githubusercontent.com/u/62661394?v=4" alt="Kotikalapudi Sumanth" width="35" height="35"></a> 
-      </td> 
-      <td>
-        <a href="https://github.com/karynaur"><img src="https://avatars.githubusercontent.com/u/25678782?v=4" alt="Aditya Srinivas Menon" width="35" height="35"></a>
-      </td> 
-      <td>
-        <a href="https://github.com/tomid9999"><img src="https://avatars.githubusercontent.com/u/28211612?v=4" alt="Rishabh Srivastava" width="35" height="35"></a> 
-      </td> 
-      <td>
-        <a href="https://github.com/nikhil9302"><img src="https://avatars.githubusercontent.com/u/74824711?v=4" alt="Nikhil Menon" width="35" height="35"></a> 
-      </td> 
-      <td>
-        <a href="https://github.com/AkshayWarrier"><img src="https://avatars.githubusercontent.com/u/58233418?v=4" alt="Akshay Warrier" width="35" height="35"></a> 
-      </td> 
-      <td>
-        <a href="https://github.com/Welf06"><img src="https://avatars.githubusercontent.com/u/85446331?v=4" alt="Ganesh Nathan" width="35" height="35"></a> 
-      </td> 
-    </tr>
-    <tr>
-      <td>
-        <a href="https://github.com/vishal-lokare">vishal-lokare</a>
-      </td> 
-      <td>
-        <a href="https://github.com/freak-10">freak-10</a>
-      </td>  
-      <td>
-        <a href="https://github.com/karynaur">karynaur</a>
-      </td>  
-      <td>
-        <a href="https://github.com/tomid9999">tomid9999</a>
-      </td>  
-      <td>
-        <a href="https://github.com/nikhil9302">nikhil9302</a>
-      </td>
-      <td>
-        <a href="https://github.com/AkshayWarrier">AkshayWarrier</a>
-      </td>
-      <td>
-        <a href="https://github.com/Welf06">Welf06</a>
-      </td>
-    </tr>  
-  </table>
-  </p>
+  <br><br><hr>
+  <p> AutoJoomer extension on Chrome Webstore - <a href="https://chrome.google.com/webstore/detail/autojoomer/gbclbcfjcjnajkkibmadammhkbmgbiao">Add to your browser</a></p>
+  <p> AutoJoomer GitHub repo - <a href="https://www.github.com/vishal-lokare/AutoJoomer">https://www.github.com/vishal-lokare/AutoJoomer</a></p>
+  <p> AutoJoomer website - <a href="https://www.autojoomer.co/">https://www.autojoomer.co/</a></p>
+
 </p>
+
 
 # AutoJoomer
 
@@ -89,12 +41,14 @@ Many more to come.
 
 ## Getting Started
 
-Three-pointers to get you started:
-
-- <p><a href="https://github.com/vishal-lokare/AutoJoomer/blob/main/CONTRIBUTING.md">Contributing.md</a></p>
+- <p><a href="https://github.com/vishal-lokare/AutoJoomer/blob/main/CONTRIBUTING.md">CONTRIBUTING.md</a></p>
 - <p><a href="https://github.com/vishal-lokare/AutoJoomer/blob/main/LICENSE">License</a></p>
 
 ## Installation
+
+If you are just a user, then you can install the extension from the <a href="https://chrome.google.com/webstore/detail/autojoomer/gbclbcfjcjnajkkibmadammhkbmgbiao">Chrome Webstore</a>.
+
+And for contributors, they can follow the below steps to add the extension in Developer mode.
 
 1. Download all the files to a folder either by the "Download as ZIP" button or by cloning the repo.
 
@@ -110,11 +64,15 @@ Three-pointers to get you started:
 
 6. Click on Login on bottom left, and set the required values.
 
-7. Now the extension will auto-login you to college's wifi portal and LMS portal.
+7. Now the extension is fully setup.
+
+Everytime you make any change in your local code, go to "chrome://extensions" or equivalent for your browser, click on 'reload ⟳' button on AutoJoomer extension and your changes will be reflected in the browser.
 
 ## How to stay updated
 
-To stay up-to-date with the latest version hosted on github, while being in the same directory where the downloaded files are, run
+Users from Chrome Webstore will get updates automatically.
+
+To stay up-to-date with the latest version hosted on GitHub, while being in the same directory where the downloaded files are, run
 
 ```
 git pull
@@ -144,8 +102,7 @@ Repeat the installation process again.
 
 ## Future Updates
 
-<p>-> Publish extension in the Chrome Web Store. (Published, review pending)</p>
-
+<p>-> Publish extension in the Chrome Web Store. (Finally Published 🥳)</p>
 
 ## License
 
