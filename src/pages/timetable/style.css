@@ -1,0 +1,209 @@
+@import url('https://fonts.googleapis.com/css2?family=Lobster&family=Rhodium+Libre&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+::-webkit-scrollbar{
+    display:none;
+}
+
+body {
+    position: relative;
+    width: 100%;
+    height:100%;
+    background-color: black;
+}
+
+.container {
+    position: absolute;
+    width: 25%;
+    height: 100%;
+    left: 37.5%;
+    margin-top: 2vh;
+}
+
+.dropdown-selection a{
+    display:none;
+    text-decoration:none;
+    text-align:center;
+    color: white;
+    padding: 5px;
+    font-family: 'Rhodium Libre';
+    font-size: 1.5em;
+    box-shadow: 0px 2px 3px #169CE7;
+    margin-bottom:2.5px;
+    background-color: #2b2626;
+    transition: all 200ms ease-out;
+}
+
+.dropdown-selection a:hover {
+    color:rgb(238, 133, 34);
+    transform: scale(1.1);
+    background-color: rgb(19, 18, 18);
+}
+
+#button-timetable {
+    display:block;
+    margin: auto;
+    margin-top: 0.3em;
+    padding-bottom: 0.3em;
+    padding-left:1em;
+    padding-right:1em;
+    background-color: black;
+    color: #F87217;
+    border: none;
+    font-family: 'Lobster';
+    font-size: 3em;
+    cursor: pointer;
+    box-shadow: 0px 2px 3px white;
+    transition: all 300ms ease-in-out;
+}
+
+#button-timetable:hover {
+    color: #ff4f00;
+}
+
+.container:hover .dropdown-selection a{
+    display:block;
+    transition-duration: 300ms;
+}
+
+
+.timetable {
+    position:absolute;
+    margin-top: 15vh;
+    width: 100%;
+}
+
+.timetable table{
+    width: 100%;
+    padding: 0px 50px 0px 50px;
+    border-spacing: 5px;
+}
+
+.timetable table th{
+    width: 13.3%;
+    background-color: #222629;
+    color: #f7c353;
+    font-size: 2em;
+    height:3em;
+    text-transform: uppercase;
+}
+
+.timetable table td{
+    background-color: rgb(88, 82, 74); 
+    color: white;
+    text-align: center;
+    font-size: 1.5em;
+}
+.timetable table td,th {
+    border-radius: 5px;
+    cursor: default;
+    padding: 7px;
+}
+
+[data-tooltip] {
+    position: relative;
+}
+
+[data-tooltip]::after {
+    content: attr(data-tooltip);
+    position: absolute;
+    max-width: 20vw;
+    width:150%;
+    left: calc(25% - 6.6vw);
+    transform: translateY(10px);
+    bottom: 90%;
+    text-align: center;
+    font-family: 'Rhodium Libre';
+    box-sizing: border-box;
+    background-color: black;
+    color: white;
+    font-size: 0.9em;
+    padding: 7px;
+    border-radius: 5px;
+    visibility:hidden;
+    opacity:0;
+    overflow-wrap: break-word;
+    transition: opacity 300ms, transform 500ms; 
+}
+
+[data-tooltip]:hover::after {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(-10px);
+}
+
+@media (max-width:1584px) {
+    #button-timetable {
+        font-size: 2.5em;
+    }
+    .timetable table th{
+        font-size: 1.5em;
+        height:2.5em;
+    }
+}
+
+@media (max-width:1336px){
+    #button-timetable {
+        font-size: 2em;
+    }
+    .timetable table th{
+        font-size: 1.25em;
+        height:2em;
+    }
+    .timetable table td{
+        font-size: 1.3em;
+    }
+}
+
+@media (max-width:1150px) {
+    #button-timetable {
+        font-size: 1.5em;
+    }
+    .timetable table th{
+        font-size: 1em;
+        height:1.5em;
+    }
+    .timetable table td{
+        font-size: 12px;
+    }
+    .dropdown-selection a{
+        font-size: 1em;
+        margin-bottom:2px;
+    }
+}
+
+@media (max-width:800px) {
+    .timetable table th{
+        font-size: 12px;
+        height:1em;
+    }
+    .timetable table td{
+        font-size: 10px;
+    }
+    .dropdown-selection a{
+        font-size: 10px;
+        margin-bottom:2px;
+    }
+}
+
+@media (max-width:580px) {
+    .timetable table th{
+        font-size: 10px;
+        height:0.7em;
+    }
+    .timetable table td{
+        font-size: 10px;
+    }
+    .dropdown-selection a{
+        padding: 2px;
+        font-size: 7px;
+        box-shadow: 0px 1px 2px #169CE7;
+        margin-bottom:2px;
+    }
+}
+

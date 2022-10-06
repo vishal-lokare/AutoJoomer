@@ -1,41 +1,26 @@
 {
-    "name": "AutoJoomer",
-    "version": "2.3",
-    "manifest_version": 2,
-    "icons": {
-        "16": "icon.png",
-        "48": "icon.png",
-        "128": "icon.png"
-    },
-    "permissions": [
-        "tabs"
-    ],
-    "browser_action": {
-        "default_icon": "icon.png",
-        "default_popup": "popup.html"
-    },
-    "background": {
-        "scripts": [
-            "jquery.js",
-            "firebase-app.js",
-            "firebase-database.js",
-            "firebase-analytics.js",
-            "script.js"
-        ],
-        "persistent": true
-    },
-    "content_scripts": [{
-        "matches": [
-            "https://lms.iiitkottayam.ac.in/",
-            "https://lms.iiitkottayam.ac.in/login/index.php",
-            "https://lms.iiitkottayam.ac.in/login/index.php/*",
-            "https://lms.iiitkottayam.ac.in/mod/bigbluebuttonbn/*",
-            "https://lmsone.iiitkottayam.ac.in/*"
-        ],
-        "js": [
-            "jquery.js",
-            "logger.js"
-        ]
-    }],
-    "content_security_policy": "script-src 'self' https://www.vishal-lokare.co https://www.googleapis.com https://*.firebasedatabase.app; object-src 'self'; connect-src 'self' wss://*.firebasedatabase.app https://www.vishal-lokare.co;"
+  "name": "AutoJoomer",
+  "version": "3.0.1",
+  "manifest_version": 3,
+  "icons": {
+    "128": "src/images/icon.png"
+  },
+  "permissions": [
+    "storage"
+  ],
+  "content_scripts": [
+    {
+      "matches": [
+        "https://lms.iiitkottayam.ac.in/*", "https://lmsone.iiitkottayam.ac.in/*", "http://*/fgtauth*"
+      ],
+      "js": [
+        "/src/js/logger.js"
+      ],
+      "run_at": "document_end"
+    }
+  ],
+  "action": {
+    "default_title": "AutoJoomer",
+    "default_popup": "/src/js/popup.html"
+  }
 }
