@@ -97,6 +97,9 @@ btn.addEventListener("click", () => {
     );
     btn.disabled = true;
     btn.innerText = "Saved";
+    setTimeout(() => { //redirecting to popup.html
+      window.open("/src/js/popup.html", "_self");
+    }, 1000);
   } else {
     alert("Roll number does not exist");
     return;
