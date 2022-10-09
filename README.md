@@ -21,7 +21,7 @@
 ![Firebase](https://camo.githubusercontent.com/ea0283d34b92d1905070c14ffe1c48412fef80c44232679c0657db176708403f/68747470733a2f2f696d672e736869656c64732e696f2f62616467652f46697265626173652d79656c6c6f773f7374796c653d666f722d7468652d6261646765266c6f676f3d666972656261736526)
 
 <p align="center">
-  <a href="https://github.com/vishal-lokare/AutoJoomer/"><img src="https://github.com/vishal-lokare/AutoJoomer/blob/main/src/images/icon.jpeg?raw=true" alt="AutoJoomer" width="100" height="100"></a><br>
+  <a href="https://github.com/vishal-lokare/AutoJoomer/"><img src="https://github.com/vishal-lokare/AutoJoomer/blob/main/src/images/icon.png" alt="AutoJoomer" width="100" height="100"></a><br>
   <a href="https://github.com/vishal-lokare/AutoJoomer/"><b>AutoJoomer</b></a>
   <br><br><hr>
   <p> AutoJoomer extension on Chrome Webstore - <a href="https://chrome.google.com/webstore/detail/autojoomer/gbclbcfjcjnajkkibmadammhkbmgbiao">Add to your browser</a></p>
