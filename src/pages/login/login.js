@@ -11,20 +11,9 @@ window.onload = function populate() {
     year.value = result["AutoJoomerYear"];
   });
   chrome.storage.local.get("AutoJoomerBranch", function (result) {
-    switch(result["AutoJoomerBranch"]) {
-      case "ECE": {
-        branch.value = "ECE";
-        break;
-      }
-      case "CSE": {
-	      branch.value = "CSE";
-        break;
-      }
-      default: {
-        branch.value = "CSY";
-        break;
-      }
-    }
+    if (result["AutoJoomerBatch"] == "CSE") branch.value = "CSE";
+    else if (result["AutoJoomerBatch"] == "CSY") branch.value = "CSY";
+    else if (result["AutoJoomerBatch"] == "ECE") branch.value = "ECE";
     // branch.value = result["AutoJoomerBranch"];
   });
   chrome.storage.local.get("AutoJoomerBatch", function (result) {
