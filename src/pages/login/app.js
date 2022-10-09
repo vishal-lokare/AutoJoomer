@@ -35,9 +35,11 @@ roll.addEventListener("keyup", () => {
     year.value = "2019";
     branch.value = "CSE";
     batch.value = "";
-  } else if (yearValue == 2020) {
+  } 
+  else if (yearValue == 2020) {
     year.value = "2020";
-  } else if (yearValue == 2021) {
+  } 
+  else if (yearValue == 2021) {
     year.value = "2021";
   }
 });
@@ -49,12 +51,14 @@ roll.addEventListener("keyup", () => {
   branchValue = inputValue.slice(4, 7);
   if (branchValue == "BCS") {
     branch.value = "CSE";
-  } else if (branchValue == "BEC") {
+  } 
+  else if (branchValue == "BEC") {
     if (year.value != "2019") {
       branch.value = "ECE";
     }
-  } else if (branchValue == "BCY") {
-    if (year.value != "2019" || year.value != "2020") {
+  } 
+  else if (branchValue == "BCY") {
+    if (year.value != "2019" && year.value != "2020") {
       branch.value = "CSY";
     }
   }
@@ -64,15 +68,17 @@ roll.addEventListener("keyup", () => {
 var batchValue = "";
 roll.addEventListener("keyup", () => {
   let inputValue = roll.value.toUpperCase();
-  batchValue = inputValue[10];
-  if (year.value != "2019") {
-    if (inputValue.length > 10) {
+  if (inputValue.length > 10) {
+    batchValue = inputValue[10];
+    if (year.value != "2019") {
       if (batchValue % 2 == 0) {
         batch.value = "2";
-      } else {
+      } 
+      else {
         batch.value = "1";
       }
-    } else batch.value = "";
+    } 
+    else batch.value = "";
   }
 });
 
