@@ -55,7 +55,7 @@ roll.addEventListener("keyup", () => {
     }
   } else if (branchValue == "BCY") {
     if (year.value != "2019" || year.value != "2020") {
-      branch.value = "BCY";
+      branch.value = "CSY";
     }
   }
 });

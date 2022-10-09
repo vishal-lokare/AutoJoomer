@@ -15,6 +15,9 @@ window.onload = function populate() {
       case "ECE": {
         branch.value = "ECE";
       }
+      case "CSY": {
+	branch.value = "CSY";
+      }
       default: {
         branch.value = "CSE";
       }
