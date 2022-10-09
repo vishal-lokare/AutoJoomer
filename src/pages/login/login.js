@@ -14,12 +14,15 @@ window.onload = function populate() {
     switch(result["AutoJoomerBranch"]) {
       case "ECE": {
         branch.value = "ECE";
+        break;
       }
-      case "CSY": {
-	branch.value = "CSY";
+      case "CSE": {
+	      branch.value = "CSE";
+        break;
       }
       default: {
-        branch.value = "CSE";
+        branch.value = "CSY";
+        break;
       }
     }
     // branch.value = result["AutoJoomerBranch"];
