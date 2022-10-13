@@ -1,17 +1,26 @@
 let checker = 0;
-
+let study_year="";
 window.onload = function () {
   theme(); //checks theme
   // pingURL();
   //isOnline();
 };
 
-document.addEventListener("DOMContentLoaded", function () {
+window.onload = function populate() {
+  const year = document.querySelector("#year");
+  //fetch AutoJoomerYear
+
+  chrome.storage.local.get("AutoJoomerYear", function (result) {
+    study_year = result["AutoJoomerYear"];
+  });
+}
+
+document.addEventListener("DOMContentLoaded", function (){
   document.getElementById("nav_button").addEventListener("click", mode_change);
-  document
-    .getElementById("nav_logo")
-    .addEventListener("click", open_autojoomer);
+  document.getElementById("nav_logo").addEventListener("click", open_autojoomer);
+  document.getElementById("lms_button").addEventListener("click", open_lms);
 });
+
 
 // function getRandomString () {
 //     return Math.random().toString(36).substring(2, 15)
@@ -105,6 +114,17 @@ function open_autojoomer() {
   window.open("https://www.autojoomer.co/", (target = "_blank"));
 }
 
+function open_lms()   
+{
+  //study_year = document.login_form.year.selectedIndex;    
+    if(study_year == 2020)
+    {window.open("https://lms.iiitkottayam.ac.in/", (target="_blank"));}     
+    else if(study_year == 2019 || study_year == 2021)
+    {window.open("https://lmsone.iiitkottayam.ac.in/", (target="_blank"));}
+    else
+    {alert("KINDLY ENTER YOUR CREDENTIALS");}
+} 
+
 function mode_change() {
   let element1 = document.body;
   element1.classList.toggle("dark_bg");
@@ -179,3 +199,4 @@ async function connect_wifi() {
   // offline.style.display="none";
   // online.style.display="flex";
 }
+
