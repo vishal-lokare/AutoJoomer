@@ -85,7 +85,9 @@ btn.addEventListener("click", () => {
     alert("Invalid Roll Number");
     return;
   }
-  if (pattern.test(roll.value)) {
+  let t =pattern.test(roll.value);
+  if (t) { 
+    alert("You have been Logged In");
     chrome.storage.local.set({ ["AutoJoomerUsername"]: roll.value });
     chrome.storage.local.set({ ["AutoJoomerPassword"]: password.value });
     chrome.storage.local.set({ ["AutoJoomerYear"]: yearValue });
@@ -97,6 +99,7 @@ btn.addEventListener("click", () => {
     );
     btn.disabled = true;
     btn.innerText = "Saved";
+    return;
   } else {
     alert("Roll number does not exist");
     return;
