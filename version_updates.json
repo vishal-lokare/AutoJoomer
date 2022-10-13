@@ -9,5 +9,7 @@
   "2.4": "Early join feature added",
   "2.5": "Added Auto Login to College WiFi",
   "2.6": "Improved auto login feature",
-  "3.0": "Updated with Manifest Version 3"
+  "3.0": "Updated with Manifest Version 3",
+  "3.0.1": "Fixed wifi login, auto populate, UI changes",
+  "3.0.2": "Login page on startup"
 }

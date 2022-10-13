@@ -99,7 +99,13 @@ btn.addEventListener("click", () => {
     );
     btn.disabled = true;
     btn.innerText = "Saved";
+<<<<<<< HEAD
     return;
+=======
+    setTimeout(() => { //redirecting to popup.html
+      window.open("/src/js/popup.html", "_self");
+    }, 1000);
+>>>>>>> f21ecc1a807dfc1e2c6b4d650ba48abd45df071a
   } else {
     alert("Roll number does not exist");
     return;

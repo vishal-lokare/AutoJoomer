@@ -3,7 +3,7 @@
 [![Stargazers][stars-shield]][stars-url]
 [![Issues][issues-shield]][issues-url]
 [![MIT License][license-shield]][license-url]
-[![Generic badge](https://img.shields.io/badge/Version-3.0.1-brightgreen?style=for-the-badge&logo=appveyor)](https://github.com/vishal-lokare/AutoJoomer)
+[![Generic badge](https://img.shields.io/badge/Version-3.0.2-brightgreen?style=for-the-badge&logo=appveyor)](https://github.com/vishal-lokare/AutoJoomer)
 
 [contributors-shield]: https://img.shields.io/github/contributors/vishal-lokare/AutoJoomer.svg?style=for-the-badge
 [contributors-url]: https://github.com/vishal-lokare/AutoJoomer/graphs/contributors
@@ -21,7 +21,7 @@
 ![Firebase](https://camo.githubusercontent.com/ea0283d34b92d1905070c14ffe1c48412fef80c44232679c0657db176708403f/68747470733a2f2f696d672e736869656c64732e696f2f62616467652f46697265626173652d79656c6c6f773f7374796c653d666f722d7468652d6261646765266c6f676f3d666972656261736526)
 
 <p align="center">
-  <a href="https://github.com/vishal-lokare/AutoJoomer/"><img src="https://github.com/vishal-lokare/AutoJoomer/blob/main/src/images/icon.jpeg?raw=true" alt="AutoJoomer" width="100" height="100"></a><br>
+  <a href="https://github.com/vishal-lokare/AutoJoomer/"><img src="https://github.com/vishal-lokare/AutoJoomer/blob/main/src/images/icon.png" alt="AutoJoomer" width="100" height="100"></a><br>
   <a href="https://github.com/vishal-lokare/AutoJoomer/"><b>AutoJoomer</b></a>
   <br><br><hr>
   <p> AutoJoomer extension on Chrome Webstore - <a href="https://chrome.google.com/webstore/detail/autojoomer/gbclbcfjcjnajkkibmadammhkbmgbiao">Add to your browser</a></p>
