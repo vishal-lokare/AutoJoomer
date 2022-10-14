@@ -97,9 +97,20 @@ btn.addEventListener("click", () => {
     );
     btn.disabled = true;
     btn.innerText = "Saved";
-    setTimeout(() => { //redirecting to popup.html
+
+    //Create button to go back
+    const div = document.getElementsByClassName("form-container")[0];
+    const back_button = document.createElement('BUTTON');
+    back_button.className = "submit-btn";
+    back_button.id = "back";
+    const text = document.createTextNode("Back"); 
+    back_button.onclick = function() { //Redirect to popup
       window.open("/src/js/popup.html", "_self");
-    }, 1000);
+    }
+    back_button.appendChild(text);
+    //append line break
+    div.appendChild(document.createElement("br"));
+    div.appendChild(back_button);
   } else {
     alert("Roll number does not exist");
     return;
