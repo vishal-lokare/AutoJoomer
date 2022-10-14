@@ -103,7 +103,7 @@ btn.addEventListener("click", () => {
     const back_button = document.createElement('BUTTON');
     back_button.className = "submit-btn";
     back_button.id = "back";
-    const text = document.createTextNode("Back"); 
+    const text = document.createTextNode("Home"); 
     back_button.onclick = function() { //Redirect to popup
       window.open("/src/js/popup.html", "_self");
     }
