@@ -15,8 +15,8 @@ batch.disabled = true;
 
 for(let i = 0; i < elements.length; i++) {
   elements[i].addEventListener("keyup", () => {
-    if (!firstChange) {
-      firstChange++;
+    firstChange++;
+    if (!firstChange) {      
       roll.value = "";
       password.value = "";
       year.value = "";
