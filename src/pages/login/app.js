@@ -12,6 +12,13 @@ let firstChange = 0;
 year.disabled = true;
 branch.disabled = true;
 batch.disabled = true;
+let logo = document.getElementById("nav_logo");
+
+logo.addEventListener("click", open_autojoomer);
+
+function open_autojoomer() {
+  window.open("https://www.autojoomer.co/", (target = "_blank"));
+}
 
 for(let i = 0; i < elements.length; i++) {
   elements[i].addEventListener("keyup", () => {
