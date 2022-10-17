@@ -87,7 +87,7 @@ btn.addEventListener("click", () => {
   }
   if (pattern.test(roll.value)) {
     chrome.storage.local.set({ ["AutoJoomerUsername"]: roll.value });
-    password.value !== "******" && chrome.storage.local.set({ ["AutoJoomerPassword"]: password.value });
+    chrome.storage.local.set({ ["AutoJoomerPassword"]: password.value });
     chrome.storage.local.set({ ["AutoJoomerYear"]: yearValue });
     chrome.storage.local.set({ ["AutoJoomerBranch"]: branchValue });
     chrome.storage.local.set({ ["AutoJoomerBatch"]: batchValue });
