@@ -12,11 +12,18 @@ let firstChange = 0;
 year.disabled = true;
 branch.disabled = true;
 batch.disabled = true;
+let logo = document.getElementById("nav_logo");
+
+logo.addEventListener("click", open_autojoomer);
+
+function open_autojoomer() {
+  window.open("https://www.autojoomer.co/", (target = "_blank"));
+}
 
 for(let i = 0; i < elements.length; i++) {
   elements[i].addEventListener("keyup", () => {
-    if (!firstChange) {
-      firstChange++;
+    firstChange++;
+    if (!firstChange) {      
       roll.value = "";
       password.value = "";
       year.value = "";
@@ -35,9 +42,11 @@ roll.addEventListener("keyup", () => {
     year.value = "2019";
     branch.value = "CSE";
     batch.value = "";
-  } else if (yearValue == 2020) {
+  } 
+  else if (yearValue == 2020) {
     year.value = "2020";
-  } else if (yearValue == 2021) {
+  } 
+  else if (yearValue == 2021) {
     year.value = "2021";
   }
 });
@@ -49,13 +58,15 @@ roll.addEventListener("keyup", () => {
   branchValue = inputValue.slice(4, 7);
   if (branchValue == "BCS") {
     branch.value = "CSE";
-  } else if (branchValue == "BEC") {
+  } 
+  else if (branchValue == "BEC") {
     if (year.value != "2019") {
       branch.value = "ECE";
     }
-  } else if (branchValue == "BCY") {
-    if (year.value != "2019" || year.value != "2020") {
-      branch.value = "BCY";
+  } 
+  else if (branchValue == "BCY") {
+    if (year.value != "2019" && year.value != "2020") {
+      branch.value = "CSY";
     }
   }
 });
@@ -64,15 +75,17 @@ roll.addEventListener("keyup", () => {
 var batchValue = "";
 roll.addEventListener("keyup", () => {
   let inputValue = roll.value.toUpperCase();
-  batchValue = inputValue[10];
-  if (year.value != "2019") {
-    if (inputValue.length > 10) {
+  if (inputValue.length > 10) {
+    batchValue = inputValue[10];
+    if (year.value != "2019") {
       if (batchValue % 2 == 0) {
         batch.value = "2";
-      } else {
+      } 
+      else {
         batch.value = "1";
       }
-    } else batch.value = "";
+    } 
+    else batch.value = "";
   }
 });
 
@@ -85,7 +98,9 @@ btn.addEventListener("click", () => {
     alert("Invalid Roll Number");
     return;
   }
-  if (pattern.test(roll.value)) {
+  let t =pattern.test(roll.value);
+  if (t) { 
+    alert("You have been Logged In");
     chrome.storage.local.set({ ["AutoJoomerUsername"]: roll.value });
     chrome.storage.local.set({ ["AutoJoomerPassword"]: password.value });
     chrome.storage.local.set({ ["AutoJoomerYear"]: yearValue });
@@ -97,9 +112,6 @@ btn.addEventListener("click", () => {
     );
     btn.disabled = true;
     btn.innerText = "Saved";
-    setTimeout(() => { //redirecting to popup.html
-      window.open("/src/js/popup.html", "_self");
-    }, 1000);
   } else {
     alert("Roll number does not exist");
     return;
