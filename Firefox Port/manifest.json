@@ -1,0 +1,30 @@
+{
+    "name": "AutoJoomer",
+    "version": "1.0.",
+    "manifest_version": 2,
+  
+    "description": "Adds a red border to all webpages matching mozilla.org.",
+  
+    "icons": {
+      "128": "images/icon.png"
+    },
+
+    "permissions": [
+      "storage"
+    ],
+  
+    "content_scripts": [
+      {
+        "matches": [
+          "https://lms.iiitkottayam.ac.in/*", "https://lmsone.iiitkottayam.ac.in/*", "http://*/fgtauth*"
+        ],
+        "js": ["logger.js"],
+        "run_at": "document_end"
+      }
+    ],
+    "browser_action": {
+      "default_title": "AutoJoomer",
+      "default_popup": "popup.html"
+    }
+  }
+  

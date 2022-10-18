@@ -7,6 +7,16 @@
   scroll-behavior: smooth;
 }
 
+.navbar {
+  padding: 5px 2px;
+  display: flex;
+  width: 100%;
+  justify-content:center;
+  align-items: center;
+  background-color: #4990F5;
+  margin-bottom: 1rem;
+}
+
 :root {
   --font-family: "Montserrat", sans-serif;
   --light: white;
@@ -29,7 +39,7 @@ body {
   padding: 20px 0;
 }
 .form-container {
-  padding: 24px;
+  padding: 14px;
   display: flex;
   justify-content: flex-start;
   align-items: center;
@@ -86,11 +96,11 @@ body {
   font-size: 1.2rem;
   font-family: var(--font-family);
   cursor: pointer;
-  border: 2px solid rgba(9, 9, 121, 1);
+  /*border: 2px solid;*/
   
   transition: all 200ms ease-in-out;
   
-  background: rgba(9, 9, 121, 1);
+  background: #4990F5;
   color: var(--light);
 
 }
