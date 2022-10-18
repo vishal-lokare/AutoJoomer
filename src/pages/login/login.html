@@ -13,13 +13,9 @@
 
 <body>
   <div class="form-container">
-    <div class = 'navbar'>
-      <a id= 'nav_logo' href>
-        <img src="../../images/logo.png" style="height: 2em;width: auto;"alt="logo" />
-      </a>
-      <div style="text-align: center; color: white;font-size:2.5rem ; padding:5px;">Login</div>
-    </div>
-    <form method="post">
+    <h1>Login</h1>
+    <form name="login_form" method="post">
+
       <div class="form-group">
         <label for="roll">LMS Roll No.</label>
         <input type="text" class="form-input" name="roll" id="roll" maxlength="11"
@@ -33,7 +29,7 @@
         <div class="form-group-col">
           <label for="year">Year: </label>
           <select name="year" id="year">
-            <option value="">Select Year</option>
+            <option selected="selected" value="">Select Year</option>
             <option value="2019">2019</option>
             <option value="2020">2020</option>
             <option value="2021">2021</option>
