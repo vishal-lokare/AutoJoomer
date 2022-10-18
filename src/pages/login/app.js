@@ -12,18 +12,11 @@ let firstChange = 0;
 year.disabled = true;
 branch.disabled = true;
 batch.disabled = true;
-let logo = document.getElementById("nav_logo");
-
-logo.addEventListener("click", open_autojoomer);
-
-function open_autojoomer() {
-  window.open("https://www.autojoomer.co/", (target = "_blank"));
-}
 
 for(let i = 0; i < elements.length; i++) {
   elements[i].addEventListener("keyup", () => {
     firstChange++;
-    if (!firstChange) {      
+    if (!firstChange) {
       roll.value = "";
       password.value = "";
       year.value = "";
@@ -92,11 +85,9 @@ btn.addEventListener("click", () => {
     alert("Invalid Roll Number");
     return;
   }
-  let t =pattern.test(roll.value);
-  if (t) { 
-    alert("You have been Logged In");
+  if (pattern.test(roll.value)) {
     chrome.storage.local.set({ ["AutoJoomerUsername"]: roll.value });
-    chrome.storage.local.set({ ["AutoJoomerPassword"]: password.value });
+    password.value !== "******" && chrome.storage.local.set({ ["AutoJoomerPassword"]: password.value });
     chrome.storage.local.set({ ["AutoJoomerYear"]: yearValue });
     chrome.storage.local.set({ ["AutoJoomerBranch"]: branchValue });
     chrome.storage.local.set({ ["AutoJoomerBatch"]: batchValue });
@@ -106,6 +97,9 @@ btn.addEventListener("click", () => {
     );
     btn.disabled = true;
     btn.innerText = "Saved";
+    setTimeout(() => { //redirecting to popup.html
+      window.open("../../popup.html", "_self");
+    }, 1000);
   } else {
     alert("Roll number does not exist");
     return;

@@ -30,16 +30,15 @@
 body {
   background: var(--bg-gradient);
   font-family: var(--font-family);
-  height: 100vh;
+  height: auto;
   width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  padding: 20px 0;
 }
 .form-container {
-  padding: 14px;
+  padding: 24px;
   display: flex;
   justify-content: flex-start;
   align-items: center;
@@ -88,15 +87,16 @@ body {
   border: 1px solid rgba(0, 0, 0, 0.4);
   width: 120px;
 }
+
 .submit-btn {
   padding: 8px 16px;
-  border-radius: 4px;
   width: 100%;
+  border-radius: 4px;
   font-weight: 800;
   font-size: 1.2rem;
   font-family: var(--font-family);
   cursor: pointer;
-  /*border: 2px solid;*/
+  /* border: 2px solid rgba(9, 9, 121, 1); */
   
   transition: all 200ms ease-in-out;
   
