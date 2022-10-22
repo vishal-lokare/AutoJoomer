@@ -112,3 +112,49 @@ btn.addEventListener("click", () => {
   }
 });
 
+
+let checker = 0;
+theme();
+function theme() {
+  console.log("login - theme");
+
+  const mode = window.localStorage.getItem("dark_check");
+
+  if (mode === null || mode == 0);
+  else {
+    console.log("Changing mode ...", mode);
+    mode_change();
+  }
+}
+
+function mode_change() {
+  let element1 = document.getElementsByClassName("form-container")[0];
+  element1.classList.toggle("dark_bg");
+
+  if (checker) {
+    window.localStorage.setItem("dark_check", 0);
+    checker = 0;
+  } else {
+    window.localStorage.setItem("dark_check", 1);
+    checker = 1;
+  }
+
+  let element2 = document.getElementsByTagName("input");
+  if (checker === 1) {
+    for (let i = 0 ; i < element2.length; i++) {
+      element2[i].style.backgroundColor = "#e6e7f2"
+    }
+  }
+
+  let element3 = document.getElementsByTagName("select");
+  if (checker === 1) {
+    for (let i = 0 ; i < element3.length; i++) {
+      element3[i].style.backgroundColor = "#c1c3d4"
+    }
+  } else {
+    for (let i = 0 ; i < element3.length; i++) {
+      element3[i].style.backgroundColor = "null"
+    }
+  }
+  
+}

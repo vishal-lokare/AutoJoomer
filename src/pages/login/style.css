@@ -36,6 +36,7 @@ body {
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  color: rgba(0, 0, 0, 0.8);
 }
 .form-container {
   padding: 24px;
@@ -65,7 +66,6 @@ body {
 .form-group-col label {
   font-size: 1.2rem;
   font-weight: 600;
-  color: rgba(0, 0, 0, 0.8);
   padding-bottom: 0.5rem;
 }
 .form-group input {
@@ -91,23 +91,28 @@ body {
 .submit-btn {
   padding: 8px 16px;
   width: 100%;
-  border-radius: 4px;
+  outline: none;
   font-weight: 800;
   font-size: 1.2rem;
   font-family: var(--font-family);
   cursor: pointer;
-  margin-top: 0.5rem;
-  /* border: 2px solid rgba(9, 9, 121, 1); */
+  margin-top: 0.8rem;
+  border: 2px solid #4990F5;
+  border-radius: 4px;
   
   transition: all 200ms ease-in-out;
   
   background: #4990F5;
   color: var(--light);
-
 }
 .submit-btn:hover {
   color: rgba(9, 9, 121, 1);
   background: var(--light);
+}
+
+.dark_bg {
+  background-color: #161616;
+  color: rgba(255, 255, 255, 0.8);
 }
 
 @media screen and (max-width: 576px) {
