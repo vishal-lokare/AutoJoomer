@@ -46,11 +46,15 @@ Many more to come.
 
 ## Installation
 
-If you are just a user, then you can install the extension from the <a href="https://chrome.google.com/webstore/detail/autojoomer/gbclbcfjcjnajkkibmadammhkbmgbiao">Chrome Webstore</a>.
+![image](https://user-images.githubusercontent.com/94455615/198865183-c0d16224-84e4-4dcd-bc55-4820eaf9b678.png)
+
+1. To Install the AutoJoomer Extension head to <a href="https://chrome.google.com/webstore/category/extensions"> Chrome Webstore</a>
+2. Search for <b>AUTOJOOMER</b> and add it to your Chrome, Brave or Edge.
+* Or you can directly click on this <a href="https://chrome.google.com/webstore/detail/autojoomer/gbclbcfjcjnajkkibmadammhkbmgbiao">AutoJoomer_link</a> to add the Extension to your browser.
 
 And for contributors, they can follow the below steps to add the extension in Developer mode.
 
-1. Download all the files to a folder either by the "Download as ZIP" button or by cloning the repo.
+1. Fork the repo <b><a href = "https://github.com/vishal-lokare/AutoJoomer">vishal-lokare/AutoJoomer</a></b>, and clone it to your Local Computer.
 
 2. Open your browser, go to
 
@@ -70,8 +74,9 @@ Everytime you make any change in your local code, go to "chrome://extensions" or
 
 ## How to stay updated
 
-Users from Chrome Webstore will get updates automatically.
+Google Chrome Webstore will update Extensions automatically with in 2-3 days, if you are a user who added the extension from chrome webstore, your extension will get updated automatically.
 
+If you are a developer or contributor, 
 To stay up-to-date with the latest version hosted on GitHub, while being in the same directory where the downloaded files are, run
 
 ```
@@ -82,7 +87,9 @@ in the terminal and restart your browser / reload the extension.
 
 OR
 
-Repeat the installation process again.
+Go to your forked repo, and Click On <i>Sync Fork</i> to get updated with all the commits from the main Repository.
+![image](https://user-images.githubusercontent.com/94455615/198865630-0ec6e099-f23f-40ad-9060-e82c1f173c57.png)
+
 
 ## Tech Stack Used
 
