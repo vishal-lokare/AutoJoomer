@@ -62,6 +62,7 @@ roll.addEventListener("keyup", () => {
 
 //batch
 var batchValue = "";
+var setvalue = "";
 roll.addEventListener("keyup", () => {
   let inputValue = roll.value.toUpperCase();
   batchValue = inputValue[10];
@@ -93,14 +94,15 @@ btn.addEventListener("click", () => {
     chrome.storage.local.set({ ["AutoJoomerYear"]: yearValue });
     chrome.storage.local.set({ ["AutoJoomerBranch"]: branchValue });
     chrome.storage.local.set({ ["AutoJoomerBatch"]: batchValue });
+    chrome.storage.local.set({ ["AutoJoomerBatch"]: setvalue });
     btn.setAttribute(
       "style",
-      "background: var(--light);  color: rgba(9, 9, 121, 1);"
+      "background: var(--light);  color: rgba(9, 9, 120, 1);"
     );
     btn.disabled = true;
     btn.innerText = "Saved";
   } else {
-    alert("Roll number does not exist");
+    alert("The Roll number does not exist");
     return;
   }
 });
