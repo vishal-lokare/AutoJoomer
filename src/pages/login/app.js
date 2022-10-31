@@ -73,6 +73,7 @@ roll.addEventListener("keyup", () => {
 
 //batch
 var batchValue = "";
+var setvalue = "";
 roll.addEventListener("keyup", () => {
   let inputValue = roll.value.toUpperCase();
   if (inputValue.length > 10) {
@@ -106,12 +107,15 @@ btn.addEventListener("click", () => {
     chrome.storage.local.set({ ["AutoJoomerYear"]: yearValue });
     chrome.storage.local.set({ ["AutoJoomerBranch"]: branchValue });
     chrome.storage.local.set({ ["AutoJoomerBatch"]: batchValue });
+    chrome.storage.local.set({ ["AutoJoomerBatch"]: setvalue });
     btn.setAttribute(
       "style",
-      "background: var(--light);  color: rgba(9, 9, 121, 1);"
+      "background: var(--light);  color: rgba(9, 9, 120, 1);"
     );
     btn.disabled = true;
     btn.innerText = "Saved";
+<<<<<<< HEAD
+=======
 
     //Create button to go back
     const div = document.getElementsByClassName("form-container")[0];
@@ -127,8 +131,9 @@ btn.addEventListener("click", () => {
     div.appendChild(document.createElement("br"));
     div.appendChild(back_button);
 
+>>>>>>> 850dcf9c53653dec8319828d176dd47911d81d87
   } else {
-    alert("Roll number does not exist");
+    alert("The Roll number does not exist");
     return;
   }
 });
