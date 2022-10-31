@@ -12,11 +12,18 @@ let firstChange = 0;
 year.disabled = true;
 branch.disabled = true;
 batch.disabled = true;
+let logo = document.getElementById("nav_logo");
+
+logo.addEventListener("click", open_autojoomer);
+
+function open_autojoomer() {
+  window.open("https://www.autojoomer.co/", (target = "_blank"));
+}
 
 for(let i = 0; i < elements.length; i++) {
   elements[i].addEventListener("keyup", () => {
-    if (!firstChange) {
-      firstChange++;
+    firstChange++;
+    if (!firstChange) {      
       roll.value = "";
       password.value = "";
       year.value = "";
@@ -35,9 +42,11 @@ roll.addEventListener("keyup", () => {
     year.value = "2019";
     branch.value = "CSE";
     batch.value = "";
-  } else if (yearValue == 2020) {
+  } 
+  else if (yearValue == 2020) {
     year.value = "2020";
-  } else if (yearValue == 2021) {
+  } 
+  else if (yearValue == 2021) {
     year.value = "2021";
   }
 });
@@ -49,13 +58,15 @@ roll.addEventListener("keyup", () => {
   branchValue = inputValue.slice(4, 7);
   if (branchValue == "BCS") {
     branch.value = "CSE";
-  } else if (branchValue == "BEC") {
+  } 
+  else if (branchValue == "BEC") {
     if (year.value != "2019") {
       branch.value = "ECE";
     }
-  } else if (branchValue == "BCY") {
-    if (year.value != "2019" || year.value != "2020") {
-      branch.value = "BCY";
+  } 
+  else if (branchValue == "BCY") {
+    if (year.value != "2019" && year.value != "2020") {
+      branch.value = "CSY";
     }
   }
 });
@@ -65,15 +76,17 @@ var batchValue = "";
 var setvalue = "";
 roll.addEventListener("keyup", () => {
   let inputValue = roll.value.toUpperCase();
-  batchValue = inputValue[10];
-  if (year.value != "2019") {
-    if (inputValue.length > 10) {
+  if (inputValue.length > 10) {
+    batchValue = inputValue[10];
+    if (year.value != "2019") {
       if (batchValue % 2 == 0) {
         batch.value = "2";
-      } else {
+      } 
+      else {
         batch.value = "1";
       }
-    } else batch.value = "";
+    } 
+    else batch.value = "";
   }
 });
 
@@ -101,6 +114,24 @@ btn.addEventListener("click", () => {
     );
     btn.disabled = true;
     btn.innerText = "Saved";
+<<<<<<< HEAD
+=======
+
+    //Create button to go back
+    const div = document.getElementsByClassName("form-container")[0];
+    const back_button = document.createElement('BUTTON');
+    back_button.className = "submit-btn";
+    back_button.id = "back";
+    const text = document.createTextNode("Home"); 
+    back_button.onclick = function() { //Redirect to popup
+      window.open("/src/js/popup.html", "_self");
+    }
+    back_button.appendChild(text);
+    //append line break
+    div.appendChild(document.createElement("br"));
+    div.appendChild(back_button);
+
+>>>>>>> 850dcf9c53653dec8319828d176dd47911d81d87
   } else {
     alert("The Roll number does not exist");
     return;
