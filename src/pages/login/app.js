@@ -4,7 +4,7 @@ const branch = document.querySelector("#branch");
 const batch = document.querySelector("#batch");
 const password = document.querySelector("#password");
 const btn = document.getElementById("mb");
-let pattern = /20(19BCS((000[1-9])|(00[1-9][0-9])|(01[01][0-9])|(012[0-2]))|(20BCS)((000[1-9])|(00[1-9][0-9])|(01[0-8][0-9])|(0190))|(21BCS)((000[1-9])|(00[1-9][0-9])|(01[0-9][0-9]))|(21BCY)((000[1-9])|(00[1-3][0-9])|(004[0-6]))|(20BEC)((000[1-9])|(00[1-3][0-9]))|(21BEC)((000[1-9])|(00[1-3][0-9])|(004[0-4])))/gim;
+let pattern = /(20(19BCS((000[1-9])|(00[1-9][0-9])|(01[01][0-9])|(012[0-2]))|(20BCS)((000[1-9])|(00[1-9][0-9])|(01[0-8][0-9])|(0190))|(21BCS)((000[1-9])|(00[1-9][0-9])|(01[0-9][0-9]))|(21BCY)((000[1-9])|(00[1-3][0-9])|(004[0-6]))|(20BEC)((000[1-9])|(00[1-3][0-9]))|(21BEC)((000[1-9])|(00[1-3][0-9])|(004[0-4]))|((22BCY|22BDC)(000[1-9]|00[1-5][0-9]|006[0-4]))|((22BEC)(000[1-9]|00[1-4][0-9]|005[0-7]))|((22BCS)(000[1-9]|00\d{2}|01\d{2}|02[0-2][0-6]))))/gim;
 const elements = document.getElementsByTagName('input');
 let firstChange = 0;
 
@@ -12,13 +12,13 @@ let firstChange = 0;
 year.disabled = true;
 branch.disabled = true;
 batch.disabled = true;
-let logo = document.getElementById("nav_logo");
+// let logo = document.getElementById("nav_logo");
 
-logo.addEventListener("click", open_autojoomer);
+// logo.addEventListener("click", open_autojoomer);
 
-function open_autojoomer() {
-  window.open("https://www.autojoomer.co/", (target = "_blank"));
-}
+// function open_autojoomer() {
+//   window.open("https://www.autojoomer.co/", (target = "_blank"));
+// }
 
 for(let i = 0; i < elements.length; i++) {
   elements[i].addEventListener("keyup", () => {
@@ -49,6 +49,9 @@ roll.addEventListener("keyup", () => {
   else if (yearValue == 2021) {
     year.value = "2021";
   }
+  else if (yearValue == 2022){
+    year.value = "2022"
+  }
 });
 
 // branch
@@ -69,6 +72,11 @@ roll.addEventListener("keyup", () => {
       branch.value = "CSY";
     }
   }
+  else if (branchValue == "BDC") {
+    if( Number(year.value) >= 2022) {
+      branch.value = "AI/DS"
+    }
+  }
 });
 
 //batch
@@ -78,6 +86,7 @@ roll.addEventListener("keyup", () => {
   let inputValue = roll.value.toUpperCase();
   if (inputValue.length > 10) {
     batchValue = inputValue[10];
+    
     if (year.value != "2019") {
       if (batchValue % 2 == 0) {
         batch.value = "2";
@@ -87,6 +96,15 @@ roll.addEventListener("keyup", () => {
       }
     } 
     else batch.value = "";
+
+    if (year.value == "2022") {
+      batchValue = inputValue.slice(-3) % 3
+      if(batchValue == 0) {
+        batchValue = "3"
+
+      }
+      batch.value = batchValue
+    }
   }
 });
 
@@ -114,24 +132,21 @@ btn.addEventListener("click", () => {
     );
     btn.disabled = true;
     btn.innerText = "Saved";
-<<<<<<< HEAD
-=======
 
-    //Create button to go back
-    const div = document.getElementsByClassName("form-container")[0];
-    const back_button = document.createElement('BUTTON');
-    back_button.className = "submit-btn";
-    back_button.id = "back";
-    const text = document.createTextNode("Home"); 
-    back_button.onclick = function() { //Redirect to popup
-      window.open("/src/js/popup.html", "_self");
-    }
-    back_button.appendChild(text);
-    //append line break
-    div.appendChild(document.createElement("br"));
-    div.appendChild(back_button);
-
->>>>>>> 850dcf9c53653dec8319828d176dd47911d81d87
+    
+  //Create button to go back
+  const div = document.getElementsByClassName("form-container")[0];
+  const back_button = document.createElement('BUTTON');
+  back_button.className = "submit-btn";
+  back_button.id = "back";
+  const text = document.createTextNode("Home"); 
+  back_button.onclick = function() { //Redirect to popup
+    window.open("/src/js/popup.html", "_self");
+  }
+  back_button.appendChild(text);
+  //append line break
+  div.appendChild(document.createElement("br"));
+  div.appendChild(back_button);
   } else {
     alert("The Roll number does not exist");
     return;
