@@ -114,8 +114,6 @@ btn.addEventListener("click", () => {
     );
     btn.disabled = true;
     btn.innerText = "Saved";
-<<<<<<< HEAD
-=======
 
     //Create button to go back
     const div = document.getElementsByClassName("form-container")[0];
@@ -131,7 +129,6 @@ btn.addEventListener("click", () => {
     div.appendChild(document.createElement("br"));
     div.appendChild(back_button);
 
->>>>>>> 850dcf9c53653dec8319828d176dd47911d81d87
   } else {
     alert("The Roll number does not exist");
     return;
