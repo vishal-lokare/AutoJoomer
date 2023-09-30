@@ -26,7 +26,8 @@
   <br><br><hr>
   <p> AutoJoomer extension on Chrome Webstore - <a href="https://chrome.google.com/webstore/detail/autojoomer/gbclbcfjcjnajkkibmadammhkbmgbiao">Add to your browser</a></p>
   <p> AutoJoomer GitHub repo - <a href="https://www.github.com/vishal-lokare/AutoJoomer">https://www.github.com/vishal-lokare/AutoJoomer</a></p>
-  <p> AutoJoomer website - <a href="https://www.autojoomer.co/">https://www.autojoomer.co/</a></p>
+  <p> AutoJoomer website - <a href="https://autojoomer-21321.web.app/">https://autojoomer-21321.web.app/</a></p>
+  <p> AutoJoomer app on - <a href="https://play.google.com/store/apps/details?id=co.autojoomer.autojoomer">Play Store</a></p>
 
 </p>
 
@@ -50,7 +51,7 @@ Many more to come.
 
 1. To Install the AutoJoomer Extension head to <a href="https://chrome.google.com/webstore/category/extensions"> Chrome Webstore</a>
 2. Search for <b>AUTOJOOMER</b> and add it to your Chrome, Brave or Edge.
-* Or you can directly click on this <a href="https://chrome.google.com/webstore/detail/autojoomer/gbclbcfjcjnajkkibmadammhkbmgbiao">AutoJoomer_link</a> to add the Extension to your browser.
+* Or you can directly click on this <a href="https://chrome.google.com/webstore/detail/autojoomer/gbclbcfjcjnajkkibmadammhkbmgbiao">link</a> to add the Extension to your browser.
 
 And for contributors, they can follow the below steps to add the extension in Developer mode.
 
@@ -109,7 +110,8 @@ Go to your forked repo, and Click On <i>Sync Fork</i> to get updated with all th
 
 ## Future Updates
 
-<p>-> Publish extension in the Chrome Web Store. (Finally Published 🥳)</p>
+- <p>Publish extension in the Chrome Web Store. (Finally Published 🥳)</p>
+- <p>Add 2023 batch support in the extension.</p>
 
 ## License
 
