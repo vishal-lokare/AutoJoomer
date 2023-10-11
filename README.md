@@ -105,7 +105,7 @@ Go to your forked repo, and Click On <i>Sync Fork</i> to get updated with all th
 
 ## Communication
 
-- <p>Discord: Hop on in our discord server - <a href="https://discord.gg/spzaqNkNkU"><img src="https://logos-world.net/wp-content/uploads/2020/12/Discord-Logo.png" alt="AutoJoomer Discord" width="40" height="20"></a>, we will be happy to have you on board.</p>
+- <p>Discord: Hop on in our discord server - <a href="https://discord.gg/uGbCUzMFqt"><img src="https://logos-world.net/wp-content/uploads/2020/12/Discord-Logo.png" alt="AutoJoomer Discord" width="40" height="20"></a>, we will be happy to have you on board.</p>
 - <p>GitHub Issues: Bug reports, feature requests, install issues etc.</p>
 
 ## Future Updates
