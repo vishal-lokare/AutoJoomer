@@ -118,7 +118,6 @@ Go to your forked repo, and Click On <i>Sync Fork</i> to get updated with all th
 AutoJoomer is distributed under the Apache 2.0 license
 
 ## Contributors
-<br><br>
 <a href="https://github.com/vishal-lokare/AutoJoomer/graphs/contributors">
   <img class="dark-light" src="https://contrib.rocks/image?repo=vishal-lokare/AutoJoomer&anon=0&columns=10&max=100&r=true" />
 </a>
