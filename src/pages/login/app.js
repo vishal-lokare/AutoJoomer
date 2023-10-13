@@ -17,7 +17,7 @@ let logo = document.getElementById("nav_logo");
 logo.addEventListener("click", open_autojoomer);
 
 function open_autojoomer() {
-  window.open("https://www.autojoomer.co/", (target = "_blank"));
+  window.open("https://www.autojoomer.21321.web.app/", (target = "_blank"));
 }
 
 for(let i = 0; i < elements.length; i++) {
