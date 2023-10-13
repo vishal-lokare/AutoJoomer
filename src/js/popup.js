@@ -1,5 +1,5 @@
 let checker = 0;
-let study_year="";
+let study_year = "";
 window.onload = function () {
   theme(); //checks theme
   // pingURL();
@@ -15,115 +15,22 @@ window.onload = function populate() {
   });
 }
 
-document.addEventListener("DOMContentLoaded", function (){
+document.addEventListener("DOMContentLoaded", function () {
   document.getElementById("nav_button").addEventListener("click", mode_change);
   document.getElementById("nav_logo").addEventListener("click", open_autojoomer);
   document.getElementById("lms_button").addEventListener("click", open_lms);
 });
 
-
-// function getRandomString () {
-//     return Math.random().toString(36).substring(2, 15)
-//   }
-
-//   async function isOnline () {
-//     if (!window.navigator.onLine){
-//         conn_status=0;
-//         return false
-//     }
-//     // avoid CORS errors with a request to your own origin
-//     const url = new URL(window.location.origin)
-
-//     // random value to prevent cached responses
-//     url.searchParams.set('rand', getRandomString())
-
-//     try {
-//       const response = await fetch(
-//         url.toString(),
-//         { method: 'HEAD' },
-//       )
-
-//       console.log(response.ok);
-//       conn_status=1;
-//       return response.ok
-//     } catch {
-//         conn_status=0;
-//       return false
-//     }
-//   }
-
-// function pingURL() {
-
-//     // The custom URL entered by user
-//     var URL = "https://api.publicapis.org/entries";
-//     console.log("url = " + URL);
-//     var settings = {
-
-//         // Defines the configurations
-//         // for the request
-//         cache: false,
-//         dataType: "html",
-//         async: true,
-//         crossDomain: true,
-//         url: URL,
-//         method: "GET",
-//         timeout: 10000,
-//         headers: {
-//         accept: "*",
-//         "Access-Control-Allow-Origin": "*",
-//         },
-
-//         // Defines the response to be made
-//         // for certain status codes
-//         statusCode: {
-//         200: function (response) {
-//                 // let offline=document.getElementById("dis_conn")
-//                 // let online=document.getElementById("wifi_conn")
-//                 // online.style.display="flex";
-//                 // offline.style.display="none";
-//                 console.log("on");
-//         },
-//         400: function (response) {
-//             // let offline=document.getElementById("dis_conn")
-//             // let online=document.getElementById("wifi_conn")
-//             // online.style.display="none";
-//             // offline.style.display="flex";
-//             console.log("off");
-//         },
-//         0: function (response) {
-//                 // let offline=document.getElementById("dis_conn")
-//                 // let online=document.getElementById("wifi_conn")
-//                 // online.style.display="none";
-//                 // offline.style.display="flex";
-//                 console.log("off");
-//         },
-//         },
-//     };
-
-//     // Sends the request and observes the response
-//     $.ajax(settings)
-//     .done(function (response) {
-//         console.log(response);
-//     })
-//     .fail(function (response) {
-//         console.log("Error " + response);
-//     });
-//  }
-
 function open_autojoomer() {
   window.open("https://www.autojoomer.co/", (target = "_blank"));
 }
 
-function open_lms()   
-{
+function open_lms() {
   //study_year = document.login_form.year.selectedIndex;    
-    if(study_year == 2020)
-    {window.open("https://lms.iiitkottayam.ac.in/", (target="_blank"));}     
-    else if(study_year == 2019 || study_year == 2021)
-    {window.open("https://lmsone.iiitkottayam.ac.in/", (target="_blank"));}
-    else
-    {alert("KINDLY ENTER YOUR CREDENTIALS");}
-} 
+  if (study_year == 2020) { window.open("https://lms.iiitkottayam.ac.in/", (target = "_blank")); }
+  else if (study_year == 2019 || study_year == 2021) { window.open("https://lmsone.iiitkottayam.ac.in/", (target = "_blank")); }
+  else { alert("KINDLY ENTER YOUR CREDENTIALS"); }
+}
 
 function mode_change() {
   let element1 = document.body;
