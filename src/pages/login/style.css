@@ -27,17 +27,17 @@
     rgba(0, 207, 255, 1)
   );
 }
+
 body {
   background: var(--bg-gradient);
   font-family: var(--font-family);
-  height: 100vh;
-  width: 100%;
-  display: flex;
+  height: fit-content;
+  width: fit-content;
   justify-content: center;
   align-items: center;
-  flex-direction: column;
-  padding: 20px 0;
+  padding: 20px;
 }
+
 .form-container {
   padding: 14px;
   display: flex;
