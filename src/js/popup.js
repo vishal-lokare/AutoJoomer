@@ -28,7 +28,7 @@ function open_autojoomer() {
 function open_lms() {
   //study_year = document.login_form.year.selectedIndex;    
   if (study_year == 2020) { window.open("https://lms.iiitkottayam.ac.in/", (target = "_blank")); }
-  else if (study_year == 2019 || study_year == 2021) { window.open("https://lmsone.iiitkottayam.ac.in/", (target = "_blank")); }
+  else if (study_year == 2021) { window.open("https://lmsone.iiitkottayam.ac.in/", (target = "_blank")); }
   else { alert("KINDLY ENTER YOUR CREDENTIALS"); }
 }
 
