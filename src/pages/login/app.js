@@ -4,7 +4,7 @@ const branch = document.querySelector("#branch");
 const batch = document.querySelector("#batch");
 const password = document.querySelector("#password");
 const btn = document.getElementById("mb");
-let pattern = /20(19BCS((000[1-9])|(00[1-9][0-9])|(01[01][0-9])|(012[0-2]))|(20BCS)((000[1-9])|(00[1-9][0-9])|(01[0-8][0-9])|(0190))|(21BCS)((000[1-9])|(00[1-9][0-9])|(01[0-9][0-9]))|(21BCY)((000[1-9])|(00[1-3][0-9])|(004[0-6]))|(20BEC)((000[1-9])|(00[1-3][0-9]))|(21BEC)((000[1-9])|(00[1-3][0-9])|(004[0-4])))/gim;
+let pattern = /20(20BCS)((000[1-9])|(00[1-9][0-9])|(01[0-8][0-9])|(0190))|(21BCS)((000[1-9])|(00[1-9][0-9])|(01[0-9][0-9]))|(21BCY)((000[1-9])|(00[1-3][0-9])|(004[0-6]))|(20BEC)((000[1-9])|(00[1-3][0-9]))|(21BEC)((000[1-9])|(00[1-3][0-9])|(004[0-4])))/gim;
 const elements = document.getElementsByTagName('input');
 let firstChange = 0;
 
